@@ -1,5 +1,6 @@
 package manager;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Stack;
@@ -19,10 +20,19 @@ public class FileManager {
 	private Stack<Command> commands = new Stack<Command>();
 	private Model model;
 	
+	public FileManager(){
+		useModel();
+	}
+	
+	public FileManager(String modelkey){
+		useModel(modelkey);
+	}
 	public void useModel(){
 		model = new Model();
 	}
-	
+	public void useModel(String modelkey){
+		model = new Model(modelkey);
+	}
 	//----------commands------------
 	public void copy(String copyTo){
 		Command copy = new Copy();
@@ -48,6 +58,10 @@ public class FileManager {
 		Command delete = new Delete();
 		delete.execute();
 		commands.push(delete);
+	}
+	public void undo(){
+		if (!commands.isEmpty()) 
+			commands.pop().undo();
 	}
 	//---------------------------
 	

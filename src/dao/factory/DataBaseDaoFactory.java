@@ -1,11 +1,11 @@
 package dao.factory;
 
-import dao.DataBaseDaoDir;
-import dao.DataBaseDaoFile;
-import dao.DataBaseDaoLink;
 import dao.DirDao;
 import dao.FileDao;
 import dao.LinkDao;
+import dao.database_dao.DataBaseDaoDir;
+import dao.database_dao.DataBaseDaoFile;
+import dao.database_dao.DataBaseDaoLink;
 
 public class DataBaseDaoFactory extends DaoFactory{
 
