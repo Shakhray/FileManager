@@ -1,6 +1,7 @@
 package filesystem;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import exception.NodeAlreadyExistsException;
 import exception.OperationNotSupportedException;
@@ -53,6 +54,12 @@ public class File extends Node{
 		throw new OperationNotSupportedException();
 	}
 	public void deleteNode(Node delNode) throws OperationNotSupportedException{
+		throw new OperationNotSupportedException();
+	}
+
+	@Override
+	public ArrayList<Node> getInsertedNode()
+			throws OperationNotSupportedException {
 		throw new OperationNotSupportedException();
 	}
 

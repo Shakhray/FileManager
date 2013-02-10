@@ -1,11 +1,20 @@
 package command;
 
+import dao.DirDao;
+
 public class Copy extends Command{
 
-	@Override
+	public Copy(DirDao dirdao) {
+		super(dirdao);
+		// TODO Auto-generated constructor stub
+	}
+	private String[] path;
+	
+	
 	public void execute() {
-		// TODO Auto-generated method stub
 		
 	}
-
+	private void copyTo(){
+		
+	}
 }

@@ -6,18 +6,20 @@ import dao.LinkDao;
 import dao.testfilesystem_dao.TestFileSystemDaoDir;
 import dao.testfilesystem_dao.TestFileSystemDaoFile;
 import dao.testfilesystem_dao.TestFileSystemDaoLink;
+import exception.NodeAlreadyExistsException;
+import exception.OperationNotSupportedException;
 
 public class TestFileSystemDaoFactory extends DaoFactory{
 
-	public LinkDao getDataBaseDaoLink() {
+	public LinkDao getDataBaseDaoLink() throws NodeAlreadyExistsException, OperationNotSupportedException {
 		return new TestFileSystemDaoLink();
 	}
 
-	public FileDao getDataBaseDaoFile() {
+	public FileDao getDataBaseDaoFile() throws NodeAlreadyExistsException, OperationNotSupportedException {
 		return new TestFileSystemDaoFile();
 	}
 
-	public DirDao getDataBaseDaoDir() {
+	public DirDao getDataBaseDaoDir() throws NodeAlreadyExistsException, OperationNotSupportedException {
 		return new TestFileSystemDaoDir();
 	}
 

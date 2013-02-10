@@ -6,6 +6,8 @@ import dao.*;
 import dao.factory.DaoFactory;
 import dao.factory.DataBaseDaoFactory;
 import dao.factory.TestFileSystemDaoFactory;
+import exception.NodeAlreadyExistsException;
+import exception.OperationNotSupportedException;
 
 public class Model {
 	private LinkDao linkdao;
@@ -13,13 +15,13 @@ public class Model {
 	private DirDao dirdao;
 	private DaoFactory factory; 
 	
-	public Model(){
+	public Model() throws NodeAlreadyExistsException, OperationNotSupportedException{
 		factory = new DataBaseDaoFactory();
 		linkdao = factory.getDataBaseDaoLink();
 		filedao = factory.getDataBaseDaoFile();
 		dirdao = factory.getDataBaseDaoDir();
 	}
-	public Model(String key){
+	public Model(String key) throws NodeAlreadyExistsException, OperationNotSupportedException{
 		
 		ModelKey modelkey = ModelKey.valueOf(key.toUpperCase());
 		switch(modelkey){

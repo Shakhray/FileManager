@@ -9,7 +9,7 @@ import exception.NodeAlreadyExistsException;
 public class Dir extends Node{
 	
 	private ArrayList<String> path = new ArrayList<String>();
-	private Collection<Node> insertedNode = new ArrayList<Node>();
+	private ArrayList<Node> insertedNode = new ArrayList<Node>();
 	
 	public Dir(String dirName) {
 		super(dirName);
@@ -37,7 +37,7 @@ public class Dir extends Node{
 		return total;
 	}
 	
-	public Collection<Node> getInsertedNode(){
+	public ArrayList<Node> getInsertedNode(){
 		return 	insertedNode;
 	}
 	public boolean isDir(){

@@ -1,6 +1,7 @@
 package filesystem;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import exception.NodeAlreadyExistsException;
 import exception.OperationNotSupportedException;
@@ -34,4 +35,5 @@ public abstract class Node {
 	}
 	public abstract void addNode(Node newNode) throws NodeAlreadyExistsException, OperationNotSupportedException;
 	public abstract void deleteNode(Node delNode) throws OperationNotSupportedException;
+	public abstract ArrayList<Node> getInsertedNode() throws OperationNotSupportedException;
 }

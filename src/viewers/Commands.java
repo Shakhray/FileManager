@@ -8,5 +8,8 @@ public enum Commands {
 	CREATE,
 	UNDO,
 	EXIT,
-	ALLDIRS
+	ALLDIRS,
+	DIR,
+	CD,
+	DOWNDIR
 }

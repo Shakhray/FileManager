@@ -9,12 +9,13 @@ import filesystem.File;
 import filesystem.Node;
 
 public class TestFileSystem {
+	private Node root = new Dir("root");
 	
 	public TestFileSystem() throws NodeAlreadyExistsException, OperationNotSupportedException{
 		setFileSystem();
 	}
 	public void setFileSystem() throws NodeAlreadyExistsException, OperationNotSupportedException{
-		Node root = new Dir("root");
+		
 		ArrayList<String> path = new ArrayList<String>();
 		
 		path = root.getPath();
@@ -52,5 +53,9 @@ public class TestFileSystem {
 		photo.addNode(image2);
 		
 		text.addNode(textfile);
+	}
+	
+	public Node getRoot(){
+		return root;
 	}
 }

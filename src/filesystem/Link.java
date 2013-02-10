@@ -1,6 +1,7 @@
 package filesystem;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import exception.NodeAlreadyExistsException;
 import exception.OperationNotSupportedException;
@@ -47,6 +48,10 @@ public class Link extends Node{
 	public ArrayList<String> getPath() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	@Override
+	public ArrayList<Node> getInsertedNode() throws OperationNotSupportedException{
+		throw new OperationNotSupportedException();
 	}
 	
 
