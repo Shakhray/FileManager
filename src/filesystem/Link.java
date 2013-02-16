@@ -10,10 +10,10 @@ public class Link extends Node{
 
 	private Node linkedTo;
 	public Link(String linkName) {
-		super(linkName);
+		super(linkName, null);
 	}
 	public Link(String linkName, Node LinkedTo) {
-		super(linkName);
+		super(linkName, null);
 		this.linkedTo = LinkedTo;
 	}
 	@Override
@@ -49,10 +49,4 @@ public class Link extends Node{
 		// TODO Auto-generated method stub
 		return null;
 	}
-	@Override
-	public ArrayList<Node> getInsertedNode() throws OperationNotSupportedException{
-		throw new OperationNotSupportedException();
-	}
-	
-
 }

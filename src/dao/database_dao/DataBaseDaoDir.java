@@ -1,10 +1,10 @@
 package dao.database_dao;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 import dao.DirDao;
-import exception.NodeAlreadyExistsException;
-import exception.OperationNotSupportedException;
+import filesystem.Dir;
 import filesystem.Node;
 
 public class DataBaseDaoDir implements DirDao{
@@ -19,34 +19,55 @@ public class DataBaseDaoDir implements DirDao{
 	}
 
 	@Override
-	public Node getRoot() {
+	public void undo(ArrayList<Node> backup) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void create(Dir newdir) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setCurrentDir(Dir node) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Dir deldir) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void rename(Dir dir, String renameto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void copy(Dir copynode, ArrayList<String> copyto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void replace(Dir replacenode, ArrayList<String> replaceto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Dir getRoot() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void undo(Node backup) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void create(String name) throws OperationNotSupportedException,
-			NodeAlreadyExistsException {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	@Override
-	public void setCurrentDir(Node node) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public Node getCurrentDir() {
+	public Dir getCurrentDir() {
 		// TODO Auto-generated method stub
 		return null;
 	}

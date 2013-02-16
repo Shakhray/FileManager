@@ -1,18 +1,24 @@
 package command;
 
 import dao.DirDao;
+import filesystem.Dir;
 
 public class Rename extends Command{
 
-	public Rename(DirDao dirdao) {
-		super(dirdao);
-		// TODO Auto-generated constructor stub
+	private String renameto;
+	private Dir dir;
+	
+	public Rename(DirDao dirdao, Dir currentDir, Dir dir, String renameto){
+		super(dirdao, currentDir);
+		this.renameto = renameto;
+		this.dir = dir;
 	}
-
-	@Override
-	public void execute() {
-		// TODO Auto-generated method stub
-		
+	
+	public void execute(){
+		super.dirdao.rename(dir, renameto);
+	}
+	public void undo(){
+		super.undo();
 	}
 
 }

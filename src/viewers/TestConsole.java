@@ -3,6 +3,7 @@ package viewers;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 import exception.NodeAlreadyExistsException;
 import exception.NodeNotFoundException;
@@ -51,7 +52,6 @@ public class TestConsole {
 					try {
 						filemanager.cd(dir);
 					} catch (NodeNotFoundException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 					break;
@@ -64,21 +64,46 @@ public class TestConsole {
 					
 				}
 					case COPY :{
-						
+						System.out.print("enten copied file: ");
+						String namenode = reader.readLine();
+						System.out.print("copy to: ");
+						String path = reader.readLine();
+						String[] patharr = path.split("/");
+						ArrayList<String> copyto = new ArrayList<String>();
+						for(int i=0; i<patharr.length; i++)
+							copyto.add(patharr[i]);
+						filemanager.copy(namenode, copyto);
+						break;
 					}
 					case DELETE :{
-						
-					}
-					case CREATE :{
 						String name = reader.readLine();
-						filemanager.create(name);
+						filemanager.delete(name);
+						break;
+					}
+					case MKDIR :{
+						String name = reader.readLine();
+						filemanager.makeDir(name);
 						break;
 					}
 					case RENAME :{
-
+						System.out.print("enten renaming file: ");
+						String dir = reader.readLine();
+						System.out.print("enten new name: ");
+						String renameto = reader.readLine();
+						filemanager.rename(dir, renameto);
+						break;
 					}
 					case REPLACE : {
-						
+						System.out.print("enten repalcing file: ");
+						String namenode = reader.readLine();
+						System.out.print("replace to: ");
+						String path = reader.readLine();
+						String[] patharr = path.split("/");
+						ArrayList<String> replaceto = new ArrayList<String>();
+						for(int i=0; i<patharr.length; i++)
+							replaceto.add(patharr[i]);
+						filemanager.replace(namenode, replaceto);
+						break;
 					}
 					case EXIT : System.exit(0);
 					case UNDO : {
@@ -92,13 +117,16 @@ public class TestConsole {
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
-			} 
+			} catch (NodeNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (NodeAlreadyExistsException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 			
 		}
 		} catch (NodeAlreadyExistsException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		} catch (OperationNotSupportedException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}

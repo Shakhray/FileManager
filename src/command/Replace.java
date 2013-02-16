@@ -1,18 +1,25 @@
 package command;
 
+import java.util.ArrayList;
+
 import dao.DirDao;
+import filesystem.Dir;
 
 public class Replace extends Command{
 
-	public Replace(DirDao dirdao) {
-		super(dirdao);
-		// TODO Auto-generated constructor stub
+	private Dir replacedir;
+	private ArrayList<String> replaceto = new ArrayList<String>();
+	
+	public Replace(DirDao dirdao, Dir currentdir, Dir replacedir, ArrayList<String> replaceto){
+		super(dirdao, currentdir);
+		this.replacedir = replacedir;
+		this.replaceto = replaceto;
 	}
 
-	@Override
-	public void execute() {
-		// TODO Auto-generated method stub
-		
+	public void execute(){
+		super.dirdao.replace(replacedir, replaceto);
 	}
-
+	public void undo(){
+		super.undo();
+	}
 }

@@ -1,16 +1,19 @@
 package filesystem;
 
 import java.util.ArrayList;
-import java.util.Collection;
-
-import exception.NodeAlreadyExistsException;
-import exception.OperationNotSupportedException;
 
 public abstract class Node {
 	protected String name;
+	private ArrayList<String> path;
 	
+	
+	public Node(String name, ArrayList<String> path){
+		setName(name);
+		this.path = path;
+	}
 	public Node(String name){
 		setName(name);
+		path = new ArrayList<String>(); 
 	}
 	
 	public void setName(String name){
@@ -20,9 +23,11 @@ public abstract class Node {
 	public String getName(){
 		return name;
 	}
+	public ArrayList<String> getPath(){
+		return path;
+	}
 	
 	public abstract double size();
-	public abstract ArrayList<String> getPath();
 	public abstract boolean isDir();
 	public abstract boolean isFile();
 	public abstract boolean isLink();
@@ -33,7 +38,8 @@ public abstract class Node {
 			return true;
 		else return false;
 	}
-	public abstract void addNode(Node newNode) throws NodeAlreadyExistsException, OperationNotSupportedException;
-	public abstract void deleteNode(Node delNode) throws OperationNotSupportedException;
-	public abstract ArrayList<Node> getInsertedNode() throws OperationNotSupportedException;
+	//public abstract void addNode(Node newNode) throws NodeAlreadyExistsException, OperationNotSupportedException;
+	//public abstract void deleteNode(Node delNode) throws OperationNotSupportedException;
+	//public abstract ArrayList<Node> getInsertedNode() throws OperationNotSupportedException;
+	//public abstract void setInsertedNode(ArrayList<Node> insnode) throws OperationNotSupportedException;
 }

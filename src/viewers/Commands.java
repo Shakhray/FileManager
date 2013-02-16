@@ -11,5 +11,6 @@ public enum Commands {
 	ALLDIRS,
 	DIR,
 	CD,
-	DOWNDIR
+	DOWNDIR,
+	MKDIR
 }

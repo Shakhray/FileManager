@@ -1,7 +1,5 @@
 package model;
 
-import java.io.IOException;
-
 import dao.*;
 import dao.factory.DaoFactory;
 import dao.factory.DataBaseDaoFactory;

@@ -1,6 +1,7 @@
 package manager;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Stack;
@@ -17,82 +18,125 @@ import command.*;
 
 import exception.NodeAlreadyExistsException;
 import exception.NodeNotFoundException;
-import exception.OperationNotSupportedException;
+import filesystem.Dir;
 import filesystem.Node;
 
 public class FileManager {
-	//private Collection<Node> node = new ArrayList<Node>();
+
 	private Stack<Command> commands = new Stack<Command>();
 	private Model model;
-	private Node currentDir;
+	private Dir currentdir;
 	private Stack<CD> downDir = new Stack<CD>();
 	
 	
-	public FileManager() throws NodeAlreadyExistsException, OperationNotSupportedException{
+	public FileManager(){
 		useModel();
-		currentDir = model.getDirDao().getCurrentDir();
+		currentdir = model.getDirDao().getCurrentDir();
 	}
 	
-	public FileManager(String modelkey) throws NodeAlreadyExistsException, OperationNotSupportedException{
+	public FileManager(String modelkey){
 		useModel(modelkey);
-		currentDir = model.getDirDao().getCurrentDir();
+		currentdir = model.getDirDao().getCurrentDir();
 	}
-	public void useModel() throws NodeAlreadyExistsException, OperationNotSupportedException{
+	public void useModel(){
 		model = new Model();
 	}
-	public void useModel(String modelkey) throws NodeAlreadyExistsException, OperationNotSupportedException{
+	public void useModel(String modelkey){
 		model = new Model(modelkey);
 	}
 	public String getCurrentDir(){
-		return currentDir.getName();
+		return currentdir.getName();
 	}
 	//----------commands------------
-	public void cd (String dir) throws OperationNotSupportedException, NodeNotFoundException, NodeAlreadyExistsException{
-		/*boolean b =true;
-		for (Node node : currentDir.getInsertedNode()){
-			if (node.getName().equals(dir)) {
-				downDir.push(currentDir);
-				currentDir=node; 
-				b = false;
-			}
-		}
-		if (b) throw new NodeNotFoundException();*/
-		CD cd = new CD(model.getDirDao(),currentDir,dir);
+	public void cd (String dir){
+		CD cd = new CD(model.getDirDao(),currentdir,dir);
 		cd.execute();
 		downDir.push(cd);
-		currentDir = model.getDirDao().getCurrentDir();
+		currentdir = model.getDirDao().getCurrentDir();
 	}
 	public void downDir(){
 		if (!downDir.isEmpty()) downDir.pop().downDir();
-		currentDir = model.getDirDao().getCurrentDir();
+		currentdir = model.getDirDao().getCurrentDir();
 	}
-	public Collection<Node> dir() throws OperationNotSupportedException{
-		return currentDir.getInsertedNode();
+	public Collection<Node> dir(){
+		return currentdir.getInsertedNode();
 	}
-	public void copy(String copyTo) throws OperationNotSupportedException, NodeAlreadyExistsException{
-		Command copy = new Copy(null);
-		copy.execute();
-		commands.push(copy);
+	public void copy(String name, ArrayList<String> copyto) throws NodeNotFoundException{
+		boolean b = true;
+		for (Node node : currentdir.getInsertedNode())
+			if (node.getName().equals(name)) {
+				b = false;
+				Command copy = null;
+				if (node.isDir()) copy = new Copy(model.getDirDao(), currentdir, (Dir)node, copyto);
+				copy.execute();
+				commands.push(copy);
+			}
+		if (b) throw new NodeNotFoundException();
 	}
-	public void replace(String replaceTo) throws OperationNotSupportedException, NodeAlreadyExistsException{
-		Command replace = new Replace(null);
-		replace.execute();
-		commands.push(replace);
+	public void replace(String name, ArrayList<String> replaceto) throws NodeAlreadyExistsException, NodeNotFoundException{
+		boolean b = true;
+		for (Node node : currentdir.getInsertedNode()){
+			if (node.getName().equals(name)) {
+				b = false;
+				Command replace = null;
+				if (node.isDir()) replace = new Replace(model.getDirDao(), currentdir, (Dir)node, replaceto);
+				replace.execute();
+				commands.push(replace);
+				break;
+			}
+		}
+		if (b) throw new NodeNotFoundException();
 	}
-	public void rename(String renameTo) throws OperationNotSupportedException, NodeAlreadyExistsException{
-		Command rename = new Rename(null);
-		rename.execute();
-		commands.push(rename);
+	public void rename(String dir, String renameto) throws NodeNotFoundException{
+		if (!isExist(renameto)){
+			boolean b = true;
+			for (Node node : currentdir.getInsertedNode()){
+				if (node.getName().equals(dir)) {
+					b = false;
+					Command rename = null;
+					if (node.isDir()) rename = new Rename(model.getDirDao(), currentdir, (Dir)node, renameto);
+					rename.execute();
+					commands.push(rename);
+					break;
+				}
+			}
+			if (b) throw new NodeNotFoundException();
+		}
+		else throw new NodeAlreadyExistsException();
 	}
-	public void create(String name) throws OperationNotSupportedException, NodeAlreadyExistsException{
-		Command create = new Create(model.getDirDao(), name);
-		create.execute();
-		commands.push(create);
+	private boolean isExist(String name){
+		boolean b = false;
+		for (Node node : currentdir.getInsertedNode()){
+			if (node.getName().equals(name)) {
+				b = true;
+				break;
+			}
+		}
+		return b;
 	}
-	public void delete(String deletingNode) throws OperationNotSupportedException, NodeAlreadyExistsException{
-		Command delete = new Delete(null);
-		delete.execute();
-		commands.push(delete);
+	public void makeDir(String name) throws NodeAlreadyExistsException{
+		if (!isExist(name)) {
+			ArrayList<String> path = new ArrayList<String>();
+			path = currentdir.getPath();
+			path.add(currentdir.getName());
+			Dir dir = new Dir(name,path);
+					
+			Command create = new Create(model.getDirDao(), currentdir, dir);
+			create.execute();
+			commands.push(create);
+		}
+		else throw new NodeAlreadyExistsException();
+	}
+	public void delete(String deldir){
+		for (Node node : currentdir.getInsertedNode()){
+			if (node.getName().equals(deldir)) {
+				Command delete = null;
+				if (node.isDir()) delete = new Delete(model.getDirDao(), currentdir, (Dir)node);
+				delete.execute();
+				commands.push(delete);
+				break;
+			}
+		}
 	}
 	public void undo() throws IOException{
 		if (!commands.isEmpty()) 

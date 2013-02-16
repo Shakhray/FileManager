@@ -1,26 +1,22 @@
 package filesystem;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Stack;
 
 import exception.NodeAlreadyExistsException;
 
 public class Dir extends Node{
 	
-	private ArrayList<String> path = new ArrayList<String>();
 	private ArrayList<Node> insertedNode = new ArrayList<Node>();
 	
+	public Dir(String dirName, ArrayList<String> path) {
+		super(dirName, path);
+	}
 	public Dir(String dirName) {
 		super(dirName);
 	}
-	public Dir(String dirName, ArrayList<String> path) {
-		super(dirName);
-		this.path = path;
-	}
 	
 	public ArrayList<String> getPath(){
-		return path;
+		return super.getPath();
 	}
 	
 	public void setName(String dirName){
@@ -57,10 +53,9 @@ public class Dir extends Node{
 		else throw new NodeAlreadyExistsException();
 	}
 	public void deleteNode(Node delNode){
-		/*boolean b = true;
-		for(Node node : insertedNode)
-			if (node.equals(delNode)) b = false;
-		if (b) insertedNode.remove(delNode);*/
 		insertedNode.remove(delNode);
+	}
+	public void setInsertedNode(ArrayList<Node> insertedNode){
+		this.insertedNode = insertedNode;
 	}
 }

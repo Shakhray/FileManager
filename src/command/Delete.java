@@ -1,18 +1,21 @@
 package command;
 
 import dao.DirDao;
+import filesystem.Dir;
 
 public class Delete extends Command{
 
-	public Delete(DirDao dirdao) {
-		super(dirdao);
-		// TODO Auto-generated constructor stub
+	private Dir deldir;
+	
+	public Delete(DirDao dirdao, Dir currentDir, Dir deldir){
+		super(dirdao, currentDir);
+		this.deldir = deldir;
 	}
 
-	@Override
-	public void execute() {
-		// TODO Auto-generated method stub
-		
+	public void execute(){
+		super.dirdao.delete(deldir);
 	}
-
+	public void undo(){
+		super.undo();
+	}
 }

@@ -10,18 +10,19 @@ public class File extends Node{
 
 	private ArrayList<String> path = new ArrayList<String>();
 	private double size = 0;
+	private File file;
 	
 	public File(String fileName, double size, ArrayList<String> path){
-		super(fileName);
+		super(fileName, null);
 		this.path = path;
 		this.size = size;
 	}
 	
 	public File(String fileName) {
-		super(fileName);
+		super(fileName, null);
 	}
 	public File(String nameFile, double size) {
-		super(nameFile);
+		super(nameFile, null);
 		this.size = size;
 	}
 	
@@ -49,18 +50,4 @@ public class File extends Node{
 	public boolean isLink() {
 		return false;
 	}
-
-	public void addNode(Node newNode) throws NodeAlreadyExistsException, OperationNotSupportedException {
-		throw new OperationNotSupportedException();
-	}
-	public void deleteNode(Node delNode) throws OperationNotSupportedException{
-		throw new OperationNotSupportedException();
-	}
-
-	@Override
-	public ArrayList<Node> getInsertedNode()
-			throws OperationNotSupportedException {
-		throw new OperationNotSupportedException();
-	}
-
 }

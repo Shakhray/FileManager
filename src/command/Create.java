@@ -1,20 +1,22 @@
 package command;
 
 import dao.DirDao;
-import exception.NodeAlreadyExistsException;
-import exception.OperationNotSupportedException;
-import filesystem.Node;
+import filesystem.Dir;
 
 public class Create extends Command{
 
-	private String newDir;
-	public Create(DirDao dirdao, String newDir) {
-		super(dirdao);
+	private Dir newDir;
+	
+	public Create(DirDao dirdao, Dir currentDir, Dir newDir){
+		super(dirdao, currentDir);
 		this.newDir = newDir;
 	}
 
-	public void execute() throws OperationNotSupportedException, NodeAlreadyExistsException {
+	public void execute(){
 		super.dirdao.create(newDir);
+	}
+	public void undo(){
+		super.undo();
 	}
 
 }
