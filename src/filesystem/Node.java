@@ -38,8 +38,4 @@ public abstract class Node {
 			return true;
 		else return false;
 	}
-	//public abstract void addNode(Node newNode) throws NodeAlreadyExistsException, OperationNotSupportedException;
-	//public abstract void deleteNode(Node delNode) throws OperationNotSupportedException;
-	//public abstract ArrayList<Node> getInsertedNode() throws OperationNotSupportedException;
-	//public abstract void setInsertedNode(ArrayList<Node> insnode) throws OperationNotSupportedException;
 }

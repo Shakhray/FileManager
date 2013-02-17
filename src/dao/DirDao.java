@@ -2,9 +2,6 @@ package dao;
 
 import java.util.ArrayList;
 
-import exception.NodeAlreadyExistsException;
-import exception.NodeNotFoundException;
-import exception.OperationNotSupportedException;
 import filesystem.Dir;
 import filesystem.Node;
 

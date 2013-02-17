@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import exception.NodeAlreadyExistsException;
 import filesystem.Dir;
 import filesystem.File;
+import filesystem.Link;
 
 public class TestFileSystem {
 	private Dir root = new Dir("root"); 
@@ -19,6 +20,8 @@ public class TestFileSystem {
 		
 		Dir dir1 = new Dir("dir1", path);
 		File t = new File("t.txt",12, path);
+		Link link = new Link("link.lnk", path);
+		
 			
 		ArrayList<String> path2 = new ArrayList<String>();
 		path2 = new ArrayList(dir1.getPath());
@@ -41,6 +44,8 @@ public class TestFileSystem {
 		
 		File textfile = new File("text.txt", 10, path4);
 		
+		link.setLink(text);
+		
 		text.addNode(textfile);
 		
 		photo.addNode(image1);
@@ -52,6 +57,7 @@ public class TestFileSystem {
 
 		root.addNode(dir1);
 		root.addNode(t);
+		root.addNode(link);
 	}
 	
 	/*public void setFileSystem() throws NodeAlreadyExistsException, OperationNotSupportedException{

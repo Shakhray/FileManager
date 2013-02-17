@@ -9,26 +9,20 @@ import exception.NodeAlreadyExistsException;
 
 import filesystem.Dir;
 import filesystem.Node;
-import filesystem.testfilesystem.TestFileSystem;
 
 public class TestFileSystemDaoDir implements DirDao{
 	
 	private FileDao filedao;
 	private LinkDao linkdao;
 	
-	private TestFileSystem fs;
 	private Dir root;
 	private Dir currentdir;
 	
 	public TestFileSystemDaoDir(){
-		//fs = new TestFileSystem();
-		//root = fs.getRoot();
-		//currentdir = root;
-	}	
+		
+	}
+	
 	public TestFileSystemDaoDir(TestFileSystemDaoFile filedao, TestFileSystemDaoLink linkdao){
-		//fs = new TestFileSystem();
-		//root = fs.getRoot();
-		//currentdir = root;
 		this.filedao = filedao;
 		this.linkdao = linkdao;
 	}
@@ -39,8 +33,6 @@ public class TestFileSystemDaoDir implements DirDao{
 	private void setRootForFileAndLink(){
 		filedao.setRoot(root);
 		linkdao.setRoot(root);
-		//filedao.setCurrentDir(currentdir);
-		//linkdao.setCurrentDir(currentdir);
 	}
 	
 	public void setRoot(Dir root){

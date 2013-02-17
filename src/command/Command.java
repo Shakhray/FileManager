@@ -14,23 +14,23 @@ public abstract class Command {
 	protected LinkDao linkdao;
 	protected FileDao filedao;
 	protected DirDao dirdao;
-	//private Node backup = new Dir("root");
 	private ArrayList<Node> backup;
 	
 	public Command(DirDao dirdao, Dir currentDir){
 		this.dirdao = dirdao;
-		//ArrayList<Node> insertedNode = new ArrayList(dirdao.getRoot().getInsertedNode());
 		backup = new ArrayList(((Dir)dirdao.getRoot()).getInsertedNode());
-		//backup.setInsertedNode(insertedNode);
 		this.dirdao.setCurrentDir(currentDir);
-		//backup = dirdao.getRoot();
 	}
 	
 	public Command(FileDao filedao, Dir currentDir){
-		System.out.println(currentDir.getName());
 		this.filedao = filedao;
 		backup = new ArrayList(((Dir)filedao.getRoot()).getInsertedNode());
 		this.filedao.setCurrentDir(currentDir);
+	}
+	public Command(LinkDao linkdao, Dir currentDir){
+		this.linkdao = linkdao;
+		backup = new ArrayList(((Dir)linkdao.getRoot()).getInsertedNode());
+		this.linkdao.setCurrentDir(currentDir);
 	}
 	
 	public abstract void execute();

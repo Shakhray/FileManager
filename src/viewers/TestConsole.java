@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+import exception.IsNotDirectryException;
 import exception.NodeAlreadyExistsException;
 import exception.NodeNotFoundException;
 import filesystem.Node;
@@ -91,6 +92,19 @@ public class TestConsole {
 						filemanager.makeFile(name);
 						break;
 					}
+					case MKLINK :{
+						System.out.print("new link: ");
+						String name = reader.readLine();
+						
+						System.out.print("link to: ");
+						String path = reader.readLine();
+						String[] patharr = path.split("/");
+						ArrayList<String> linkto = new ArrayList<String>();
+						for(int i=0; i<patharr.length; i++)
+							linkto.add(patharr[i]);
+						filemanager.makeLink(name,linkto);
+						break;
+					}
 					case RENAME :{
 						System.out.print("enten renaming file: ");
 						String dir = reader.readLine();
@@ -111,6 +125,12 @@ public class TestConsole {
 						filemanager.replace(namenode, replaceto);
 						break;
 					}
+					case OPEN : {
+						System.out.print("open: ");
+						String name = reader.readLine();
+						filemanager.open(name);
+						break;
+					}
 					case EXIT : System.exit(0);
 					case UNDO : {
 						filemanager.undo();
@@ -120,7 +140,11 @@ public class TestConsole {
 			}
 			catch(IllegalArgumentException e){
 				viewer.badCommand();
-			} catch (IOException e1) {
+				e.printStackTrace();
+			} catch(IsNotDirectryException e){
+				viewer.badCommand();
+				e.printStackTrace();
+			}catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			} catch (NodeNotFoundException e) {

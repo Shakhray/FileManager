@@ -12,5 +12,7 @@ public enum Commands {
 	CD,
 	DOWNDIR,
 	MKDIR,
-	MKFILE
+	MKFILE,
+	MKLINK,
+	OPEN
 }

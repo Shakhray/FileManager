@@ -9,26 +9,20 @@ import exception.NodeAlreadyExistsException;
 import filesystem.Dir;
 import filesystem.File;
 import filesystem.Node;
-import filesystem.testfilesystem.TestFileSystem;
 
 public class TestFileSystemDaoFile implements FileDao{
 	
 	private DirDao dirdao;
 	private LinkDao linkdao;
 	
-	private TestFileSystem fs;
 	private Dir root;
 	private Dir currentdir;
 	
 	public TestFileSystemDaoFile(){
-		//fs = new TestFileSystem();
-		//root = fs.getRoot();
-		//currentdir = root;
+	
 	}
 	
 	public TestFileSystemDaoFile(TestFileSystemDaoDir dirdao, TestFileSystemDaoLink linkdao) {
-		//fs = new TestFileSystem();
-		//root = fs.getRoot();
 		this.dirdao = dirdao;
 		this.linkdao = linkdao;
 	}
@@ -47,13 +41,11 @@ public class TestFileSystemDaoFile implements FileDao{
 	private void setRootForDirAndLink(){
 		dirdao.setRoot(root);
 		linkdao.setRoot(root);
-		//dirdao.setCurrentDir(currentdir);
-		//linkdao.setCurrentDir(currentdir);
 	}
-	@Override
+	
 	public void undo(ArrayList<Node> backup) {
-		// TODO Auto-generated method stub
-		
+		root.setInsertedNode(backup);
+		setRootForDirAndLink();
 	}
 	public void create(File newfile) {
 		currentdir.addNode(newfile);

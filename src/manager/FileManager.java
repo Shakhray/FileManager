@@ -7,19 +7,26 @@ import java.util.Collection;
 import java.util.Stack;
 
 import navigation.CD;
+import navigation.Navigation;
+import navigation.Opening;
 
-import open.Opening;
 
 import search.Search;
 
 import model.Model;
 
 import command.*;
+import dao.DirDao;
+import dao.FileDao;
+import dao.LinkDao;
 
+import exception.IsNotDirectryException;
 import exception.NodeAlreadyExistsException;
 import exception.NodeNotFoundException;
+import exception.OperationNotSupportedException;
 import filesystem.Dir;
 import filesystem.File;
+import filesystem.Link;
 import filesystem.Node;
 
 public class FileManager {
@@ -27,7 +34,7 @@ public class FileManager {
 	private Stack<Command> commands = new Stack<Command>();
 	private Model model;
 	private Dir currentdir;
-	private Stack<CD> downDir = new Stack<CD>();
+	private Stack<Navigation> downDir = new Stack<Navigation>();
 	
 	
 	public FileManager(){
@@ -49,9 +56,10 @@ public class FileManager {
 		return currentdir.getName();
 	}
 	//----------commands------------
-	public void cd (String dir){
-		CD cd = new CD(model.getDirDao(), model.getFileDao(), model.getLinkDao(), currentdir,dir);
+	public void cd (String dir) throws IsNotDirectryException{
+		Navigation cd = new CD(model.getDirDao(), model.getFileDao(), model.getLinkDao(), currentdir,dir);
 		cd.execute();
+		
 		downDir.push(cd);
 		currentdir = model.getDirDao().getCurrentDir();
 	}
@@ -70,6 +78,7 @@ public class FileManager {
 				Command copy = null;
 				if (node.isDir()) copy = new Copy(model.getDirDao(), currentdir, (Dir)node, copyto);
 				if (node.isFile()) copy = new Copy(model.getFileDao(), currentdir, (File)node, copyto);
+				if (node.isLink()) copy = new Copy(model.getLinkDao(), currentdir, (Link)node, copyto);
 				copy.execute();
 				commands.push(copy);
 			}
@@ -83,6 +92,7 @@ public class FileManager {
 				Command replace = null;
 				if (node.isDir()) replace = new Replace(model.getDirDao(), currentdir, (Dir)node, replaceto);
 				if (node.isFile()) replace = new Replace(model.getFileDao(), currentdir, (File)node, replaceto);
+				if (node.isLink()) replace = new Replace(model.getLinkDao(), currentdir, (Link)node, replaceto);
 				replace.execute();
 				commands.push(replace);
 				break;
@@ -99,6 +109,7 @@ public class FileManager {
 					Command rename = null;
 					if (node.isDir()) rename = new Rename(model.getDirDao(), currentdir, (Dir)node, renameto);
 					if (node.isFile()) rename = new Rename(model.getFileDao(), currentdir, (File)node, renameto);
+					if (node.isLink()) rename = new Rename(model.getLinkDao(), currentdir, (Link)node, renameto);
 					rename.execute();
 					commands.push(rename);
 					break;
@@ -144,37 +155,91 @@ public class FileManager {
 		}
 		else throw new NodeAlreadyExistsException();
 	}
+	
+	private Node findNode (Dir root, ArrayList<String> path){
+		Node findnode = null;
+		if (path.size()>1){
+		for (Node node : root.getInsertedNode())
+			if (node.getName().equals(path.get(0))) {
+				path.remove(0);
+				findnode = findNode((Dir)node, path);
+				break;
+			}
+		}
+		else
+			if (path.size()==1){
+				for (Node node : root.getInsertedNode())
+					if (node.getName().equals(path.get(0))) {
+						findnode = node;
+						break;
+					}
+				}
+		if (findnode != null) return findnode;
+		else throw new NodeNotFoundException();
+	}
+	
+	public void makeLink(String name, ArrayList<String> linkto) throws NodeAlreadyExistsException{
+		if (!isExist(name)) {
+			ArrayList<String> path = new ArrayList<String>();
+			path = currentdir.getPath();
+			path.add(currentdir.getName());
+			
+			linkto.remove(0);
+			Node linknode = findNode (model.getDirDao().getRoot(), linkto);
+			Link link = new Link(name, linknode, path);
+					
+			Command create = new Create(model.getLinkDao(), currentdir, link);
+			create.execute();
+			commands.push(create);
+		}
+		else throw new NodeAlreadyExistsException();
+	}
 	public void delete(String deldir){
 		for (Node node : currentdir.getInsertedNode()){
 			if (node.getName().equals(deldir)) {
 				Command delete = null;
 				if (node.isDir()) delete = new Delete(model.getDirDao(), currentdir, (Dir)node);
 				if (node.isFile()) delete = new Delete(model.getFileDao(), currentdir, (File)node);
+				if (node.isLink()) delete = new Delete(model.getLinkDao(), currentdir, (Link)node);
 				delete.execute();
 				commands.push(delete);
 				break;
 			}
 		}
 	}
+	public void open(String name) throws IsNotDirectryException{
+		if (isExist(name)) {
+			for (Node node : currentdir.getInsertedNode()){
+				if (node.getName().equals(name)){
+					if (node.isDir()) cd(node.getName()); 
+					if (node.isFile()) throw new OperationNotSupportedException();
+					if (node.isLink()) 	{
+						Navigation link = new Opening(model.getDirDao(), model.getLinkDao(),model.getFileDao(), (Link)node);
+						link.execute();
+						if (((Link)node).linkTo().isDir()){
+							downDir.push(link);
+							currentdir = model.getDirDao().getCurrentDir();
+						}
+					}
+						
+				}
+			}
+		}
+		else throw new NodeNotFoundException();
+	}
 	public void undo() throws IOException{
 		if (!commands.isEmpty()) 
 			commands.pop().undo();
 	}
+	
 	//---------------------------
 	
 	//template
-	public Node find(String findTo){
+	/*public Node find(String findTo){
 		Search search = new Search();
 		search.execute();
 		
 		Node node = null;
 		return node;
-	}
-	//template
-	public Node opening(String openNode){
-		Opening open = new Opening();
-		open.execute();
-		Node node = null;
-		return node;
-	}
+	}*/
 }

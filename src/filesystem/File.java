@@ -4,35 +4,18 @@ import java.util.ArrayList;
 
 public class File extends Node{
 
-	private ArrayList<String> path = new ArrayList<String>();
 	private double size = 0;
-	private File file;
+	//private File file;
 	
 	public File(String fileName, double size, ArrayList<String> path){
-		super(fileName, null);
-		this.path = path;
+		super(fileName, path);
 		this.size = size;
 	}
 	
 	public File(String fileName, ArrayList<String> path){
-		super(fileName, null);
-		this.path = path;
+		super(fileName, path);
 	}
-	
-	public File(String fileName) {
-		super(fileName, null);
-	}
-	public File(String nameFile, double size) {
-		super(nameFile, null);
-		this.size = size;
-	}
-	
-	public ArrayList<String> getPath(){
-		return path;
-	}
-	public String getName(){
-		return super.getName();
-	}
+
 	public void setName(String fileName){
 		super.setName(fileName);
 	}

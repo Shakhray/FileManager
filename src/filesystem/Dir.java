@@ -15,16 +15,6 @@ public class Dir extends Node{
 		super(dirName);
 	}
 	
-	public ArrayList<String> getPath(){
-		return super.getPath();
-	}
-	
-	public void setName(String dirName){
-		super.setName(dirName);
-	}
-	public String getName(){
-		return super.getName();
-	}
 	public double size() {
 		double total = 0;
 		for (Node node : insertedNode) {
