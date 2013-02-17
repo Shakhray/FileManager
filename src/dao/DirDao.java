@@ -11,6 +11,7 @@ import filesystem.Node;
 public interface DirDao {
 	public Dir getRoot();
 	public Dir getCurrentDir();
+	public void setRoot(Dir root);
 	public void undo(ArrayList<Node> backup);
 	public void create(Dir newdir);
 	public void setCurrentDir(Dir node);

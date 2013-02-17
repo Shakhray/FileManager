@@ -17,13 +17,20 @@ public abstract class Command {
 	//private Node backup = new Dir("root");
 	private ArrayList<Node> backup;
 	
-	public Command(DirDao dirdao, Dir currentDir) throws OperationNotSupportedException{
+	public Command(DirDao dirdao, Dir currentDir){
 		this.dirdao = dirdao;
 		//ArrayList<Node> insertedNode = new ArrayList(dirdao.getRoot().getInsertedNode());
 		backup = new ArrayList(((Dir)dirdao.getRoot()).getInsertedNode());
 		//backup.setInsertedNode(insertedNode);
 		this.dirdao.setCurrentDir(currentDir);
 		//backup = dirdao.getRoot();
+	}
+	
+	public Command(FileDao filedao, Dir currentDir){
+		System.out.println(currentDir.getName());
+		this.filedao = filedao;
+		backup = new ArrayList(((Dir)filedao.getRoot()).getInsertedNode());
+		this.filedao.setCurrentDir(currentDir);
 	}
 	
 	public abstract void execute();

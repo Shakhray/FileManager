@@ -4,8 +4,6 @@ import dao.*;
 import dao.factory.DaoFactory;
 import dao.factory.DataBaseDaoFactory;
 import dao.factory.TestFileSystemDaoFactory;
-import exception.NodeAlreadyExistsException;
-import exception.OperationNotSupportedException;
 
 public class Model {
 	private LinkDao linkdao;
@@ -13,13 +11,13 @@ public class Model {
 	private DirDao dirdao;
 	private DaoFactory factory; 
 	
-	public Model() throws NodeAlreadyExistsException, OperationNotSupportedException{
+	public Model(){
 		factory = new DataBaseDaoFactory();
-		linkdao = factory.getDataBaseDaoLink();
-		filedao = factory.getDataBaseDaoFile();
-		dirdao = factory.getDataBaseDaoDir();
+		linkdao = factory.getDaoLink();
+		filedao = factory.getDaoFile();
+		dirdao = factory.getDaoDir();
 	}
-	public Model(String key) throws NodeAlreadyExistsException, OperationNotSupportedException{
+	public Model(String key){
 		
 		ModelKey modelkey = ModelKey.valueOf(key.toUpperCase());
 		switch(modelkey){
@@ -27,9 +25,9 @@ public class Model {
 			case TEST : {factory = new TestFileSystemDaoFactory(); break;}
 			default : throw new IllegalArgumentException();
 		}		
-		linkdao = factory.getDataBaseDaoLink();
-		filedao = factory.getDataBaseDaoFile();
-		dirdao = factory.getDataBaseDaoDir();
+		linkdao = factory.getDaoLink();
+		filedao = factory.getDaoFile();
+		dirdao = factory.getDaoDir();
 	}
 	public LinkDao getLinkDao(){
 		return linkdao;

@@ -71,4 +71,10 @@ public class DataBaseDaoDir implements DirDao{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public void setRoot(Dir root) {
+		// TODO Auto-generated method stub
+		
+	}
 }

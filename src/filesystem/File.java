@@ -1,10 +1,6 @@
 package filesystem;
 
 import java.util.ArrayList;
-import java.util.Collection;
-
-import exception.NodeAlreadyExistsException;
-import exception.OperationNotSupportedException;
 
 public class File extends Node{
 
@@ -16,6 +12,11 @@ public class File extends Node{
 		super(fileName, null);
 		this.path = path;
 		this.size = size;
+	}
+	
+	public File(String fileName, ArrayList<String> path){
+		super(fileName, null);
+		this.path = path;
 	}
 	
 	public File(String fileName) {

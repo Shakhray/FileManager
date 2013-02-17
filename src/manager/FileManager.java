@@ -19,6 +19,7 @@ import command.*;
 import exception.NodeAlreadyExistsException;
 import exception.NodeNotFoundException;
 import filesystem.Dir;
+import filesystem.File;
 import filesystem.Node;
 
 public class FileManager {
@@ -38,10 +39,10 @@ public class FileManager {
 		useModel(modelkey);
 		currentdir = model.getDirDao().getCurrentDir();
 	}
-	public void useModel(){
+	private void useModel(){
 		model = new Model();
 	}
-	public void useModel(String modelkey){
+	private void useModel(String modelkey){
 		model = new Model(modelkey);
 	}
 	public String getCurrentDir(){
@@ -49,7 +50,7 @@ public class FileManager {
 	}
 	//----------commands------------
 	public void cd (String dir){
-		CD cd = new CD(model.getDirDao(),currentdir,dir);
+		CD cd = new CD(model.getDirDao(), model.getFileDao(), model.getLinkDao(), currentdir,dir);
 		cd.execute();
 		downDir.push(cd);
 		currentdir = model.getDirDao().getCurrentDir();
@@ -68,6 +69,7 @@ public class FileManager {
 				b = false;
 				Command copy = null;
 				if (node.isDir()) copy = new Copy(model.getDirDao(), currentdir, (Dir)node, copyto);
+				if (node.isFile()) copy = new Copy(model.getFileDao(), currentdir, (File)node, copyto);
 				copy.execute();
 				commands.push(copy);
 			}
@@ -80,6 +82,7 @@ public class FileManager {
 				b = false;
 				Command replace = null;
 				if (node.isDir()) replace = new Replace(model.getDirDao(), currentdir, (Dir)node, replaceto);
+				if (node.isFile()) replace = new Replace(model.getFileDao(), currentdir, (File)node, replaceto);
 				replace.execute();
 				commands.push(replace);
 				break;
@@ -95,6 +98,7 @@ public class FileManager {
 					b = false;
 					Command rename = null;
 					if (node.isDir()) rename = new Rename(model.getDirDao(), currentdir, (Dir)node, renameto);
+					if (node.isFile()) rename = new Rename(model.getFileDao(), currentdir, (File)node, renameto);
 					rename.execute();
 					commands.push(rename);
 					break;
@@ -127,11 +131,25 @@ public class FileManager {
 		}
 		else throw new NodeAlreadyExistsException();
 	}
+	public void makeFile(String name) throws NodeAlreadyExistsException{
+		if (!isExist(name)) {
+			ArrayList<String> path = new ArrayList<String>();
+			path = currentdir.getPath();
+			path.add(currentdir.getName());
+			File file = new File(name,path);
+					
+			Command create = new Create(model.getFileDao(), currentdir, file);
+			create.execute();
+			commands.push(create);
+		}
+		else throw new NodeAlreadyExistsException();
+	}
 	public void delete(String deldir){
 		for (Node node : currentdir.getInsertedNode()){
 			if (node.getName().equals(deldir)) {
 				Command delete = null;
 				if (node.isDir()) delete = new Delete(model.getDirDao(), currentdir, (Dir)node);
+				if (node.isFile()) delete = new Delete(model.getFileDao(), currentdir, (File)node);
 				delete.execute();
 				commands.push(delete);
 				break;

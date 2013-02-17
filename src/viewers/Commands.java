@@ -5,12 +5,12 @@ public enum Commands {
 	REPLACE,
 	RENAME,
 	DELETE,
-	CREATE,
 	UNDO,
 	EXIT,
 	ALLDIRS,
 	DIR,
 	CD,
 	DOWNDIR,
-	MKDIR
+	MKDIR,
+	MKFILE
 }

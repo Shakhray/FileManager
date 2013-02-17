@@ -9,15 +9,15 @@ import dao.database_dao.DataBaseDaoLink;
 
 public class DataBaseDaoFactory extends DaoFactory{
 
-	public LinkDao getDataBaseDaoLink() {
+	public LinkDao getDaoLink() {
 		return new DataBaseDaoLink();
 	}
 
-	public FileDao getDataBaseDaoFile() {
+	public FileDao getDaoFile() {
 		return new DataBaseDaoFile();
 	}
 
-	public DirDao getDataBaseDaoDir() {
+	public DirDao getDaoDir() {
 		return new DataBaseDaoDir();
 	}
 

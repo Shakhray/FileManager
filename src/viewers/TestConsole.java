@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 import exception.NodeAlreadyExistsException;
 import exception.NodeNotFoundException;
-import exception.OperationNotSupportedException;
 import filesystem.Node;
 
 import manager.FileManager;
@@ -81,8 +80,15 @@ public class TestConsole {
 						break;
 					}
 					case MKDIR :{
+						System.out.print("new dir: ");
 						String name = reader.readLine();
 						filemanager.makeDir(name);
+						break;
+					}
+					case MKFILE :{
+						System.out.print("new file: ");
+						String name = reader.readLine();
+						filemanager.makeFile(name);
 						break;
 					}
 					case RENAME :{
@@ -124,6 +130,7 @@ public class TestConsole {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
+			
 			
 		}
 		} catch (NodeAlreadyExistsException e1) {
