@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" name="Default" comment="">
-      <change type="MOVED" beforePath="D:\LAB_java\workspace\filemanager\src\FileManager.java" afterPath="$PROJECT_DIR$/src/manager/FileManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagram.png" afterPath="$PROJECT_DIR$/diagram.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="filemanager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,196 +69,133 @@
               <ID>JAVA</ID>
               <OriginalElement>command.Command</OriginalElement>
               <nodes>
-                <node x="1463.4690656565656" y="546.0">search.Search</node>
-                <node x="236.72739898989903" y="0.0">dao.FileDao</node>
-                <node x="1172.4690656565656" y="546.0">command.Rename</node>
-                <node x="1041.883712121212" y="246.0">command.Command</node>
-                <node x="570.8579545454545" y="546.0">command.Delete</node>
-                <node x="1317.4690656565656" y="546.0">command.Replace</node>
-                <node x="128.0" y="546.0">open.Opening</node>
-                <node x="715.8579545454545" y="546.0">command.Copy</node>
-                <node x="207.5" y="138.0">dao.DataBaseDaoFile</node>
-                <node x="273.0" y="505.0">model.Model</node>
-                <node x="707.727398989899" y="0.0">dao.DirDao</node>
-                <node x="898.8837121212122" y="316.5">filesystem.Dir</node>
-                <node x="821.8837121212122" y="316.5">filesystem.Link</node>
-                <node x="576.7569444444445" y="138.0">dao.DataBaseDaoDir</node>
-                <node x="849.1458333333333" y="715.0">manager.FileManager</node>
-                <node x="10.5" y="108.0">dao.factory.DaoFactory</node>
-                <node x="291.4878787878788" y="286.5">dao.factory.DataBaseDaoFactory</node>
-                <node x="356.49999999999994" y="138.0">dao.DataBaseDaoLink</node>
-                <node x="608.727398989899" y="0.0">dao.LinkDao</node>
-                <node x="968.8837121212122" y="316.5">filesystem.File</node>
-                <node x="1027.4690656565656" y="546.0">command.Create</node>
-                <node x="928.6337121212122" y="138.0">filesystem.Node</node>
+                <node x="185.0" y="1621.0">search.Search</node>
+                <node x="1323.0" y="536.0">dao.FileDao</node>
+                <node x="0.0" y="1621.0">viewers.TestConsole</node>
+                <node x="666.0" y="1486.0">exception.NodeAlreadyExistsException</node>
+                <node x="1120.0" y="1486.0">exception.IsNotDirectryException</node>
+                <node x="983.0" y="260.0">command.Rename</node>
+                <node x="945.0" y="1189.0">dao.factory.TestFileSystemDaoFactory</node>
+                <node x="1225.0" y="260.0">command.Replace</node>
+                <node x="785.5" y="0.0">command.Command</node>
+                <node x="1330.0" y="1486.0">use.Main</node>
+                <node x="1184.0" y="1051.0">model.Model</node>
+                <node x="772.0" y="536.0">dao.DirDao</node>
+                <node x="0.0" y="796.0">filesystem.Dir</node>
+                <node x="879.75" y="1051.0">dao.factory.DaoFactory</node>
+                <node x="772.0" y="1220.0">dao.factory.DataBaseDaoFactory</node>
+                <node x="0.0" y="1210.0">navigation.CD</node>
+                <node x="1045.0" y="536.0">dao.LinkDao</node>
+                <node x="583.0" y="270.0">command.Create</node>
+                <node x="241.0" y="536.0">filesystem.Node</node>
+                <node x="196.5" y="1051.0">navigation.Navigation</node>
+                <node x="1045.0" y="775.0">dao.database_dao.DataBaseDaoLink</node>
+                <node x="1323.0" y="775.0">dao.database_dao.DataBaseDaoFile</node>
+                <node x="273.0" y="1190.0">navigation.Opening</node>
+                <node x="398.0" y="1486.0">exception.OperationNotSupportedException</node>
+                <node x="1378.0" y="1051.0">viewers.Viewer</node>
+                <node x="784.0" y="270.0">command.Delete</node>
+                <node x="905.0" y="1486.0">exception.NodeNotFoundException</node>
+                <node x="0.0" y="1486.0">filesystem.testfilesystem.TestFileSystem</node>
+                <node x="296.0" y="260.0">command.Copy</node>
+                <node x="489.0" y="816.0">filesystem.Link</node>
+                <node x="0.0" y="0.0">manager.FileManager</node>
+                <node x="772.0" y="775.0">dao.database_dao.DataBaseDaoDir</node>
+                <node x="567.0" y="1051.0">viewers.Commands</node>
+                <node x="226.0" y="805.5">filesystem.File</node>
+                <node x="197.0" y="1486.0">model.ModelKey</node>
               </nodes>
               <notes />
               <edges>
                 <edge source="command.Copy" target="command.Command">
-                  <point x="0.0" y="-24.0" />
-                  <point x="778.3579545454545" y="475.0" />
-                  <point x="1086.633712121212" y="475.0" />
-                  <point x="-44.75" y="84.5" />
-                </edge>
-                <edge source="model.Model" target="dao.factory.DataBaseDaoFactory">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="-115.0" />
+                  <point x="429.5" y="230.0" />
+                  <point x="803.0999999999999" y="230.0" />
+                  <point x="-70.39999999999998" y="105.0" />
                 </edge>
                 <edge source="dao.factory.DataBaseDaoFactory" target="dao.factory.DaoFactory">
-                  <point x="-66.375" y="-44.0" />
-                  <point x="313.6128787878788" y="226.0" />
-                  <point x="143.25" y="226.0" />
-                  <point x="44.25" y="44.0" />
-                </edge>
-                <edge source="command.Command" target="dao.LinkDao">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="manager.FileManager" target="command.Copy">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="-44.0" />
+                  <point x="848.5" y="1164.0" />
+                  <point x="912.5" y="1164.0" />
+                  <point x="-32.75" y="44.0" />
                 </edge>
                 <edge source="command.Create" target="command.Command">
-                  <point x="0.0" y="-24.0" />
-                  <point x="1089.9690656565656" y="485.0" />
-                  <point x="1116.4670454545453" y="485.0" />
-                  <point x="-14.916666666666686" y="84.5" />
-                </edge>
-                <edge source="manager.FileManager" target="command.Rename">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.Model" target="dao.DirDao">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="dao.factory.DataBaseDaoFactory" target="dao.DataBaseDaoDir">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="manager.FileManager" target="command.Replace">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="manager.FileManager" target="command.Command">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="command.Command" target="filesystem.Node">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="filesystem.Link" target="filesystem.Node">
-                  <point x="0.0" y="-14.0" />
-                  <point x="850.3837121212122" y="216.0" />
-                  <point x="936.3837121212122" y="216.0" />
-                  <point x="-23.25" y="14.0" />
-                </edge>
-                <edge source="model.Model" target="dao.LinkDao">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="dao.DataBaseDaoFile" target="dao.FileDao">
-                  <point x="0.0" y="-14.0" />
-                  <point x="272.0" y="88.0" />
-                  <point x="274.22739898989903" y="88.0" />
-                  <point x="0.0" y="14.0" />
+                  <point x="0.0" y="-105.0" />
+                  <point x="673.5" y="240.0" />
+                  <point x="838.3" y="240.0" />
+                  <point x="-35.19999999999999" y="105.0" />
                 </edge>
                 <edge source="command.Replace" target="command.Command">
-                  <point x="0.0" y="-24.0" />
-                  <point x="1379.9690656565656" y="475.0" />
-                  <point x="1176.133712121212" y="475.0" />
-                  <point x="44.75" y="84.5" />
+                  <point x="0.0" y="-115.0" />
+                  <point x="1365.0" y="230.0" />
+                  <point x="943.9" y="230.0" />
+                  <point x="70.4" y="105.0" />
                 </edge>
-                <edge source="command.Delete" target="command.Command">
-                  <point x="0.0" y="-24.0" />
-                  <point x="633.3579545454545" y="465.0" />
-                  <point x="1056.8003787878788" y="465.0" />
-                  <point x="-74.58333333333331" y="84.5" />
-                </edge>
-                <edge source="manager.FileManager" target="model.Model">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="manager.FileManager" target="command.Create">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
+                <edge source="dao.database_dao.DataBaseDaoLink" target="dao.LinkDao">
+                  <point x="0.0" y="-94.5" />
+                  <point x="0.0" y="94.5" />
                 </edge>
                 <edge source="filesystem.Dir" target="filesystem.Node">
-                  <point x="0.0" y="-14.0" />
-                  <point x="923.8837121212122" y="226.0" />
-                  <point x="951.8837121212122" y="226.0" />
-                  <point x="-7.75" y="14.0" />
+                  <point x="0.0" y="-105.0" />
+                  <point x="103.0" y="771.0" />
+                  <point x="276.5" y="771.0" />
+                  <point x="-71.0" y="105.0" />
                 </edge>
-                <edge source="model.Model" target="dao.factory.DaoFactory">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
+                <edge source="dao.database_dao.DataBaseDaoFile" target="dao.FileDao">
+                  <point x="0.0" y="-94.5" />
+                  <point x="0.0" y="94.5" />
                 </edge>
-                <edge source="manager.FileManager" target="command.Delete">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="command.Command" target="dao.DirDao">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="command.Command" target="dao.FileDao">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="dao.DataBaseDaoLink" target="dao.LinkDao">
-                  <point x="0.0" y="-14.0" />
-                  <point x="422.99999999999994" y="88.0" />
-                  <point x="621.8940656565657" y="88.0" />
-                  <point x="-26.333333333333314" y="14.0" />
-                </edge>
-                <edge source="manager.FileManager" target="search.Search">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="dao.factory.DataBaseDaoFactory" target="dao.DataBaseDaoLink">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="manager.FileManager" target="open.Opening">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="dao.factory.DataBaseDaoFactory" target="dao.DataBaseDaoFile">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.Model" target="dao.FileDao">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="command.Rename" target="command.Command">
-                  <point x="0.0" y="-24.0" />
-                  <point x="1234.9690656565656" y="485.0" />
-                  <point x="1146.3003787878788" y="485.0" />
-                  <point x="14.916666666666629" y="84.5" />
-                </edge>
-                <edge source="dao.DataBaseDaoDir" target="dao.DirDao">
-                  <point x="0.0" y="-14.0" />
-                  <point x="639.7569444444445" y="88.0" />
-                  <point x="719.727398989899" y="88.0" />
-                  <point x="-24.0" y="14.0" />
+                <edge source="navigation.Opening" target="navigation.Navigation">
+                  <point x="0.0" y="-125.5" />
+                  <point x="397.5" y="1165.0" />
+                  <point x="294.75" y="1165.0" />
+                  <point x="32.75" y="44.5" />
                 </edge>
                 <edge source="filesystem.File" target="filesystem.Node">
-                  <point x="0.0" y="-14.0" />
-                  <point x="995.3837121212122" y="226.0" />
-                  <point x="967.3837121212122" y="226.0" />
-                  <point x="7.75" y="14.0" />
+                  <point x="0.0" y="-95.5" />
+                  <point x="0.0" y="105.0" />
+                </edge>
+                <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.factory.DaoFactory">
+                  <point x="0.0" y="-75.0" />
+                  <point x="1042.0" y="1164.0" />
+                  <point x="978.0" y="1164.0" />
+                  <point x="32.75" y="44.0" />
+                </edge>
+                <edge source="navigation.CD" target="navigation.Navigation">
+                  <point x="0.0" y="-105.5" />
+                  <point x="126.5" y="1165.0" />
+                  <point x="229.25" y="1165.0" />
+                  <point x="-32.75" y="44.5" />
+                </edge>
+                <edge source="filesystem.Link" target="filesystem.Node">
+                  <point x="0.0" y="-85.0" />
+                  <point x="608.0" y="771.0" />
+                  <point x="418.5" y="771.0" />
+                  <point x="71.0" y="105.0" />
+                </edge>
+                <edge source="command.Delete" target="command.Command">
+                  <point x="0.0" y="-105.0" />
+                  <point x="0.0" y="105.0" />
+                </edge>
+                <edge source="dao.database_dao.DataBaseDaoDir" target="dao.DirDao">
+                  <point x="0.0" y="-104.5" />
+                  <point x="0.0" y="94.5" />
+                </edge>
+                <edge source="command.Rename" target="command.Command">
+                  <point x="0.0" y="-115.0" />
+                  <point x="1094.0" y="240.0" />
+                  <point x="908.6999999999999" y="240.0" />
+                  <point x="35.19999999999999" y="105.0" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.5549792531120332" x="794.9252336448598" y="390.0" />
+              <settings layout="Hierarchic Group" zoom="0.3167554766133807" x="777.0" y="834.5" />
               <SelectedNodes />
               <Categories>
-                <Category>Fields</Category>
                 <Category>Constructors</Category>
+                <Category>Fields</Category>
                 <Category>Methods</Category>
-                <Category>Properties</Category>
                 <Category>Inner Classes</Category>
+                <Category>Properties</Category>
               </Categories>
               <SCOPE>All</SCOPE>
               <VISIBILITY>private</VISIBILITY>
@@ -305,7 +244,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -321,6 +259,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="viewers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="use" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,7 +330,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="open" />
+              <option name="myItemId" value="navigation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,6 +402,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="filesystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testfilesystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -468,6 +482,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database_dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filemanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="command" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -475,6 +511,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -510,24 +547,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -554,6 +573,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -616,36 +653,37 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" name="Default" comment="" />
       <created>1360334110921</created>
       <updated>1360334110921</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962063" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -710,9 +748,10 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="51.0" y="34.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="51.0" y="35.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -722,196 +761,133 @@
           <ID>JAVA</ID>
           <OriginalElement>command.Command</OriginalElement>
           <nodes>
-            <node x="1463.4690656565656" y="546.0">search.Search</node>
-            <node x="236.72739898989903" y="0.0">dao.FileDao</node>
-            <node x="1172.4690656565656" y="546.0">command.Rename</node>
-            <node x="1041.883712121212" y="246.0">command.Command</node>
-            <node x="570.8579545454545" y="546.0">command.Delete</node>
-            <node x="1317.4690656565656" y="546.0">command.Replace</node>
-            <node x="128.0" y="546.0">open.Opening</node>
-            <node x="715.8579545454545" y="546.0">command.Copy</node>
-            <node x="207.5" y="138.0">dao.DataBaseDaoFile</node>
-            <node x="273.0" y="505.0">model.Model</node>
-            <node x="707.727398989899" y="0.0">dao.DirDao</node>
-            <node x="898.8837121212122" y="316.5">filesystem.Dir</node>
-            <node x="821.8837121212122" y="316.5">filesystem.Link</node>
-            <node x="576.7569444444445" y="138.0">dao.DataBaseDaoDir</node>
-            <node x="849.1458333333333" y="715.0">manager.FileManager</node>
-            <node x="10.5" y="108.0">dao.factory.DaoFactory</node>
-            <node x="291.4878787878788" y="286.5">dao.factory.DataBaseDaoFactory</node>
-            <node x="356.49999999999994" y="138.0">dao.DataBaseDaoLink</node>
-            <node x="608.727398989899" y="0.0">dao.LinkDao</node>
-            <node x="968.8837121212122" y="316.5">filesystem.File</node>
-            <node x="1027.4690656565656" y="546.0">command.Create</node>
-            <node x="928.6337121212122" y="138.0">filesystem.Node</node>
+            <node x="185.0" y="1621.0">search.Search</node>
+            <node x="1323.0" y="536.0">dao.FileDao</node>
+            <node x="0.0" y="1621.0">viewers.TestConsole</node>
+            <node x="666.0" y="1486.0">exception.NodeAlreadyExistsException</node>
+            <node x="1120.0" y="1486.0">exception.IsNotDirectryException</node>
+            <node x="983.0" y="260.0">command.Rename</node>
+            <node x="945.0" y="1189.0">dao.factory.TestFileSystemDaoFactory</node>
+            <node x="1225.0" y="260.0">command.Replace</node>
+            <node x="785.5" y="0.0">command.Command</node>
+            <node x="1330.0" y="1486.0">use.Main</node>
+            <node x="1184.0" y="1051.0">model.Model</node>
+            <node x="772.0" y="536.0">dao.DirDao</node>
+            <node x="0.0" y="796.0">filesystem.Dir</node>
+            <node x="879.75" y="1051.0">dao.factory.DaoFactory</node>
+            <node x="772.0" y="1220.0">dao.factory.DataBaseDaoFactory</node>
+            <node x="0.0" y="1210.0">navigation.CD</node>
+            <node x="1045.0" y="536.0">dao.LinkDao</node>
+            <node x="583.0" y="270.0">command.Create</node>
+            <node x="241.0" y="536.0">filesystem.Node</node>
+            <node x="196.5" y="1051.0">navigation.Navigation</node>
+            <node x="1045.0" y="775.0">dao.database_dao.DataBaseDaoLink</node>
+            <node x="1323.0" y="775.0">dao.database_dao.DataBaseDaoFile</node>
+            <node x="273.0" y="1190.0">navigation.Opening</node>
+            <node x="398.0" y="1486.0">exception.OperationNotSupportedException</node>
+            <node x="1378.0" y="1051.0">viewers.Viewer</node>
+            <node x="784.0" y="270.0">command.Delete</node>
+            <node x="905.0" y="1486.0">exception.NodeNotFoundException</node>
+            <node x="0.0" y="1486.0">filesystem.testfilesystem.TestFileSystem</node>
+            <node x="296.0" y="260.0">command.Copy</node>
+            <node x="489.0" y="816.0">filesystem.Link</node>
+            <node x="0.0" y="0.0">manager.FileManager</node>
+            <node x="772.0" y="775.0">dao.database_dao.DataBaseDaoDir</node>
+            <node x="567.0" y="1051.0">viewers.Commands</node>
+            <node x="226.0" y="805.5">filesystem.File</node>
+            <node x="197.0" y="1486.0">model.ModelKey</node>
           </nodes>
           <notes />
           <edges>
             <edge source="command.Copy" target="command.Command">
-              <point x="0.0" y="-24.0" />
-              <point x="778.3579545454545" y="475.0" />
-              <point x="1086.633712121212" y="475.0" />
-              <point x="-44.75" y="84.5" />
-            </edge>
-            <edge source="model.Model" target="dao.factory.DataBaseDaoFactory">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="0.0" y="-115.0" />
+              <point x="429.5" y="230.0" />
+              <point x="803.0999999999999" y="230.0" />
+              <point x="-70.39999999999998" y="105.0" />
             </edge>
             <edge source="dao.factory.DataBaseDaoFactory" target="dao.factory.DaoFactory">
-              <point x="-66.375" y="-44.0" />
-              <point x="313.6128787878788" y="226.0" />
-              <point x="143.25" y="226.0" />
-              <point x="44.25" y="44.0" />
-            </edge>
-            <edge source="command.Command" target="dao.LinkDao">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="manager.FileManager" target="command.Copy">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="0.0" y="-44.0" />
+              <point x="848.5" y="1164.0" />
+              <point x="912.5" y="1164.0" />
+              <point x="-32.75" y="44.0" />
             </edge>
             <edge source="command.Create" target="command.Command">
-              <point x="0.0" y="-24.0" />
-              <point x="1089.9690656565656" y="485.0" />
-              <point x="1116.4670454545453" y="485.0" />
-              <point x="-14.916666666666686" y="84.5" />
-            </edge>
-            <edge source="manager.FileManager" target="command.Rename">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="model.Model" target="dao.DirDao">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="dao.factory.DataBaseDaoFactory" target="dao.DataBaseDaoDir">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="manager.FileManager" target="command.Replace">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="manager.FileManager" target="command.Command">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="command.Command" target="filesystem.Node">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="filesystem.Link" target="filesystem.Node">
-              <point x="0.0" y="-14.0" />
-              <point x="850.3837121212122" y="216.0" />
-              <point x="936.3837121212122" y="216.0" />
-              <point x="-23.25" y="14.0" />
-            </edge>
-            <edge source="model.Model" target="dao.LinkDao">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="dao.DataBaseDaoFile" target="dao.FileDao">
-              <point x="0.0" y="-14.0" />
-              <point x="272.0" y="88.0" />
-              <point x="274.22739898989903" y="88.0" />
-              <point x="0.0" y="14.0" />
+              <point x="0.0" y="-105.0" />
+              <point x="673.5" y="240.0" />
+              <point x="838.3" y="240.0" />
+              <point x="-35.19999999999999" y="105.0" />
             </edge>
             <edge source="command.Replace" target="command.Command">
-              <point x="0.0" y="-24.0" />
-              <point x="1379.9690656565656" y="475.0" />
-              <point x="1176.133712121212" y="475.0" />
-              <point x="44.75" y="84.5" />
+              <point x="0.0" y="-115.0" />
+              <point x="1365.0" y="230.0" />
+              <point x="943.9" y="230.0" />
+              <point x="70.4" y="105.0" />
             </edge>
-            <edge source="command.Delete" target="command.Command">
-              <point x="0.0" y="-24.0" />
-              <point x="633.3579545454545" y="465.0" />
-              <point x="1056.8003787878788" y="465.0" />
-              <point x="-74.58333333333331" y="84.5" />
-            </edge>
-            <edge source="manager.FileManager" target="model.Model">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="manager.FileManager" target="command.Create">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+            <edge source="dao.database_dao.DataBaseDaoLink" target="dao.LinkDao">
+              <point x="0.0" y="-94.5" />
+              <point x="0.0" y="94.5" />
             </edge>
             <edge source="filesystem.Dir" target="filesystem.Node">
-              <point x="0.0" y="-14.0" />
-              <point x="923.8837121212122" y="226.0" />
-              <point x="951.8837121212122" y="226.0" />
-              <point x="-7.75" y="14.0" />
+              <point x="0.0" y="-105.0" />
+              <point x="103.0" y="771.0" />
+              <point x="276.5" y="771.0" />
+              <point x="-71.0" y="105.0" />
             </edge>
-            <edge source="model.Model" target="dao.factory.DaoFactory">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+            <edge source="dao.database_dao.DataBaseDaoFile" target="dao.FileDao">
+              <point x="0.0" y="-94.5" />
+              <point x="0.0" y="94.5" />
             </edge>
-            <edge source="manager.FileManager" target="command.Delete">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="command.Command" target="dao.DirDao">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="command.Command" target="dao.FileDao">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="dao.DataBaseDaoLink" target="dao.LinkDao">
-              <point x="0.0" y="-14.0" />
-              <point x="422.99999999999994" y="88.0" />
-              <point x="621.8940656565657" y="88.0" />
-              <point x="-26.333333333333314" y="14.0" />
-            </edge>
-            <edge source="manager.FileManager" target="search.Search">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="dao.factory.DataBaseDaoFactory" target="dao.DataBaseDaoLink">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="manager.FileManager" target="open.Opening">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="dao.factory.DataBaseDaoFactory" target="dao.DataBaseDaoFile">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="model.Model" target="dao.FileDao">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="command.Rename" target="command.Command">
-              <point x="0.0" y="-24.0" />
-              <point x="1234.9690656565656" y="485.0" />
-              <point x="1146.3003787878788" y="485.0" />
-              <point x="14.916666666666629" y="84.5" />
-            </edge>
-            <edge source="dao.DataBaseDaoDir" target="dao.DirDao">
-              <point x="0.0" y="-14.0" />
-              <point x="639.7569444444445" y="88.0" />
-              <point x="719.727398989899" y="88.0" />
-              <point x="-24.0" y="14.0" />
+            <edge source="navigation.Opening" target="navigation.Navigation">
+              <point x="0.0" y="-125.5" />
+              <point x="397.5" y="1165.0" />
+              <point x="294.75" y="1165.0" />
+              <point x="32.75" y="44.5" />
             </edge>
             <edge source="filesystem.File" target="filesystem.Node">
-              <point x="0.0" y="-14.0" />
-              <point x="995.3837121212122" y="226.0" />
-              <point x="967.3837121212122" y="226.0" />
-              <point x="7.75" y="14.0" />
+              <point x="0.0" y="-95.5" />
+              <point x="0.0" y="105.0" />
+            </edge>
+            <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.factory.DaoFactory">
+              <point x="0.0" y="-75.0" />
+              <point x="1042.0" y="1164.0" />
+              <point x="978.0" y="1164.0" />
+              <point x="32.75" y="44.0" />
+            </edge>
+            <edge source="navigation.CD" target="navigation.Navigation">
+              <point x="0.0" y="-105.5" />
+              <point x="126.5" y="1165.0" />
+              <point x="229.25" y="1165.0" />
+              <point x="-32.75" y="44.5" />
+            </edge>
+            <edge source="filesystem.Link" target="filesystem.Node">
+              <point x="0.0" y="-85.0" />
+              <point x="608.0" y="771.0" />
+              <point x="418.5" y="771.0" />
+              <point x="71.0" y="105.0" />
+            </edge>
+            <edge source="command.Delete" target="command.Command">
+              <point x="0.0" y="-105.0" />
+              <point x="0.0" y="105.0" />
+            </edge>
+            <edge source="dao.database_dao.DataBaseDaoDir" target="dao.DirDao">
+              <point x="0.0" y="-104.5" />
+              <point x="0.0" y="94.5" />
+            </edge>
+            <edge source="command.Rename" target="command.Command">
+              <point x="0.0" y="-115.0" />
+              <point x="1094.0" y="240.0" />
+              <point x="908.6999999999999" y="240.0" />
+              <point x="35.19999999999999" y="105.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.5549792531120332" x="794.9252336448598" y="390.0" />
+          <settings layout="Hierarchic Group" zoom="0.3167554766133807" x="777.0" y="834.5" />
           <SelectedNodes />
           <Categories>
-            <Category>Fields</Category>
             <Category>Constructors</Category>
+            <Category>Fields</Category>
             <Category>Methods</Category>
-            <Category>Properties</Category>
             <Category>Inner Classes</Category>
+            <Category>Properties</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
