@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagram.png" afterPath="$PROJECT_DIR$/diagram.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" name="Default" comment="" />
     <ignored path="filemanager.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,126 +65,666 @@
               <ID>JAVA</ID>
               <OriginalElement>command.Command</OriginalElement>
               <nodes>
-                <node x="185.0" y="1621.0">search.Search</node>
-                <node x="1323.0" y="536.0">dao.FileDao</node>
-                <node x="0.0" y="1621.0">viewers.TestConsole</node>
-                <node x="666.0" y="1486.0">exception.NodeAlreadyExistsException</node>
-                <node x="1120.0" y="1486.0">exception.IsNotDirectryException</node>
-                <node x="983.0" y="260.0">command.Rename</node>
-                <node x="945.0" y="1189.0">dao.factory.TestFileSystemDaoFactory</node>
-                <node x="1225.0" y="260.0">command.Replace</node>
-                <node x="785.5" y="0.0">command.Command</node>
-                <node x="1330.0" y="1486.0">use.Main</node>
-                <node x="1184.0" y="1051.0">model.Model</node>
-                <node x="772.0" y="536.0">dao.DirDao</node>
-                <node x="0.0" y="796.0">filesystem.Dir</node>
-                <node x="879.75" y="1051.0">dao.factory.DaoFactory</node>
-                <node x="772.0" y="1220.0">dao.factory.DataBaseDaoFactory</node>
-                <node x="0.0" y="1210.0">navigation.CD</node>
-                <node x="1045.0" y="536.0">dao.LinkDao</node>
-                <node x="583.0" y="270.0">command.Create</node>
-                <node x="241.0" y="536.0">filesystem.Node</node>
-                <node x="196.5" y="1051.0">navigation.Navigation</node>
-                <node x="1045.0" y="775.0">dao.database_dao.DataBaseDaoLink</node>
-                <node x="1323.0" y="775.0">dao.database_dao.DataBaseDaoFile</node>
-                <node x="273.0" y="1190.0">navigation.Opening</node>
-                <node x="398.0" y="1486.0">exception.OperationNotSupportedException</node>
-                <node x="1378.0" y="1051.0">viewers.Viewer</node>
-                <node x="784.0" y="270.0">command.Delete</node>
-                <node x="905.0" y="1486.0">exception.NodeNotFoundException</node>
-                <node x="0.0" y="1486.0">filesystem.testfilesystem.TestFileSystem</node>
-                <node x="296.0" y="260.0">command.Copy</node>
-                <node x="489.0" y="816.0">filesystem.Link</node>
-                <node x="0.0" y="0.0">manager.FileManager</node>
-                <node x="772.0" y="775.0">dao.database_dao.DataBaseDaoDir</node>
-                <node x="567.0" y="1051.0">viewers.Commands</node>
-                <node x="226.0" y="805.5">filesystem.File</node>
-                <node x="197.0" y="1486.0">model.ModelKey</node>
+                <node x="406.0" y="2562.0">search.Search</node>
+                <node x="2531.0526449560557" y="280.5">dao.FileDao</node>
+                <node x="626.8888888888889" y="2371.0">viewers.TestConsole</node>
+                <node x="3452.1547619047615" y="81.0">exception.NodeAlreadyExistsException</node>
+                <node x="2251.8214285714284" y="1130.0">exception.IsNotDirectryException</node>
+                <node x="1191.2222878131984" y="1459.5">command.Rename</node>
+                <node x="2629.3340630329285" y="1079.0">dao.factory.TestFileSystemDaoFactory</node>
+                <node x="405.22228781319836" y="1459.5">command.Replace</node>
+                <node x="1292.1912058900716" y="1049.0">command.Command</node>
+                <node x="624.8888888888889" y="2469.0">use.Main</node>
+                <node x="2846.5297619047615" y="1499.5">model.Model</node>
+                <node x="2228.1776449560552" y="280.5">dao.DirDao</node>
+                <node x="1573.5714285714284" y="270.0">filesystem.Dir</node>
+                <node x="2955.9074019414943" y="660.5">dao.factory.DaoFactory</node>
+                <node x="3004.9276449560557" y="1110.0">dao.factory.DataBaseDaoFactory</node>
+                <node x="2207.8214285714284" y="1469.0">navigation.CD</node>
+                <node x="2823.407401941494" y="280.5">dao.LinkDao</node>
+                <node x="204.22228781319836" y="1469.5">command.Create</node>
+                <node x="801.3032352748276" y="0.0">filesystem.Node</node>
+                <node x="2436.8214285714284" y="1109.5">navigation.Navigation</node>
+                <node x="3357.9074019414943" y="610.0">dao.database_dao.DataBaseDaoLink</node>
+                <node x="3106.9074019414943" y="610.0">dao.database_dao.DataBaseDaoFile</node>
+                <node x="1801.8214285714284" y="1449.0">navigation.Opening</node>
+                <node x="3184.363095238095" y="1550.5">exception.OperationNotSupportedException</node>
+                <node x="580.8888888888889" y="2021.5">viewers.Viewer</node>
+                <node x="992.2222878131984" y="1469.5">command.Delete</node>
+                <node x="1745.8214285714284" y="1130.0">exception.NodeNotFoundException</node>
+                <node x="1397.3214285714284" y="659.5">filesystem.testfilesystem.TestFileSystem</node>
+                <node x="705.2222878131984" y="1459.5">command.Copy</node>
+                <node x="743.3472878131984" y="290.0">filesystem.Link</node>
+                <node x="1462.8214285714284" y="1830.0">manager.FileManager</node>
+                <node x="1969.8214285714284" y="600.0">dao.database_dao.DataBaseDaoDir</node>
+                <node x="0.0" y="2562.0">viewers.Commands</node>
+                <node x="20.870957956184384" y="279.5">filesystem.File</node>
+                <node x="205.0" y="2562.0">model.ModelKey</node>
               </nodes>
               <notes />
               <edges>
                 <edge source="command.Copy" target="command.Command">
-                  <point x="0.0" y="-115.0" />
-                  <point x="429.5" y="230.0" />
-                  <point x="803.0999999999999" y="230.0" />
-                  <point x="-70.39999999999998" y="105.0" />
+                  <point x="100.125" y="-115.0" />
+                  <point x="938.8472878131984" y="1399.0" />
+                  <point x="1365.524539223405" y="1399.0" />
+                  <point x="-14.666666666666629" y="105.0" />
+                </edge>
+                <edge source="manager.FileManager" target="filesystem.File">
+                  <point x="-118.52777777777783" y="-245.5" />
+                  <point x="1469.7936507936506" y="1810.0" />
+                  <point x="69.1508592417697" y="1810.0" />
+                  <point x="69.1508592417697" y="580.0" />
+                  <point x="38.22810081332727" y="580.0" />
+                  <point x="-104.14285714285711" y="95.5" />
                 </edge>
                 <edge source="dao.factory.DataBaseDaoFactory" target="dao.factory.DaoFactory">
-                  <point x="0.0" y="-44.0" />
-                  <point x="848.5" y="1164.0" />
-                  <point x="912.5" y="1164.0" />
-                  <point x="-32.75" y="44.0" />
+                  <point x="-19.125" y="-44.0" />
+                  <point x="3062.3026449560557" y="839.0" />
+                  <point x="3021.4074019414943" y="839.0" />
+                  <point x="0.0" y="44.0" />
+                </edge>
+                <edge source="navigation.CD" target="dao.DirDao">
+                  <point x="-36.14285714285711" y="-105.5" />
+                  <point x="2298.1785714285716" y="1329.0" />
+                  <point x="2230.3214285714284" y="1329.0" />
+                  <point x="2230.3214285714284" y="530.0" />
+                  <point x="2361.1776449560552" y="530.0" />
+                  <point x="19.0" y="94.5" />
+                </edge>
+                <edge source="manager.FileManager" target="command.Copy">
+                  <point x="-62.75" y="-245.5" />
+                  <point x="1525.5714285714284" y="1770.0" />
+                  <point x="838.7222878131984" y="1770.0" />
+                  <point x="0.0" y="115.0" />
                 </edge>
                 <edge source="command.Create" target="command.Command">
-                  <point x="0.0" y="-105.0" />
-                  <point x="673.5" y="240.0" />
-                  <point x="838.3" y="240.0" />
-                  <point x="-35.19999999999999" y="105.0" />
+                  <point x="67.875" y="-105.0" />
+                  <point x="362.59728781319836" y="1379.0" />
+                  <point x="1306.8578725567384" y="1379.0" />
+                  <point x="-73.33333333333337" y="105.0" />
+                </edge>
+                <edge source="filesystem.testfilesystem.TestFileSystem" target="filesystem.Dir">
+                  <point x="19.0" y="-45.0" />
+                  <point x="1492.3214285714284" y="530.0" />
+                  <point x="1582.154761904762" y="530.0" />
+                  <point x="-94.41666666666674" y="105.0" />
+                </edge>
+                <edge source="manager.FileManager" target="navigation.Opening">
+                  <point x="34.861111111111086" y="-245.5" />
+                  <point x="1623.1825396825398" y="1750.0" />
+                  <point x="1926.3214285714284" y="1750.0" />
+                  <point x="0.0" y="125.5" />
+                </edge>
+                <edge source="dao.factory.TestFileSystemDaoFactory" target="filesystem.Dir">
+                  <point x="-27.71428571428578" y="-75.0" />
+                  <point x="2698.619777318643" y="869.0" />
+                  <point x="1959.3214285714284" y="869.0" />
+                  <point x="1959.3214285714284" y="570.0" />
+                  <point x="1770.9880952380954" y="570.0" />
+                  <point x="94.41666666666674" y="105.0" />
+                </edge>
+                <edge source="command.Copy" target="filesystem.Dir">
+                  <point x="33.375" y="-115.0" />
+                  <point x="872.0972878131984" y="1359.0" />
+                  <point x="1270.6912058900716" y="1359.0" />
+                  <point x="1270.6912058900716" y="939.0" />
+                  <point x="1581.8214285714284" y="939.0" />
+                  <point x="1581.8214285714284" y="570.0" />
+                  <point x="1650.8214285714284" y="570.0" />
+                  <point x="-25.75" y="105.0" />
+                </edge>
+                <edge source="manager.FileManager" target="command.Replace">
+                  <point x="-76.69444444444434" y="-245.5" />
+                  <point x="1511.626984126984" y="1780.0" />
+                  <point x="545.2222878131984" y="1780.0" />
+                  <point x="0.0" y="115.0" />
+                </edge>
+                <edge source="manager.FileManager" target="command.Command">
+                  <point x="-20.916666666666515" y="-245.5" />
+                  <point x="1567.404761904762" y="1740.0" />
+                  <point x="1460.6940426997242" y="1740.0" />
+                  <point x="1460.6940426997242" y="1419.0" />
+                  <point x="1453.524539223405" y="1419.0" />
+                  <point x="73.33333333333326" y="105.0" />
                 </edge>
                 <edge source="command.Replace" target="command.Command">
-                  <point x="0.0" y="-115.0" />
-                  <point x="1365.0" y="230.0" />
-                  <point x="943.9" y="230.0" />
-                  <point x="70.4" y="105.0" />
+                  <point x="105.0" y="-115.0" />
+                  <point x="650.2222878131984" y="1389.0" />
+                  <point x="1336.1912058900716" y="1389.0" />
+                  <point x="-44.0" y="105.0" />
                 </edge>
                 <edge source="dao.database_dao.DataBaseDaoLink" target="dao.LinkDao">
                   <point x="0.0" y="-94.5" />
-                  <point x="0.0" y="94.5" />
+                  <point x="3474.4074019414943" y="520.0" />
+                  <point x="2998.157401941494" y="520.0" />
+                  <point x="58.25" y="94.5" />
+                </edge>
+                <edge source="filesystem.Dir" target="exception.NodeAlreadyExistsException">
+                  <point x="68.66666666666674" y="-105.0" />
+                  <point x="1745.2380952380954" y="250.0" />
+                  <point x="3500.6547619047615" y="250.0" />
+                  <point x="-48.5" y="24.0" />
+                </edge>
+                <edge source="manager.FileManager" target="model.Model">
+                  <point x="76.69444444444434" y="-245.5" />
+                  <point x="1665.0158730158728" y="1780.0" />
+                  <point x="2883.7797619047615" y="1780.0" />
+                  <point x="-37.25" y="75.0" />
+                </edge>
+                <edge source="manager.FileManager" target="command.Create">
+                  <point x="-90.63888888888891" y="-245.5" />
+                  <point x="1497.6825396825398" y="1790.0" />
+                  <point x="294.72228781319836" y="1790.0" />
+                  <point x="0.0" y="105.0" />
                 </edge>
                 <edge source="filesystem.Dir" target="filesystem.Node">
-                  <point x="0.0" y="-105.0" />
-                  <point x="103.0" y="771.0" />
-                  <point x="276.5" y="771.0" />
-                  <point x="-71.0" y="105.0" />
+                  <point x="-68.66666666666674" y="-105.0" />
+                  <point x="1607.904761904762" y="250.0" />
+                  <point x="938.2318067033991" y="250.0" />
+                  <point x="30.42857142857156" y="105.0" />
+                </edge>
+                <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.FileDao">
+                  <point x="27.71428571428578" y="-75.0" />
+                  <point x="2754.0483487472147" y="1029.0" />
+                  <point x="2748.0297619047615" y="1029.0" />
+                  <point x="2748.0297619047615" y="570.0" />
+                  <point x="2665.8026449560552" y="570.0" />
+                  <point x="19.25" y="94.5" />
+                </edge>
+                <edge source="navigation.CD" target="filesystem.Dir">
+                  <point x="-72.28571428571422" y="-105.5" />
+                  <point x="2262.035714285714" y="1339.0" />
+                  <point x="1948.3214285714284" y="1339.0" />
+                  <point x="1948.3214285714284" y="580.0" />
+                  <point x="1753.8214285714284" y="580.0" />
+                  <point x="77.25" y="105.0" />
+                </edge>
+                <edge source="model.Model" target="dao.factory.DaoFactory">
+                  <point x="37.25" y="-75.0" />
+                  <point x="2958.2797619047615" y="1419.0" />
+                  <point x="3168.4276449560557" y="1419.0" />
+                  <point x="3168.4276449560557" y="829.0" />
+                  <point x="3065.074068608161" y="829.0" />
+                  <point x="43.66666666666674" y="44.0" />
+                </edge>
+                <edge source="dao.database_dao.DataBaseDaoDir" target="filesystem.Node">
+                  <point x="-57.0" y="-104.5" />
+                  <point x="2026.8214285714284" y="230.0" />
+                  <point x="999.0889495605417" y="230.0" />
+                  <point x="91.28571428571422" y="105.0" />
                 </edge>
                 <edge source="dao.database_dao.DataBaseDaoFile" target="dao.FileDao">
                   <point x="0.0" y="-94.5" />
-                  <point x="0.0" y="94.5" />
+                  <point x="3222.4074019414943" y="530.0" />
+                  <point x="2742.8026449560557" y="530.0" />
+                  <point x="96.25" y="94.5" />
+                </edge>
+                <edge source="dao.factory.DataBaseDaoFactory" target="dao.database_dao.DataBaseDaoDir">
+                  <point x="-57.375" y="-44.0" />
+                  <point x="3024.0526449560557" y="849.0" />
+                  <point x="2083.8214285714284" y="849.0" />
+                  <point x="0.0" y="104.5" />
+                </edge>
+                <edge source="command.Create" target="filesystem.File">
+                  <point x="-67.875" y="-105.0" />
+                  <point x="226.84728781319836" y="1429.0" />
+                  <point x="80.1508592417697" y="1429.0" />
+                  <point x="80.1508592417697" y="570.0" />
+                  <point x="72.94238652761305" y="570.0" />
+                  <point x="-69.42857142857133" y="95.5" />
+                </edge>
+                <edge source="command.Replace" target="filesystem.File">
+                  <point x="-105.0" y="-115.0" />
+                  <point x="440.22228781319836" y="1329.0" />
+                  <point x="91.1508592417697" y="1329.0" />
+                  <point x="91.1508592417697" y="560.0" />
+                  <point x="107.6566722418986" y="560.0" />
+                  <point x="-34.71428571428578" y="95.5" />
+                </edge>
+                <edge source="manager.FileManager" target="exception.NodeAlreadyExistsException">
+                  <point x="118.52777777777783" y="-245.5" />
+                  <point x="1706.8492063492063" y="1810.0" />
+                  <point x="3653.3026449560557" y="1810.0" />
+                  <point x="3653.3026449560557" y="250.0" />
+                  <point x="3597.6547619047615" y="250.0" />
+                  <point x="48.5" y="24.0" />
+                </edge>
+                <edge source="navigation.Opening" target="exception.NodeNotFoundException">
+                  <point x="-35.57142857142867" y="-125.5" />
+                  <point x="1890.75" y="1409.0" />
+                  <point x="1830.8214285714284" y="1409.0" />
+                  <point x="0.0" y="24.0" />
+                </edge>
+                <edge source="command.Replace" target="filesystem.Link">
+                  <point x="-35.0" y="-115.0" />
+                  <point x="510.22228781319836" y="1319.0" />
+                  <point x="427.37870589007184" y="1319.0" />
+                  <point x="427.37870589007184" y="879.0" />
+                  <point x="845.6964285714287" y="879.0" />
+                  <point x="845.6964285714287" y="580.0" />
+                  <point x="817.7222878131984" y="580.0" />
+                  <point x="-44.625" y="85.0" />
+                </edge>
+                <edge source="use.Main" target="manager.FileManager">
+                  <point x="48.0" y="-24.0" />
+                  <point x="744.8888888888889" y="2444.0" />
+                  <point x="1651.0714285714284" y="2444.0" />
+                  <point x="62.75" y="245.5" />
+                </edge>
+                <edge source="navigation.Opening" target="dao.FileDao">
+                  <point x="35.57142857142844" y="-125.5" />
+                  <point x="1961.8928571428569" y="1429.0" />
+                  <point x="1937.3214285714284" y="1429.0" />
+                  <point x="1937.3214285714284" y="1029.0" />
+                  <point x="2468.777376033058" y="1029.0" />
+                  <point x="2468.777376033058" y="570.0" />
+                  <point x="2588.8026449560552" y="570.0" />
+                  <point x="-57.75" y="94.5" />
                 </edge>
                 <edge source="navigation.Opening" target="navigation.Navigation">
-                  <point x="0.0" y="-125.5" />
-                  <point x="397.5" y="1165.0" />
-                  <point x="294.75" y="1165.0" />
-                  <point x="32.75" y="44.5" />
+                  <point x="71.14285714285711" y="-125.5" />
+                  <point x="1997.4642857142858" y="1359.0" />
+                  <point x="2458.6547619047615" y="1359.0" />
+                  <point x="-43.66666666666674" y="44.5" />
+                </edge>
+                <edge source="filesystem.testfilesystem.TestFileSystem" target="filesystem.Link">
+                  <point x="-19.0" y="-45.0" />
+                  <point x="1454.3214285714284" y="520.0" />
+                  <point x="966.4722878131984" y="520.0" />
+                  <point x="104.125" y="85.0" />
+                </edge>
+                <edge source="manager.FileManager" target="navigation.CD">
+                  <point x="48.80555555555566" y="-245.5" />
+                  <point x="1637.126984126984" y="1760.0" />
+                  <point x="2334.3214285714284" y="1760.0" />
+                  <point x="0.0" y="105.5" />
+                </edge>
+                <edge source="model.Model" target="dao.FileDao">
+                  <point x="-12.416666666666515" y="-75.0" />
+                  <point x="2908.6130952380954" y="1389.0" />
+                  <point x="2910.490735274828" y="1389.0" />
+                  <point x="2910.490735274828" y="560.0" />
+                  <point x="2704.3026449560557" y="560.0" />
+                  <point x="57.750000000000114" y="94.5" />
+                </edge>
+                <edge source="manager.FileManager" target="filesystem.Dir">
+                  <point x="6.972222222222172" y="-245.5" />
+                  <point x="1595.2936507936506" y="1720.0" />
+                  <point x="1571.4907352748273" y="1720.0" />
+                  <point x="1571.4907352748273" y="979.0" />
+                  <point x="1718.8214285714284" y="979.0" />
+                  <point x="42.91666666666674" y="105.0" />
                 </edge>
                 <edge source="filesystem.File" target="filesystem.Node">
                   <point x="0.0" y="-95.5" />
-                  <point x="0.0" y="105.0" />
+                  <point x="142.37095795618438" y="230.0" />
+                  <point x="816.5175209891133" y="230.0" />
+                  <point x="-91.28571428571422" y="105.0" />
                 </edge>
                 <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.factory.DaoFactory">
-                  <point x="0.0" y="-75.0" />
-                  <point x="1042.0" y="1164.0" />
-                  <point x="978.0" y="1164.0" />
-                  <point x="32.75" y="44.0" />
+                  <point x="83.14285714285711" y="-75.0" />
+                  <point x="2809.476920175786" y="1029.0" />
+                  <point x="2977.740735274828" y="1029.0" />
+                  <point x="-43.66666666666663" y="44.0" />
+                </edge>
+                <edge source="manager.FileManager" target="exception.NodeNotFoundException">
+                  <point x="20.916666666666742" y="-245.5" />
+                  <point x="1609.2380952380954" y="1740.0" />
+                  <point x="1774.154761904762" y="1740.0" />
+                  <point x="-56.66666666666663" y="24.0" />
+                </edge>
+                <edge source="navigation.CD" target="exception.IsNotDirectryException">
+                  <point x="0.0" y="-105.5" />
+                  <point x="0.0" y="24.0" />
+                </edge>
+                <edge source="command.Rename" target="filesystem.Dir">
+                  <point x="83.25" y="-115.0" />
+                  <point x="1385.4722878131984" y="1429.0" />
+                  <point x="1530.3657352748273" y="1429.0" />
+                  <point x="1530.3657352748273" y="959.0" />
+                  <point x="1696.8214285714284" y="959.0" />
+                  <point x="1696.8214285714284" y="580.0" />
+                  <point x="1685.154761904762" y="580.0" />
+                  <point x="8.583333333333258" y="105.0" />
+                </edge>
+                <edge source="model.Model" target="dao.factory.DataBaseDaoFactory">
+                  <point x="12.416666666666686" y="-75.0" />
+                  <point x="2933.4464285714284" y="1409.0" />
+                  <point x="3081.4276449560557" y="1409.0" />
+                  <point x="0.0" y="44.0" />
+                </edge>
+                <edge source="command.Command" target="dao.LinkDao">
+                  <point x="66.0" y="-105.0" />
+                  <point x="1446.1912058900716" y="1019.0" />
+                  <point x="2457.777376033058" y="1019.0" />
+                  <point x="2457.777376033058" y="580.0" />
+                  <point x="2842.824068608161" y="580.0" />
+                  <point x="-97.08333333333348" y="94.5" />
+                </edge>
+                <edge source="navigation.Opening" target="filesystem.Dir">
+                  <point x="-71.14285714285711" y="-125.5" />
+                  <point x="1855.1785714285716" y="1419.0" />
+                  <point x="1735.3214285714284" y="1419.0" />
+                  <point x="1735.3214285714284" y="580.0" />
+                  <point x="1736.654761904762" y="580.0" />
+                  <point x="60.083333333333485" y="105.0" />
+                </edge>
+                <edge source="dao.factory.DataBaseDaoFactory" target="dao.database_dao.DataBaseDaoLink">
+                  <point x="57.375" y="-44.0" />
+                  <point x="3138.8026449560557" y="1029.0" />
+                  <point x="3474.4074019414943" y="1029.0" />
+                  <point x="0.0" y="94.5" />
+                </edge>
+                <edge source="command.Create" target="filesystem.Dir">
+                  <point x="22.625" y="-105.0" />
+                  <point x="317.34728781319836" y="1339.0" />
+                  <point x="1248.6912058900716" y="1339.0" />
+                  <point x="1248.6912058900716" y="919.0" />
+                  <point x="1559.8214285714284" y="919.0" />
+                  <point x="1559.8214285714284" y="550.0" />
+                  <point x="1616.4880952380954" y="550.0" />
+                  <point x="-60.08333333333326" y="105.0" />
+                </edge>
+                <edge source="manager.FileManager" target="command.Rename">
+                  <point x="-34.861111111111086" y="-245.5" />
+                  <point x="1553.4603174603176" y="1750.0" />
+                  <point x="1302.2222878131984" y="1750.0" />
+                  <point x="0.0" y="115.0" />
+                </edge>
+                <edge source="navigation.CD" target="exception.NodeNotFoundException">
+                  <point x="-108.42857142857133" y="-105.5" />
+                  <point x="2225.892857142857" y="1349.0" />
+                  <point x="1887.4880952380952" y="1349.0" />
+                  <point x="56.66666666666663" y="24.0" />
                 </edge>
                 <edge source="navigation.CD" target="navigation.Navigation">
-                  <point x="0.0" y="-105.5" />
-                  <point x="126.5" y="1165.0" />
-                  <point x="229.25" y="1165.0" />
-                  <point x="-32.75" y="44.5" />
+                  <point x="36.14285714285711" y="-105.5" />
+                  <point x="2370.4642857142853" y="1369.0" />
+                  <point x="2502.3214285714284" y="1369.0" />
+                  <point x="0.0" y="44.5" />
+                </edge>
+                <edge source="manager.FileManager" target="exception.OperationNotSupportedException">
+                  <point x="104.58333333333326" y="-245.5" />
+                  <point x="1692.904761904762" y="1800.0" />
+                  <point x="3295.863095238095" y="1800.0" />
+                  <point x="0.0" y="24.0" />
+                </edge>
+                <edge source="model.Model" target="dao.DirDao">
+                  <point x="-62.08333333333326" y="-75.0" />
+                  <point x="2858.9464285714284" y="1319.0" />
+                  <point x="2241.3214285714284" y="1319.0" />
+                  <point x="2241.3214285714284" y="540.0" />
+                  <point x="2399.1776449560552" y="540.0" />
+                  <point x="57.0" y="94.5" />
+                </edge>
+                <edge source="use.Main" target="filesystem.testfilesystem.TestFileSystem">
+                  <point x="-48.0" y="-24.0" />
+                  <point x="648.8888888888889" y="2444.0" />
+                  <point x="28.0" y="2444.0" />
+                  <point x="28.0" y="909.0" />
+                  <point x="1422.654761904762" y="909.0" />
+                  <point x="-50.66666666666674" y="45.0" />
+                </edge>
+                <edge source="filesystem.testfilesystem.TestFileSystem" target="filesystem.File">
+                  <point x="-57.0" y="-45.0" />
+                  <point x="1416.3214285714284" y="530.0" />
+                  <point x="246.5138150990415" y="530.0" />
+                  <point x="104.14285714285711" y="95.5" />
+                </edge>
+                <edge source="manager.FileManager" target="filesystem.Link">
+                  <point x="-104.58333333333348" y="-245.5" />
+                  <point x="1483.738095238095" y="1800.0" />
+                  <point x="124.1508592417697" y="1800.0" />
+                  <point x="124.1508592417697" y="859.0" />
+                  <point x="733.5898760330576" y="859.0" />
+                  <point x="733.5898760330576" y="570.0" />
+                  <point x="758.2222878131984" y="570.0" />
+                  <point x="-104.125" y="85.0" />
+                </edge>
+                <edge source="command.Create" target="filesystem.Link">
+                  <point x="-22.625" y="-105.0" />
+                  <point x="272.09728781319836" y="869.0" />
+                  <point x="744.5898760330576" y="869.0" />
+                  <point x="744.5898760330576" y="580.0" />
+                  <point x="787.9722878131984" y="580.0" />
+                  <point x="-74.375" y="85.0" />
+                </edge>
+                <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.DirDao">
+                  <point x="0.0" y="-75.0" />
+                  <point x="2726.3340630329285" y="859.0" />
+                  <point x="2385.1335924176847" y="859.0" />
+                  <point x="2385.1335924176847" y="550.0" />
+                  <point x="2437.1776449560552" y="550.0" />
+                  <point x="95.0" y="94.5" />
+                </edge>
+                <edge source="command.Command" target="filesystem.Node">
+                  <point x="-66.0" y="-105.0" />
+                  <point x="1314.1912058900716" y="839.0" />
+                  <point x="691.9464285714287" y="839.0" />
+                  <point x="691.9464285714287" y="240.0" />
+                  <point x="846.9460924176844" y="240.0" />
+                  <point x="-60.85714285714289" y="105.0" />
                 </edge>
                 <edge source="filesystem.Link" target="filesystem.Node">
-                  <point x="0.0" y="-85.0" />
-                  <point x="608.0" y="771.0" />
-                  <point x="418.5" y="771.0" />
-                  <point x="71.0" y="105.0" />
-                </edge>
-                <edge source="command.Delete" target="command.Command">
-                  <point x="0.0" y="-105.0" />
+                  <point x="59.5" y="-85.0" />
+                  <point x="921.8472878131984" y="250.0" />
+                  <point x="907.8032352748276" y="250.0" />
                   <point x="0.0" y="105.0" />
                 </edge>
+                <edge source="model.Model" target="dao.factory.TestFileSystemDaoFactory">
+                  <point x="-37.25" y="-75.0" />
+                  <point x="2883.7797619047615" y="1309.0" />
+                  <point x="2726.3340630329285" y="1309.0" />
+                  <point x="0.0" y="75.0" />
+                </edge>
+                <edge source="model.Model" target="dao.LinkDao">
+                  <point x="62.08333333333326" y="-75.0" />
+                  <point x="2983.113095238095" y="1429.0" />
+                  <point x="3601.4074019414943" y="1429.0" />
+                  <point x="3601.4074019414943" y="510.0" />
+                  <point x="3036.990735274828" y="510.0" />
+                  <point x="97.08333333333348" y="94.5" />
+                </edge>
+                <edge source="navigation.Opening" target="filesystem.Link">
+                  <point x="-106.71428571428578" y="-125.5" />
+                  <point x="1819.6071428571427" y="1429.0" />
+                  <point x="1596.6335924176847" y="1429.0" />
+                  <point x="1596.6335924176847" y="899.0" />
+                  <point x="1386.8214285714284" y="899.0" />
+                  <point x="1386.8214285714284" y="540.0" />
+                  <point x="936.7222878131984" y="540.0" />
+                  <point x="74.375" y="85.0" />
+                </edge>
+                <edge source="use.Main" target="viewers.TestConsole">
+                  <point x="0.0" y="-24.0" />
+                  <point x="0.0" y="24.0" />
+                </edge>
+                <edge source="command.Delete" target="command.Command">
+                  <point x="67.125" y="-105.0" />
+                  <point x="1148.8472878131984" y="1409.0" />
+                  <point x="1394.8578725567384" y="1409.0" />
+                  <point x="14.666666666666629" y="105.0" />
+                </edge>
+                <edge source="command.Delete" target="filesystem.File">
+                  <point x="-67.125" y="-105.0" />
+                  <point x="1014.5972878131984" y="1289.0" />
+                  <point x="113.1508592417697" y="1289.0" />
+                  <point x="113.1508592417697" y="580.0" />
+                  <point x="177.08524367047016" y="580.0" />
+                  <point x="34.71428571428578" y="95.5" />
+                </edge>
+                <edge source="navigation.CD" target="dao.LinkDao">
+                  <point x="108.42857142857156" y="-105.5" />
+                  <point x="2442.75" y="1399.0" />
+                  <point x="2945.4074019414943" y="1399.0" />
+                  <point x="2945.4074019414943" y="580.0" />
+                  <point x="2959.324068608161" y="580.0" />
+                  <point x="19.416666666666515" y="94.5" />
+                </edge>
+                <edge source="command.Rename" target="filesystem.File">
+                  <point x="-83.25" y="-115.0" />
+                  <point x="1218.9722878131984" y="1329.0" />
+                  <point x="1077.9732142857142" y="1329.0" />
+                  <point x="1077.9732142857142" y="849.0" />
+                  <point x="641.1166617473434" y="849.0" />
+                  <point x="641.1166617473434" y="580.0" />
+                  <point x="211.79952938475594" y="580.0" />
+                  <point x="69.42857142857156" y="95.5" />
+                </edge>
+                <edge source="command.Replace" target="filesystem.Dir">
+                  <point x="35.0" y="-115.0" />
+                  <point x="580.2222878131984" y="1349.0" />
+                  <point x="1259.6912058900716" y="1349.0" />
+                  <point x="1259.6912058900716" y="929.0" />
+                  <point x="1570.8214285714284" y="929.0" />
+                  <point x="1570.8214285714284" y="560.0" />
+                  <point x="1633.654761904762" y="560.0" />
+                  <point x="-42.91666666666674" y="105.0" />
+                </edge>
+                <edge source="navigation.Opening" target="dao.DirDao">
+                  <point x="0.0" y="-125.5" />
+                  <point x="1926.3214285714284" y="999.0" />
+                  <point x="2219.3214285714284" y="999.0" />
+                  <point x="2219.3214285714284" y="520.0" />
+                  <point x="2323.1776449560552" y="520.0" />
+                  <point x="-19.0" y="94.5" />
+                </edge>
                 <edge source="dao.database_dao.DataBaseDaoDir" target="dao.DirDao">
-                  <point x="0.0" y="-104.5" />
+                  <point x="57.0" y="-104.5" />
+                  <point x="2140.8214285714284" y="500.0" />
+                  <point x="2247.1776449560552" y="500.0" />
+                  <point x="-95.0" y="94.5" />
+                </edge>
+                <edge source="manager.FileManager" target="command.Delete">
+                  <point x="-48.80555555555566" y="-245.5" />
+                  <point x="1539.5158730158728" y="1760.0" />
+                  <point x="1081.7222878131984" y="1760.0" />
+                  <point x="0.0" y="105.0" />
+                </edge>
+                <edge source="command.Command" target="dao.DirDao">
+                  <point x="-22.0" y="-105.0" />
+                  <point x="1358.1912058900716" y="989.0" />
+                  <point x="2208.3214285714284" y="989.0" />
+                  <point x="2208.3214285714284" y="510.0" />
+                  <point x="2285.1776449560552" y="510.0" />
+                  <point x="-57.0" y="94.5" />
+                </edge>
+                <edge source="viewers.TestConsole" target="viewers.Viewer">
+                  <point x="-35.0" y="-24.0" />
+                  <point x="0.0" y="54.0" />
+                </edge>
+                <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.LinkDao">
+                  <point x="55.42857142857156" y="-75.0" />
+                  <point x="2781.7626344615" y="1009.0" />
+                  <point x="2921.490735274828" y="1009.0" />
+                  <point x="2921.490735274828" y="550.0" />
+                  <point x="2881.657401941494" y="550.0" />
+                  <point x="-58.25" y="94.5" />
+                </edge>
+                <edge source="command.Delete" target="filesystem.Link">
+                  <point x="-22.375" y="-105.0" />
+                  <point x="1059.3472878131984" y="1279.0" />
+                  <point x="976.5037058900717" y="1279.0" />
+                  <point x="976.5037058900717" y="899.0" />
+                  <point x="1131.2589285714284" y="899.0" />
+                  <point x="1131.2589285714284" y="560.0" />
+                  <point x="877.2222878131984" y="560.0" />
+                  <point x="14.875" y="85.0" />
+                </edge>
+                <edge source="command.Command" target="dao.FileDao">
+                  <point x="22.0" y="-105.0" />
+                  <point x="1402.1912058900716" y="1009.0" />
+                  <point x="2433.245957956184" y="1009.0" />
+                  <point x="2433.245957956184" y="560.0" />
+                  <point x="2550.3026449560552" y="560.0" />
+                  <point x="-96.25" y="94.5" />
+                </edge>
+                <edge source="command.Copy" target="filesystem.Link">
+                  <point x="-33.375" y="-115.0" />
+                  <point x="805.3472878131984" y="1299.0" />
+                  <point x="722.5037058900718" y="1299.0" />
+                  <point x="722.5037058900718" y="889.0" />
+                  <point x="998.7589285714286" y="889.0" />
+                  <point x="998.7589285714286" y="570.0" />
+                  <point x="847.4722878131984" y="570.0" />
+                  <point x="-14.875" y="85.0" />
+                </edge>
+                <edge source="navigation.Opening" target="dao.LinkDao">
+                  <point x="106.71428571428578" y="-125.5" />
+                  <point x="2033.0357142857142" y="1389.0" />
+                  <point x="2833.8340630329285" y="1389.0" />
+                  <point x="2833.8340630329285" y="1019.0" />
+                  <point x="2934.4074019414943" y="1019.0" />
+                  <point x="2934.4074019414943" y="540.0" />
+                  <point x="2920.4907352748273" y="540.0" />
+                  <point x="-19.416666666666742" y="94.5" />
+                </edge>
+                <edge source="dao.factory.TestFileSystemDaoFactory" target="filesystem.testfilesystem.TestFileSystem">
+                  <point x="-83.14285714285711" y="-75.0" />
+                  <point x="2643.1912058900716" y="889.0" />
+                  <point x="1473.3214285714284" y="889.0" />
+                  <point x="0.0" y="45.0" />
+                </edge>
+                <edge source="viewers.TestConsole" target="manager.FileManager">
+                  <point x="35.0" y="-24.0" />
+                  <point x="731.8888888888889" y="2346.0" />
+                  <point x="1525.5714285714284" y="2346.0" />
+                  <point x="-62.75" y="245.5" />
+                </edge>
+                <edge source="navigation.CD" target="dao.FileDao">
+                  <point x="72.28571428571422" y="-105.5" />
+                  <point x="2406.6071428571427" y="1379.0" />
+                  <point x="2618.834063032929" y="1379.0" />
+                  <point x="2618.834063032929" y="570.0" />
+                  <point x="2627.3026449560552" y="570.0" />
+                  <point x="-19.25" y="94.5" />
+                </edge>
+                <edge source="manager.FileManager" target="navigation.Navigation">
+                  <point x="62.75" y="-245.5" />
+                  <point x="1651.0714285714284" y="1770.0" />
+                  <point x="2545.9880952380954" y="1770.0" />
+                  <point x="43.66666666666674" y="44.5" />
+                </edge>
+                <edge source="command.Rename" target="filesystem.Link">
+                  <point x="-27.75" y="-115.0" />
+                  <point x="1274.4722878131984" y="1329.0" />
+                  <point x="1237.6912058900716" y="1329.0" />
+                  <point x="1237.6912058900716" y="550.0" />
+                  <point x="906.9722878131984" y="550.0" />
+                  <point x="44.625" y="85.0" />
+                </edge>
+                <edge source="command.Delete" target="filesystem.Dir">
+                  <point x="22.375" y="-105.0" />
+                  <point x="1104.0972878131984" y="1369.0" />
+                  <point x="1281.6912058900716" y="1369.0" />
+                  <point x="1281.6912058900716" y="949.0" />
+                  <point x="1592.8214285714284" y="949.0" />
+                  <point x="1592.8214285714284" y="580.0" />
+                  <point x="1667.9880952380954" y="580.0" />
+                  <point x="-8.583333333333258" y="105.0" />
+                </edge>
+                <edge source="dao.factory.DataBaseDaoFactory" target="dao.database_dao.DataBaseDaoFile">
+                  <point x="19.125" y="-44.0" />
+                  <point x="3100.5526449560557" y="1019.0" />
+                  <point x="3222.4074019414943" y="1019.0" />
                   <point x="0.0" y="94.5" />
                 </edge>
                 <edge source="command.Rename" target="command.Command">
-                  <point x="0.0" y="-115.0" />
-                  <point x="1094.0" y="240.0" />
-                  <point x="908.6999999999999" y="240.0" />
-                  <point x="35.19999999999999" y="105.0" />
+                  <point x="27.75" y="-115.0" />
+                  <point x="1329.9722878131984" y="1419.0" />
+                  <point x="1424.1912058900716" y="1419.0" />
+                  <point x="44.0" y="105.0" />
+                </edge>
+                <edge source="command.Copy" target="filesystem.File">
+                  <point x="-100.125" y="-115.0" />
+                  <point x="738.5972878131984" y="1309.0" />
+                  <point x="102.1508592417697" y="1309.0" />
+                  <point x="102.1508592417697" y="570.0" />
+                  <point x="142.37095795618438" y="570.0" />
+                  <point x="0.0" y="95.5" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.3167554766133807" x="777.0" y="834.5" />
+              <settings layout="Hierarchic Group" zoom="0.7851211072664359" x="660.8391361833408" y="382.71176729836935" />
               <SelectedNodes />
               <Categories>
                 <Category>Constructors</Category>
@@ -660,8 +1196,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -761,126 +1297,666 @@
           <ID>JAVA</ID>
           <OriginalElement>command.Command</OriginalElement>
           <nodes>
-            <node x="185.0" y="1621.0">search.Search</node>
-            <node x="1323.0" y="536.0">dao.FileDao</node>
-            <node x="0.0" y="1621.0">viewers.TestConsole</node>
-            <node x="666.0" y="1486.0">exception.NodeAlreadyExistsException</node>
-            <node x="1120.0" y="1486.0">exception.IsNotDirectryException</node>
-            <node x="983.0" y="260.0">command.Rename</node>
-            <node x="945.0" y="1189.0">dao.factory.TestFileSystemDaoFactory</node>
-            <node x="1225.0" y="260.0">command.Replace</node>
-            <node x="785.5" y="0.0">command.Command</node>
-            <node x="1330.0" y="1486.0">use.Main</node>
-            <node x="1184.0" y="1051.0">model.Model</node>
-            <node x="772.0" y="536.0">dao.DirDao</node>
-            <node x="0.0" y="796.0">filesystem.Dir</node>
-            <node x="879.75" y="1051.0">dao.factory.DaoFactory</node>
-            <node x="772.0" y="1220.0">dao.factory.DataBaseDaoFactory</node>
-            <node x="0.0" y="1210.0">navigation.CD</node>
-            <node x="1045.0" y="536.0">dao.LinkDao</node>
-            <node x="583.0" y="270.0">command.Create</node>
-            <node x="241.0" y="536.0">filesystem.Node</node>
-            <node x="196.5" y="1051.0">navigation.Navigation</node>
-            <node x="1045.0" y="775.0">dao.database_dao.DataBaseDaoLink</node>
-            <node x="1323.0" y="775.0">dao.database_dao.DataBaseDaoFile</node>
-            <node x="273.0" y="1190.0">navigation.Opening</node>
-            <node x="398.0" y="1486.0">exception.OperationNotSupportedException</node>
-            <node x="1378.0" y="1051.0">viewers.Viewer</node>
-            <node x="784.0" y="270.0">command.Delete</node>
-            <node x="905.0" y="1486.0">exception.NodeNotFoundException</node>
-            <node x="0.0" y="1486.0">filesystem.testfilesystem.TestFileSystem</node>
-            <node x="296.0" y="260.0">command.Copy</node>
-            <node x="489.0" y="816.0">filesystem.Link</node>
-            <node x="0.0" y="0.0">manager.FileManager</node>
-            <node x="772.0" y="775.0">dao.database_dao.DataBaseDaoDir</node>
-            <node x="567.0" y="1051.0">viewers.Commands</node>
-            <node x="226.0" y="805.5">filesystem.File</node>
-            <node x="197.0" y="1486.0">model.ModelKey</node>
+            <node x="406.0" y="2562.0">search.Search</node>
+            <node x="2531.0526449560557" y="280.5">dao.FileDao</node>
+            <node x="626.8888888888889" y="2371.0">viewers.TestConsole</node>
+            <node x="3452.1547619047615" y="81.0">exception.NodeAlreadyExistsException</node>
+            <node x="2251.8214285714284" y="1130.0">exception.IsNotDirectryException</node>
+            <node x="1191.2222878131984" y="1459.5">command.Rename</node>
+            <node x="2629.3340630329285" y="1079.0">dao.factory.TestFileSystemDaoFactory</node>
+            <node x="405.22228781319836" y="1459.5">command.Replace</node>
+            <node x="1292.1912058900716" y="1049.0">command.Command</node>
+            <node x="624.8888888888889" y="2469.0">use.Main</node>
+            <node x="2846.5297619047615" y="1499.5">model.Model</node>
+            <node x="2228.1776449560552" y="280.5">dao.DirDao</node>
+            <node x="1573.5714285714284" y="270.0">filesystem.Dir</node>
+            <node x="2955.9074019414943" y="660.5">dao.factory.DaoFactory</node>
+            <node x="3004.9276449560557" y="1110.0">dao.factory.DataBaseDaoFactory</node>
+            <node x="2207.8214285714284" y="1469.0">navigation.CD</node>
+            <node x="2823.407401941494" y="280.5">dao.LinkDao</node>
+            <node x="204.22228781319836" y="1469.5">command.Create</node>
+            <node x="801.3032352748276" y="0.0">filesystem.Node</node>
+            <node x="2436.8214285714284" y="1109.5">navigation.Navigation</node>
+            <node x="3357.9074019414943" y="610.0">dao.database_dao.DataBaseDaoLink</node>
+            <node x="3106.9074019414943" y="610.0">dao.database_dao.DataBaseDaoFile</node>
+            <node x="1801.8214285714284" y="1449.0">navigation.Opening</node>
+            <node x="3184.363095238095" y="1550.5">exception.OperationNotSupportedException</node>
+            <node x="580.8888888888889" y="2021.5">viewers.Viewer</node>
+            <node x="992.2222878131984" y="1469.5">command.Delete</node>
+            <node x="1745.8214285714284" y="1130.0">exception.NodeNotFoundException</node>
+            <node x="1397.3214285714284" y="659.5">filesystem.testfilesystem.TestFileSystem</node>
+            <node x="705.2222878131984" y="1459.5">command.Copy</node>
+            <node x="743.3472878131984" y="290.0">filesystem.Link</node>
+            <node x="1462.8214285714284" y="1830.0">manager.FileManager</node>
+            <node x="1969.8214285714284" y="600.0">dao.database_dao.DataBaseDaoDir</node>
+            <node x="0.0" y="2562.0">viewers.Commands</node>
+            <node x="20.870957956184384" y="279.5">filesystem.File</node>
+            <node x="205.0" y="2562.0">model.ModelKey</node>
           </nodes>
           <notes />
           <edges>
             <edge source="command.Copy" target="command.Command">
-              <point x="0.0" y="-115.0" />
-              <point x="429.5" y="230.0" />
-              <point x="803.0999999999999" y="230.0" />
-              <point x="-70.39999999999998" y="105.0" />
+              <point x="100.125" y="-115.0" />
+              <point x="938.8472878131984" y="1399.0" />
+              <point x="1365.524539223405" y="1399.0" />
+              <point x="-14.666666666666629" y="105.0" />
+            </edge>
+            <edge source="manager.FileManager" target="filesystem.File">
+              <point x="-118.52777777777783" y="-245.5" />
+              <point x="1469.7936507936506" y="1810.0" />
+              <point x="69.1508592417697" y="1810.0" />
+              <point x="69.1508592417697" y="580.0" />
+              <point x="38.22810081332727" y="580.0" />
+              <point x="-104.14285714285711" y="95.5" />
             </edge>
             <edge source="dao.factory.DataBaseDaoFactory" target="dao.factory.DaoFactory">
-              <point x="0.0" y="-44.0" />
-              <point x="848.5" y="1164.0" />
-              <point x="912.5" y="1164.0" />
-              <point x="-32.75" y="44.0" />
+              <point x="-19.125" y="-44.0" />
+              <point x="3062.3026449560557" y="839.0" />
+              <point x="3021.4074019414943" y="839.0" />
+              <point x="0.0" y="44.0" />
+            </edge>
+            <edge source="navigation.CD" target="dao.DirDao">
+              <point x="-36.14285714285711" y="-105.5" />
+              <point x="2298.1785714285716" y="1329.0" />
+              <point x="2230.3214285714284" y="1329.0" />
+              <point x="2230.3214285714284" y="530.0" />
+              <point x="2361.1776449560552" y="530.0" />
+              <point x="19.0" y="94.5" />
+            </edge>
+            <edge source="manager.FileManager" target="command.Copy">
+              <point x="-62.75" y="-245.5" />
+              <point x="1525.5714285714284" y="1770.0" />
+              <point x="838.7222878131984" y="1770.0" />
+              <point x="0.0" y="115.0" />
             </edge>
             <edge source="command.Create" target="command.Command">
-              <point x="0.0" y="-105.0" />
-              <point x="673.5" y="240.0" />
-              <point x="838.3" y="240.0" />
-              <point x="-35.19999999999999" y="105.0" />
+              <point x="67.875" y="-105.0" />
+              <point x="362.59728781319836" y="1379.0" />
+              <point x="1306.8578725567384" y="1379.0" />
+              <point x="-73.33333333333337" y="105.0" />
+            </edge>
+            <edge source="filesystem.testfilesystem.TestFileSystem" target="filesystem.Dir">
+              <point x="19.0" y="-45.0" />
+              <point x="1492.3214285714284" y="530.0" />
+              <point x="1582.154761904762" y="530.0" />
+              <point x="-94.41666666666674" y="105.0" />
+            </edge>
+            <edge source="manager.FileManager" target="navigation.Opening">
+              <point x="34.861111111111086" y="-245.5" />
+              <point x="1623.1825396825398" y="1750.0" />
+              <point x="1926.3214285714284" y="1750.0" />
+              <point x="0.0" y="125.5" />
+            </edge>
+            <edge source="dao.factory.TestFileSystemDaoFactory" target="filesystem.Dir">
+              <point x="-27.71428571428578" y="-75.0" />
+              <point x="2698.619777318643" y="869.0" />
+              <point x="1959.3214285714284" y="869.0" />
+              <point x="1959.3214285714284" y="570.0" />
+              <point x="1770.9880952380954" y="570.0" />
+              <point x="94.41666666666674" y="105.0" />
+            </edge>
+            <edge source="command.Copy" target="filesystem.Dir">
+              <point x="33.375" y="-115.0" />
+              <point x="872.0972878131984" y="1359.0" />
+              <point x="1270.6912058900716" y="1359.0" />
+              <point x="1270.6912058900716" y="939.0" />
+              <point x="1581.8214285714284" y="939.0" />
+              <point x="1581.8214285714284" y="570.0" />
+              <point x="1650.8214285714284" y="570.0" />
+              <point x="-25.75" y="105.0" />
+            </edge>
+            <edge source="manager.FileManager" target="command.Replace">
+              <point x="-76.69444444444434" y="-245.5" />
+              <point x="1511.626984126984" y="1780.0" />
+              <point x="545.2222878131984" y="1780.0" />
+              <point x="0.0" y="115.0" />
+            </edge>
+            <edge source="manager.FileManager" target="command.Command">
+              <point x="-20.916666666666515" y="-245.5" />
+              <point x="1567.404761904762" y="1740.0" />
+              <point x="1460.6940426997242" y="1740.0" />
+              <point x="1460.6940426997242" y="1419.0" />
+              <point x="1453.524539223405" y="1419.0" />
+              <point x="73.33333333333326" y="105.0" />
             </edge>
             <edge source="command.Replace" target="command.Command">
-              <point x="0.0" y="-115.0" />
-              <point x="1365.0" y="230.0" />
-              <point x="943.9" y="230.0" />
-              <point x="70.4" y="105.0" />
+              <point x="105.0" y="-115.0" />
+              <point x="650.2222878131984" y="1389.0" />
+              <point x="1336.1912058900716" y="1389.0" />
+              <point x="-44.0" y="105.0" />
             </edge>
             <edge source="dao.database_dao.DataBaseDaoLink" target="dao.LinkDao">
               <point x="0.0" y="-94.5" />
-              <point x="0.0" y="94.5" />
+              <point x="3474.4074019414943" y="520.0" />
+              <point x="2998.157401941494" y="520.0" />
+              <point x="58.25" y="94.5" />
+            </edge>
+            <edge source="filesystem.Dir" target="exception.NodeAlreadyExistsException">
+              <point x="68.66666666666674" y="-105.0" />
+              <point x="1745.2380952380954" y="250.0" />
+              <point x="3500.6547619047615" y="250.0" />
+              <point x="-48.5" y="24.0" />
+            </edge>
+            <edge source="manager.FileManager" target="model.Model">
+              <point x="76.69444444444434" y="-245.5" />
+              <point x="1665.0158730158728" y="1780.0" />
+              <point x="2883.7797619047615" y="1780.0" />
+              <point x="-37.25" y="75.0" />
+            </edge>
+            <edge source="manager.FileManager" target="command.Create">
+              <point x="-90.63888888888891" y="-245.5" />
+              <point x="1497.6825396825398" y="1790.0" />
+              <point x="294.72228781319836" y="1790.0" />
+              <point x="0.0" y="105.0" />
             </edge>
             <edge source="filesystem.Dir" target="filesystem.Node">
-              <point x="0.0" y="-105.0" />
-              <point x="103.0" y="771.0" />
-              <point x="276.5" y="771.0" />
-              <point x="-71.0" y="105.0" />
+              <point x="-68.66666666666674" y="-105.0" />
+              <point x="1607.904761904762" y="250.0" />
+              <point x="938.2318067033991" y="250.0" />
+              <point x="30.42857142857156" y="105.0" />
+            </edge>
+            <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.FileDao">
+              <point x="27.71428571428578" y="-75.0" />
+              <point x="2754.0483487472147" y="1029.0" />
+              <point x="2748.0297619047615" y="1029.0" />
+              <point x="2748.0297619047615" y="570.0" />
+              <point x="2665.8026449560552" y="570.0" />
+              <point x="19.25" y="94.5" />
+            </edge>
+            <edge source="navigation.CD" target="filesystem.Dir">
+              <point x="-72.28571428571422" y="-105.5" />
+              <point x="2262.035714285714" y="1339.0" />
+              <point x="1948.3214285714284" y="1339.0" />
+              <point x="1948.3214285714284" y="580.0" />
+              <point x="1753.8214285714284" y="580.0" />
+              <point x="77.25" y="105.0" />
+            </edge>
+            <edge source="model.Model" target="dao.factory.DaoFactory">
+              <point x="37.25" y="-75.0" />
+              <point x="2958.2797619047615" y="1419.0" />
+              <point x="3168.4276449560557" y="1419.0" />
+              <point x="3168.4276449560557" y="829.0" />
+              <point x="3065.074068608161" y="829.0" />
+              <point x="43.66666666666674" y="44.0" />
+            </edge>
+            <edge source="dao.database_dao.DataBaseDaoDir" target="filesystem.Node">
+              <point x="-57.0" y="-104.5" />
+              <point x="2026.8214285714284" y="230.0" />
+              <point x="999.0889495605417" y="230.0" />
+              <point x="91.28571428571422" y="105.0" />
             </edge>
             <edge source="dao.database_dao.DataBaseDaoFile" target="dao.FileDao">
               <point x="0.0" y="-94.5" />
-              <point x="0.0" y="94.5" />
+              <point x="3222.4074019414943" y="530.0" />
+              <point x="2742.8026449560557" y="530.0" />
+              <point x="96.25" y="94.5" />
+            </edge>
+            <edge source="dao.factory.DataBaseDaoFactory" target="dao.database_dao.DataBaseDaoDir">
+              <point x="-57.375" y="-44.0" />
+              <point x="3024.0526449560557" y="849.0" />
+              <point x="2083.8214285714284" y="849.0" />
+              <point x="0.0" y="104.5" />
+            </edge>
+            <edge source="command.Create" target="filesystem.File">
+              <point x="-67.875" y="-105.0" />
+              <point x="226.84728781319836" y="1429.0" />
+              <point x="80.1508592417697" y="1429.0" />
+              <point x="80.1508592417697" y="570.0" />
+              <point x="72.94238652761305" y="570.0" />
+              <point x="-69.42857142857133" y="95.5" />
+            </edge>
+            <edge source="command.Replace" target="filesystem.File">
+              <point x="-105.0" y="-115.0" />
+              <point x="440.22228781319836" y="1329.0" />
+              <point x="91.1508592417697" y="1329.0" />
+              <point x="91.1508592417697" y="560.0" />
+              <point x="107.6566722418986" y="560.0" />
+              <point x="-34.71428571428578" y="95.5" />
+            </edge>
+            <edge source="manager.FileManager" target="exception.NodeAlreadyExistsException">
+              <point x="118.52777777777783" y="-245.5" />
+              <point x="1706.8492063492063" y="1810.0" />
+              <point x="3653.3026449560557" y="1810.0" />
+              <point x="3653.3026449560557" y="250.0" />
+              <point x="3597.6547619047615" y="250.0" />
+              <point x="48.5" y="24.0" />
+            </edge>
+            <edge source="navigation.Opening" target="exception.NodeNotFoundException">
+              <point x="-35.57142857142867" y="-125.5" />
+              <point x="1890.75" y="1409.0" />
+              <point x="1830.8214285714284" y="1409.0" />
+              <point x="0.0" y="24.0" />
+            </edge>
+            <edge source="command.Replace" target="filesystem.Link">
+              <point x="-35.0" y="-115.0" />
+              <point x="510.22228781319836" y="1319.0" />
+              <point x="427.37870589007184" y="1319.0" />
+              <point x="427.37870589007184" y="879.0" />
+              <point x="845.6964285714287" y="879.0" />
+              <point x="845.6964285714287" y="580.0" />
+              <point x="817.7222878131984" y="580.0" />
+              <point x="-44.625" y="85.0" />
+            </edge>
+            <edge source="use.Main" target="manager.FileManager">
+              <point x="48.0" y="-24.0" />
+              <point x="744.8888888888889" y="2444.0" />
+              <point x="1651.0714285714284" y="2444.0" />
+              <point x="62.75" y="245.5" />
+            </edge>
+            <edge source="navigation.Opening" target="dao.FileDao">
+              <point x="35.57142857142844" y="-125.5" />
+              <point x="1961.8928571428569" y="1429.0" />
+              <point x="1937.3214285714284" y="1429.0" />
+              <point x="1937.3214285714284" y="1029.0" />
+              <point x="2468.777376033058" y="1029.0" />
+              <point x="2468.777376033058" y="570.0" />
+              <point x="2588.8026449560552" y="570.0" />
+              <point x="-57.75" y="94.5" />
             </edge>
             <edge source="navigation.Opening" target="navigation.Navigation">
-              <point x="0.0" y="-125.5" />
-              <point x="397.5" y="1165.0" />
-              <point x="294.75" y="1165.0" />
-              <point x="32.75" y="44.5" />
+              <point x="71.14285714285711" y="-125.5" />
+              <point x="1997.4642857142858" y="1359.0" />
+              <point x="2458.6547619047615" y="1359.0" />
+              <point x="-43.66666666666674" y="44.5" />
+            </edge>
+            <edge source="filesystem.testfilesystem.TestFileSystem" target="filesystem.Link">
+              <point x="-19.0" y="-45.0" />
+              <point x="1454.3214285714284" y="520.0" />
+              <point x="966.4722878131984" y="520.0" />
+              <point x="104.125" y="85.0" />
+            </edge>
+            <edge source="manager.FileManager" target="navigation.CD">
+              <point x="48.80555555555566" y="-245.5" />
+              <point x="1637.126984126984" y="1760.0" />
+              <point x="2334.3214285714284" y="1760.0" />
+              <point x="0.0" y="105.5" />
+            </edge>
+            <edge source="model.Model" target="dao.FileDao">
+              <point x="-12.416666666666515" y="-75.0" />
+              <point x="2908.6130952380954" y="1389.0" />
+              <point x="2910.490735274828" y="1389.0" />
+              <point x="2910.490735274828" y="560.0" />
+              <point x="2704.3026449560557" y="560.0" />
+              <point x="57.750000000000114" y="94.5" />
+            </edge>
+            <edge source="manager.FileManager" target="filesystem.Dir">
+              <point x="6.972222222222172" y="-245.5" />
+              <point x="1595.2936507936506" y="1720.0" />
+              <point x="1571.4907352748273" y="1720.0" />
+              <point x="1571.4907352748273" y="979.0" />
+              <point x="1718.8214285714284" y="979.0" />
+              <point x="42.91666666666674" y="105.0" />
             </edge>
             <edge source="filesystem.File" target="filesystem.Node">
               <point x="0.0" y="-95.5" />
-              <point x="0.0" y="105.0" />
+              <point x="142.37095795618438" y="230.0" />
+              <point x="816.5175209891133" y="230.0" />
+              <point x="-91.28571428571422" y="105.0" />
             </edge>
             <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.factory.DaoFactory">
-              <point x="0.0" y="-75.0" />
-              <point x="1042.0" y="1164.0" />
-              <point x="978.0" y="1164.0" />
-              <point x="32.75" y="44.0" />
+              <point x="83.14285714285711" y="-75.0" />
+              <point x="2809.476920175786" y="1029.0" />
+              <point x="2977.740735274828" y="1029.0" />
+              <point x="-43.66666666666663" y="44.0" />
+            </edge>
+            <edge source="manager.FileManager" target="exception.NodeNotFoundException">
+              <point x="20.916666666666742" y="-245.5" />
+              <point x="1609.2380952380954" y="1740.0" />
+              <point x="1774.154761904762" y="1740.0" />
+              <point x="-56.66666666666663" y="24.0" />
+            </edge>
+            <edge source="navigation.CD" target="exception.IsNotDirectryException">
+              <point x="0.0" y="-105.5" />
+              <point x="0.0" y="24.0" />
+            </edge>
+            <edge source="command.Rename" target="filesystem.Dir">
+              <point x="83.25" y="-115.0" />
+              <point x="1385.4722878131984" y="1429.0" />
+              <point x="1530.3657352748273" y="1429.0" />
+              <point x="1530.3657352748273" y="959.0" />
+              <point x="1696.8214285714284" y="959.0" />
+              <point x="1696.8214285714284" y="580.0" />
+              <point x="1685.154761904762" y="580.0" />
+              <point x="8.583333333333258" y="105.0" />
+            </edge>
+            <edge source="model.Model" target="dao.factory.DataBaseDaoFactory">
+              <point x="12.416666666666686" y="-75.0" />
+              <point x="2933.4464285714284" y="1409.0" />
+              <point x="3081.4276449560557" y="1409.0" />
+              <point x="0.0" y="44.0" />
+            </edge>
+            <edge source="command.Command" target="dao.LinkDao">
+              <point x="66.0" y="-105.0" />
+              <point x="1446.1912058900716" y="1019.0" />
+              <point x="2457.777376033058" y="1019.0" />
+              <point x="2457.777376033058" y="580.0" />
+              <point x="2842.824068608161" y="580.0" />
+              <point x="-97.08333333333348" y="94.5" />
+            </edge>
+            <edge source="navigation.Opening" target="filesystem.Dir">
+              <point x="-71.14285714285711" y="-125.5" />
+              <point x="1855.1785714285716" y="1419.0" />
+              <point x="1735.3214285714284" y="1419.0" />
+              <point x="1735.3214285714284" y="580.0" />
+              <point x="1736.654761904762" y="580.0" />
+              <point x="60.083333333333485" y="105.0" />
+            </edge>
+            <edge source="dao.factory.DataBaseDaoFactory" target="dao.database_dao.DataBaseDaoLink">
+              <point x="57.375" y="-44.0" />
+              <point x="3138.8026449560557" y="1029.0" />
+              <point x="3474.4074019414943" y="1029.0" />
+              <point x="0.0" y="94.5" />
+            </edge>
+            <edge source="command.Create" target="filesystem.Dir">
+              <point x="22.625" y="-105.0" />
+              <point x="317.34728781319836" y="1339.0" />
+              <point x="1248.6912058900716" y="1339.0" />
+              <point x="1248.6912058900716" y="919.0" />
+              <point x="1559.8214285714284" y="919.0" />
+              <point x="1559.8214285714284" y="550.0" />
+              <point x="1616.4880952380954" y="550.0" />
+              <point x="-60.08333333333326" y="105.0" />
+            </edge>
+            <edge source="manager.FileManager" target="command.Rename">
+              <point x="-34.861111111111086" y="-245.5" />
+              <point x="1553.4603174603176" y="1750.0" />
+              <point x="1302.2222878131984" y="1750.0" />
+              <point x="0.0" y="115.0" />
+            </edge>
+            <edge source="navigation.CD" target="exception.NodeNotFoundException">
+              <point x="-108.42857142857133" y="-105.5" />
+              <point x="2225.892857142857" y="1349.0" />
+              <point x="1887.4880952380952" y="1349.0" />
+              <point x="56.66666666666663" y="24.0" />
             </edge>
             <edge source="navigation.CD" target="navigation.Navigation">
-              <point x="0.0" y="-105.5" />
-              <point x="126.5" y="1165.0" />
-              <point x="229.25" y="1165.0" />
-              <point x="-32.75" y="44.5" />
+              <point x="36.14285714285711" y="-105.5" />
+              <point x="2370.4642857142853" y="1369.0" />
+              <point x="2502.3214285714284" y="1369.0" />
+              <point x="0.0" y="44.5" />
+            </edge>
+            <edge source="manager.FileManager" target="exception.OperationNotSupportedException">
+              <point x="104.58333333333326" y="-245.5" />
+              <point x="1692.904761904762" y="1800.0" />
+              <point x="3295.863095238095" y="1800.0" />
+              <point x="0.0" y="24.0" />
+            </edge>
+            <edge source="model.Model" target="dao.DirDao">
+              <point x="-62.08333333333326" y="-75.0" />
+              <point x="2858.9464285714284" y="1319.0" />
+              <point x="2241.3214285714284" y="1319.0" />
+              <point x="2241.3214285714284" y="540.0" />
+              <point x="2399.1776449560552" y="540.0" />
+              <point x="57.0" y="94.5" />
+            </edge>
+            <edge source="use.Main" target="filesystem.testfilesystem.TestFileSystem">
+              <point x="-48.0" y="-24.0" />
+              <point x="648.8888888888889" y="2444.0" />
+              <point x="28.0" y="2444.0" />
+              <point x="28.0" y="909.0" />
+              <point x="1422.654761904762" y="909.0" />
+              <point x="-50.66666666666674" y="45.0" />
+            </edge>
+            <edge source="filesystem.testfilesystem.TestFileSystem" target="filesystem.File">
+              <point x="-57.0" y="-45.0" />
+              <point x="1416.3214285714284" y="530.0" />
+              <point x="246.5138150990415" y="530.0" />
+              <point x="104.14285714285711" y="95.5" />
+            </edge>
+            <edge source="manager.FileManager" target="filesystem.Link">
+              <point x="-104.58333333333348" y="-245.5" />
+              <point x="1483.738095238095" y="1800.0" />
+              <point x="124.1508592417697" y="1800.0" />
+              <point x="124.1508592417697" y="859.0" />
+              <point x="733.5898760330576" y="859.0" />
+              <point x="733.5898760330576" y="570.0" />
+              <point x="758.2222878131984" y="570.0" />
+              <point x="-104.125" y="85.0" />
+            </edge>
+            <edge source="command.Create" target="filesystem.Link">
+              <point x="-22.625" y="-105.0" />
+              <point x="272.09728781319836" y="869.0" />
+              <point x="744.5898760330576" y="869.0" />
+              <point x="744.5898760330576" y="580.0" />
+              <point x="787.9722878131984" y="580.0" />
+              <point x="-74.375" y="85.0" />
+            </edge>
+            <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.DirDao">
+              <point x="0.0" y="-75.0" />
+              <point x="2726.3340630329285" y="859.0" />
+              <point x="2385.1335924176847" y="859.0" />
+              <point x="2385.1335924176847" y="550.0" />
+              <point x="2437.1776449560552" y="550.0" />
+              <point x="95.0" y="94.5" />
+            </edge>
+            <edge source="command.Command" target="filesystem.Node">
+              <point x="-66.0" y="-105.0" />
+              <point x="1314.1912058900716" y="839.0" />
+              <point x="691.9464285714287" y="839.0" />
+              <point x="691.9464285714287" y="240.0" />
+              <point x="846.9460924176844" y="240.0" />
+              <point x="-60.85714285714289" y="105.0" />
             </edge>
             <edge source="filesystem.Link" target="filesystem.Node">
-              <point x="0.0" y="-85.0" />
-              <point x="608.0" y="771.0" />
-              <point x="418.5" y="771.0" />
-              <point x="71.0" y="105.0" />
-            </edge>
-            <edge source="command.Delete" target="command.Command">
-              <point x="0.0" y="-105.0" />
+              <point x="59.5" y="-85.0" />
+              <point x="921.8472878131984" y="250.0" />
+              <point x="907.8032352748276" y="250.0" />
               <point x="0.0" y="105.0" />
             </edge>
+            <edge source="model.Model" target="dao.factory.TestFileSystemDaoFactory">
+              <point x="-37.25" y="-75.0" />
+              <point x="2883.7797619047615" y="1309.0" />
+              <point x="2726.3340630329285" y="1309.0" />
+              <point x="0.0" y="75.0" />
+            </edge>
+            <edge source="model.Model" target="dao.LinkDao">
+              <point x="62.08333333333326" y="-75.0" />
+              <point x="2983.113095238095" y="1429.0" />
+              <point x="3601.4074019414943" y="1429.0" />
+              <point x="3601.4074019414943" y="510.0" />
+              <point x="3036.990735274828" y="510.0" />
+              <point x="97.08333333333348" y="94.5" />
+            </edge>
+            <edge source="navigation.Opening" target="filesystem.Link">
+              <point x="-106.71428571428578" y="-125.5" />
+              <point x="1819.6071428571427" y="1429.0" />
+              <point x="1596.6335924176847" y="1429.0" />
+              <point x="1596.6335924176847" y="899.0" />
+              <point x="1386.8214285714284" y="899.0" />
+              <point x="1386.8214285714284" y="540.0" />
+              <point x="936.7222878131984" y="540.0" />
+              <point x="74.375" y="85.0" />
+            </edge>
+            <edge source="use.Main" target="viewers.TestConsole">
+              <point x="0.0" y="-24.0" />
+              <point x="0.0" y="24.0" />
+            </edge>
+            <edge source="command.Delete" target="command.Command">
+              <point x="67.125" y="-105.0" />
+              <point x="1148.8472878131984" y="1409.0" />
+              <point x="1394.8578725567384" y="1409.0" />
+              <point x="14.666666666666629" y="105.0" />
+            </edge>
+            <edge source="command.Delete" target="filesystem.File">
+              <point x="-67.125" y="-105.0" />
+              <point x="1014.5972878131984" y="1289.0" />
+              <point x="113.1508592417697" y="1289.0" />
+              <point x="113.1508592417697" y="580.0" />
+              <point x="177.08524367047016" y="580.0" />
+              <point x="34.71428571428578" y="95.5" />
+            </edge>
+            <edge source="navigation.CD" target="dao.LinkDao">
+              <point x="108.42857142857156" y="-105.5" />
+              <point x="2442.75" y="1399.0" />
+              <point x="2945.4074019414943" y="1399.0" />
+              <point x="2945.4074019414943" y="580.0" />
+              <point x="2959.324068608161" y="580.0" />
+              <point x="19.416666666666515" y="94.5" />
+            </edge>
+            <edge source="command.Rename" target="filesystem.File">
+              <point x="-83.25" y="-115.0" />
+              <point x="1218.9722878131984" y="1329.0" />
+              <point x="1077.9732142857142" y="1329.0" />
+              <point x="1077.9732142857142" y="849.0" />
+              <point x="641.1166617473434" y="849.0" />
+              <point x="641.1166617473434" y="580.0" />
+              <point x="211.79952938475594" y="580.0" />
+              <point x="69.42857142857156" y="95.5" />
+            </edge>
+            <edge source="command.Replace" target="filesystem.Dir">
+              <point x="35.0" y="-115.0" />
+              <point x="580.2222878131984" y="1349.0" />
+              <point x="1259.6912058900716" y="1349.0" />
+              <point x="1259.6912058900716" y="929.0" />
+              <point x="1570.8214285714284" y="929.0" />
+              <point x="1570.8214285714284" y="560.0" />
+              <point x="1633.654761904762" y="560.0" />
+              <point x="-42.91666666666674" y="105.0" />
+            </edge>
+            <edge source="navigation.Opening" target="dao.DirDao">
+              <point x="0.0" y="-125.5" />
+              <point x="1926.3214285714284" y="999.0" />
+              <point x="2219.3214285714284" y="999.0" />
+              <point x="2219.3214285714284" y="520.0" />
+              <point x="2323.1776449560552" y="520.0" />
+              <point x="-19.0" y="94.5" />
+            </edge>
             <edge source="dao.database_dao.DataBaseDaoDir" target="dao.DirDao">
-              <point x="0.0" y="-104.5" />
+              <point x="57.0" y="-104.5" />
+              <point x="2140.8214285714284" y="500.0" />
+              <point x="2247.1776449560552" y="500.0" />
+              <point x="-95.0" y="94.5" />
+            </edge>
+            <edge source="manager.FileManager" target="command.Delete">
+              <point x="-48.80555555555566" y="-245.5" />
+              <point x="1539.5158730158728" y="1760.0" />
+              <point x="1081.7222878131984" y="1760.0" />
+              <point x="0.0" y="105.0" />
+            </edge>
+            <edge source="command.Command" target="dao.DirDao">
+              <point x="-22.0" y="-105.0" />
+              <point x="1358.1912058900716" y="989.0" />
+              <point x="2208.3214285714284" y="989.0" />
+              <point x="2208.3214285714284" y="510.0" />
+              <point x="2285.1776449560552" y="510.0" />
+              <point x="-57.0" y="94.5" />
+            </edge>
+            <edge source="viewers.TestConsole" target="viewers.Viewer">
+              <point x="-35.0" y="-24.0" />
+              <point x="0.0" y="54.0" />
+            </edge>
+            <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.LinkDao">
+              <point x="55.42857142857156" y="-75.0" />
+              <point x="2781.7626344615" y="1009.0" />
+              <point x="2921.490735274828" y="1009.0" />
+              <point x="2921.490735274828" y="550.0" />
+              <point x="2881.657401941494" y="550.0" />
+              <point x="-58.25" y="94.5" />
+            </edge>
+            <edge source="command.Delete" target="filesystem.Link">
+              <point x="-22.375" y="-105.0" />
+              <point x="1059.3472878131984" y="1279.0" />
+              <point x="976.5037058900717" y="1279.0" />
+              <point x="976.5037058900717" y="899.0" />
+              <point x="1131.2589285714284" y="899.0" />
+              <point x="1131.2589285714284" y="560.0" />
+              <point x="877.2222878131984" y="560.0" />
+              <point x="14.875" y="85.0" />
+            </edge>
+            <edge source="command.Command" target="dao.FileDao">
+              <point x="22.0" y="-105.0" />
+              <point x="1402.1912058900716" y="1009.0" />
+              <point x="2433.245957956184" y="1009.0" />
+              <point x="2433.245957956184" y="560.0" />
+              <point x="2550.3026449560552" y="560.0" />
+              <point x="-96.25" y="94.5" />
+            </edge>
+            <edge source="command.Copy" target="filesystem.Link">
+              <point x="-33.375" y="-115.0" />
+              <point x="805.3472878131984" y="1299.0" />
+              <point x="722.5037058900718" y="1299.0" />
+              <point x="722.5037058900718" y="889.0" />
+              <point x="998.7589285714286" y="889.0" />
+              <point x="998.7589285714286" y="570.0" />
+              <point x="847.4722878131984" y="570.0" />
+              <point x="-14.875" y="85.0" />
+            </edge>
+            <edge source="navigation.Opening" target="dao.LinkDao">
+              <point x="106.71428571428578" y="-125.5" />
+              <point x="2033.0357142857142" y="1389.0" />
+              <point x="2833.8340630329285" y="1389.0" />
+              <point x="2833.8340630329285" y="1019.0" />
+              <point x="2934.4074019414943" y="1019.0" />
+              <point x="2934.4074019414943" y="540.0" />
+              <point x="2920.4907352748273" y="540.0" />
+              <point x="-19.416666666666742" y="94.5" />
+            </edge>
+            <edge source="dao.factory.TestFileSystemDaoFactory" target="filesystem.testfilesystem.TestFileSystem">
+              <point x="-83.14285714285711" y="-75.0" />
+              <point x="2643.1912058900716" y="889.0" />
+              <point x="1473.3214285714284" y="889.0" />
+              <point x="0.0" y="45.0" />
+            </edge>
+            <edge source="viewers.TestConsole" target="manager.FileManager">
+              <point x="35.0" y="-24.0" />
+              <point x="731.8888888888889" y="2346.0" />
+              <point x="1525.5714285714284" y="2346.0" />
+              <point x="-62.75" y="245.5" />
+            </edge>
+            <edge source="navigation.CD" target="dao.FileDao">
+              <point x="72.28571428571422" y="-105.5" />
+              <point x="2406.6071428571427" y="1379.0" />
+              <point x="2618.834063032929" y="1379.0" />
+              <point x="2618.834063032929" y="570.0" />
+              <point x="2627.3026449560552" y="570.0" />
+              <point x="-19.25" y="94.5" />
+            </edge>
+            <edge source="manager.FileManager" target="navigation.Navigation">
+              <point x="62.75" y="-245.5" />
+              <point x="1651.0714285714284" y="1770.0" />
+              <point x="2545.9880952380954" y="1770.0" />
+              <point x="43.66666666666674" y="44.5" />
+            </edge>
+            <edge source="command.Rename" target="filesystem.Link">
+              <point x="-27.75" y="-115.0" />
+              <point x="1274.4722878131984" y="1329.0" />
+              <point x="1237.6912058900716" y="1329.0" />
+              <point x="1237.6912058900716" y="550.0" />
+              <point x="906.9722878131984" y="550.0" />
+              <point x="44.625" y="85.0" />
+            </edge>
+            <edge source="command.Delete" target="filesystem.Dir">
+              <point x="22.375" y="-105.0" />
+              <point x="1104.0972878131984" y="1369.0" />
+              <point x="1281.6912058900716" y="1369.0" />
+              <point x="1281.6912058900716" y="949.0" />
+              <point x="1592.8214285714284" y="949.0" />
+              <point x="1592.8214285714284" y="580.0" />
+              <point x="1667.9880952380954" y="580.0" />
+              <point x="-8.583333333333258" y="105.0" />
+            </edge>
+            <edge source="dao.factory.DataBaseDaoFactory" target="dao.database_dao.DataBaseDaoFile">
+              <point x="19.125" y="-44.0" />
+              <point x="3100.5526449560557" y="1019.0" />
+              <point x="3222.4074019414943" y="1019.0" />
               <point x="0.0" y="94.5" />
             </edge>
             <edge source="command.Rename" target="command.Command">
-              <point x="0.0" y="-115.0" />
-              <point x="1094.0" y="240.0" />
-              <point x="908.6999999999999" y="240.0" />
-              <point x="35.19999999999999" y="105.0" />
+              <point x="27.75" y="-115.0" />
+              <point x="1329.9722878131984" y="1419.0" />
+              <point x="1424.1912058900716" y="1419.0" />
+              <point x="44.0" y="105.0" />
+            </edge>
+            <edge source="command.Copy" target="filesystem.File">
+              <point x="-100.125" y="-115.0" />
+              <point x="738.5972878131984" y="1309.0" />
+              <point x="102.1508592417697" y="1309.0" />
+              <point x="102.1508592417697" y="570.0" />
+              <point x="142.37095795618438" y="570.0" />
+              <point x="0.0" y="95.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.3167554766133807" x="777.0" y="834.5" />
+          <settings layout="Hierarchic Group" zoom="0.7851211072664359" x="660.8391361833408" y="382.71176729836935" />
           <SelectedNodes />
           <Categories>
             <Category>Constructors</Category>
