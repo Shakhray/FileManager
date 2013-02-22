@@ -1,24 +1,24 @@
 package dao;
 
-import java.util.ArrayList;
+import java.util.arraylist;
 
-import filesystem.Dir;
-import filesystem.Node;
+import filesystem.dir;
+import filesystem.node;
 
-public interface NodeDao<PK> {
-    void update(Node node);
-    PK create(Node node);
-    void delete(Node node);
-    void setRoot(Dir root);
+public interface nodedao<pk> {
+    void update(node node);
+    pk create(node node);
+    void delete(node node);
+    void setroot(dir root);
     
-    public Dir getRoot();
-    public void setCurrentDir(Dir currentDir);
-    public Dir getCurrentDir();
+    public dir getroot();
+    public void setcurrentdir(dir currentdir);
+    public dir getcurrentdir();
     
-	public void undo(ArrayList<Node> backup);
+	public void undo(arraylist<node> backup);
 
-	public void copy(Node copynode, ArrayList<String> copyto);
-	public void copy(Node copynode, Integer id);
-	public void replace(Node replacenode, ArrayList<String> replaceto);
-	public void replace(Node replacenode, Integer id);
+	public void copy(node copynode, arraylist<string> copyto);
+	public void copy(node copynode, integer id);
+	public void replace(node replacenode, arraylist<string> replaceto);
+	public void replace(node replacenode, integer id);
 }
