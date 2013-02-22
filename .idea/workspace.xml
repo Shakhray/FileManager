@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\LAB_java\workspace\filemanager2\src\dao\testfilesystem_dao\TestGenericDao.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagram.png" afterPath="$PROJECT_DIR$/diagram.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/NodeDao.java" afterPath="$PROJECT_DIR$/src/dao/NodeDao.java" />
     </list>
     <ignored path="filemanager.iws" />
@@ -93,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NodeDao.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="NodeDao.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dao/NodeDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="0" selection-end="620" vertical-scroll-proportion="0.0">
+            <state line="7" column="42" selection-start="121" selection-end="121" vertical-scroll-proportion="0.21996303">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JAVA/command2.Command" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JAVA/command2.Command" pinned="false" current="false" current-in-tab="false">
         <entry file="uml://JAVA/command2.Command">
           <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
@@ -134,7 +131,6 @@
                 <node x="211.0" y="1301.0">viewers.Viewer</node>
                 <node x="1323.0" y="1301.0">exception.NodeNotFoundException</node>
                 <node x="418.0" y="1301.0">filesystem.testfilesystem.TestFileSystem</node>
-                <node x="0.0" y="988.0">dao.nodedao</node>
                 <node x="738.0" y="763.0">command2.Delete</node>
                 <node x="205.0" y="763.0">command2.Update</node>
                 <node x="0.0" y="360.0">filesystem.Link</node>
@@ -216,7 +212,7 @@
                   <point x="25.0" y="34.0" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.3379265091863517" x="791.2970873786408" y="752.0" />
+              <settings layout="Hierarchic Group" zoom="0.3379265091863517" x="-109.78640776699024" y="700.2135922330098" />
               <SelectedNodes />
               <Categories>
                 <Category>Fields</Category>
@@ -545,10 +541,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NodeDao.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -942,15 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/NodeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="0" selection-end="620" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/command2.Command">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -980,7 +963,6 @@
             <node x="211.0" y="1301.0">viewers.Viewer</node>
             <node x="1323.0" y="1301.0">exception.NodeNotFoundException</node>
             <node x="418.0" y="1301.0">filesystem.testfilesystem.TestFileSystem</node>
-            <node x="0.0" y="988.0">dao.nodedao</node>
             <node x="738.0" y="763.0">command2.Delete</node>
             <node x="205.0" y="763.0">command2.Update</node>
             <node x="0.0" y="360.0">filesystem.Link</node>
@@ -1062,7 +1044,7 @@
               <point x="25.0" y="34.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.3379265091863517" x="791.2970873786408" y="752.0" />
+          <settings layout="Hierarchic Group" zoom="0.3379265091863517" x="-109.78640776699024" y="700.2135922330098" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1073,6 +1055,15 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/NodeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="42" selection-start="121" selection-end="121" vertical-scroll-proportion="0.21996303">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
