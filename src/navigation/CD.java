@@ -19,7 +19,7 @@ public class CD extends Navigation{
 	}
 	
 	public void execute() throws  NodeNotFoundException, IsNotDirectryException{
-		boolean b =true;
+		boolean b = true;
 		for (Node node : nodeDao.getCurrentDir().getInsertedNode()){
 			if (node.getName().equals(dir)) {
 				if (node.isDir()){

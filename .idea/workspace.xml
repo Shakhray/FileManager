@@ -2,23 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagram.png" afterPath="$PROJECT_DIR$/diagram.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/command2/Copy.java" afterPath="$PROJECT_DIR$/src/command2/Copy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/command2/Replace.java" afterPath="$PROJECT_DIR$/src/command2/Replace.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/NodeDao.java" afterPath="$PROJECT_DIR$/src/dao/NodeDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/database_dao/DataBaseDaoNode.java" afterPath="$PROJECT_DIR$/src/dao/database_dao/DataBaseDaoNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/factory/TestFileSystemInMemory.java" afterPath="$PROJECT_DIR$/src/dao/factory/TestFileSystemInMemory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/testfilesystem_dao/TestFileSystemDaoNode.java" afterPath="$PROJECT_DIR$/src/dao/testfilesystem_dao/TestFileSystemDaoNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/filesystem/Dir.java" afterPath="$PROJECT_DIR$/src/filesystem/Dir.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/filesystem/File.java" afterPath="$PROJECT_DIR$/src/filesystem/File.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/filesystem/Link.java" afterPath="$PROJECT_DIR$/src/filesystem/Link.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/filesystem/Node.java" afterPath="$PROJECT_DIR$/src/filesystem/Node.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/filesystem/testfilesystem/TestFileSystem.java" afterPath="$PROJECT_DIR$/src/filesystem/testfilesystem/TestFileSystem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/FileManager.java" afterPath="$PROJECT_DIR$/src/manager/FileManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/navigation/CD.java" afterPath="$PROJECT_DIR$/src/navigation/CD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/navigation/Opening.java" afterPath="$PROJECT_DIR$/src/navigation/Opening.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/search/Search.java" afterPath="$PROJECT_DIR$/src/search/Search.java" />
     </list>
     <ignored path="filemanager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361389694232" ignored="false" />
-    <file path="/Copy.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361348454504" ignored="false" />
-    <file path="/fragment.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361348446685" ignored="false" />
-    <file path="/Rename.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361391163155" ignored="false" />
-    <file path="/DirCopy.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361391012788" ignored="false" />
-    <file path="/AbstractCommand.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361390883453" ignored="false" />
-    <file path="/TestFileSystemDaoFactory.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361390578325" ignored="false" />
-    <file path="/GenericDao.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361392690694" ignored="false" />
-    <file path="/NodeDao.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361391792778" ignored="false" />
-    <file path="/TestGenericDao.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361391948209" ignored="false" />
-    <file path="/TestFileSystemInMemory.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361392595817" ignored="false" />
-    <file path="/FileManager.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361393401652" ignored="false" />
     <file path="/Create.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361393479540" ignored="false" />
+    <file path="/FileManager.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361393401652" ignored="false" />
+    <file path="/TestFileSystemInMemory.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361392595817" ignored="false" />
+    <file path="/TestGenericDao.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361391948209" ignored="false" />
+    <file path="/NodeDao.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361391792778" ignored="false" />
+    <file path="/GenericDao.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361392690694" ignored="false" />
+    <file path="/TestFileSystemDaoFactory.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361390578325" ignored="false" />
+    <file path="/AbstractCommand.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361390883453" ignored="false" />
+    <file path="/DirCopy.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361391012788" ignored="false" />
+    <file path="/Rename.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361391163155" ignored="false" />
+    <file path="/fragment.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361348446685" ignored="false" />
+    <file path="/Copy.java" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361348454504" ignored="false" />
+    <file path="/Dummy.txt" changelist="2cb31b46-ea30-43c4-9dcd-1fc371d68f8b" time="1361389694232" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +54,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_rules default_suspend_policy="SuspendAll" />
     <breakpoint_any default_suspend_policy="SuspendAll">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -71,6 +86,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <breakpoint_rules default_suspend_policy="SuspendAll" />
     <ui_properties default_suspend_policy="SuspendAll" />
     <breakpoint_rules />
     <ui_properties />
@@ -90,13 +106,162 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NodeDao.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NodeDao.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/NodeDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="42" selection-start="121" selection-end="121" vertical-scroll-proportion="0.21996303">
+            <state line="7" column="42" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Search.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/search/Search.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/search.Search" pinned="false" current="true" current-in-tab="true">
+        <entry file="uml://JAVA/search.Search">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>search.Search</OriginalElement>
+              <nodes>
+                <node x="310.0" y="1118.0">command2.Create</node>
+                <node x="1306.0" y="990.0">search.Search</node>
+                <node x="1334.0" y="1577.0">viewers.TestConsole</node>
+                <node x="268.0" y="1577.0">exception.NodeAlreadyExistsException</node>
+                <node x="935.0" y="1577.0">exception.IsNotDirectryException</node>
+                <node x="524.0" y="1421.0">dao.factory.TestFileSystemDaoFactory</node>
+                <node x="740.0" y="1108.0">command2.Replace</node>
+                <node x="1145.0" y="1577.0">use.Main</node>
+                <node x="763.0" y="1323.0">model.Model</node>
+                <node x="0.0" y="320.0">filesystem.Dir</node>
+                <node x="722.0" y="1577.0">exception.PathNotFoundException</node>
+                <node x="438.0" y="1323.0">dao.factory.DaoFactory</node>
+                <node x="338.0" y="1431.5">dao.factory.DataBaseDaoFactory</node>
+                <node x="0.0" y="754.0">navigation.CD</node>
+                <node x="1059.0" y="279.0">dao.testfilesystem_dao.TestFileSystemDaoNode</node>
+                <node x="0.0" y="1323.0">dao.factory.TestFileSystemInMemory</node>
+                <node x="241.5" y="0.0">filesystem.Node</node>
+                <node x="156.75" y="595.0">navigation.Navigation</node>
+                <node x="220.0" y="734.0">navigation.Opening</node>
+                <node x="560.5" y="990.0">command2.Command</node>
+                <node x="925.0" y="0.0">dao.NodeDao</node>
+                <node x="0.0" y="1577.0">exception.OperationNotSupportedException</node>
+                <node x="974.0" y="1323.0">viewers.Viewer</node>
+                <node x="507.0" y="1577.0">exception.NodeNotFoundException</node>
+                <node x="1181.0" y="1323.0">filesystem.testfilesystem.TestFileSystem</node>
+                <node x="526.0" y="1118.0">command2.Delete</node>
+                <node x="1063.0" y="1118.0">command2.Update</node>
+                <node x="229.0" y="340.0">filesystem.Link</node>
+                <node x="1352.0" y="0.0">manager.FileManager</node>
+                <node x="791.0" y="289.5">dao.database_dao.DataBaseDaoNode</node>
+                <node x="0.0" y="1108.0">command2.Copy</node>
+                <node x="514.0" y="595.0">viewers.Commands</node>
+                <node x="495.0" y="329.5">filesystem.File</node>
+                <node x="1378.0" y="1323.0">model.ModelKey</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="dao.factory.DataBaseDaoFactory" target="dao.factory.DaoFactory">
+                  <point x="0.0" y="-24.0" />
+                  <point x="421.0" y="1396.0" />
+                  <point x="479.5" y="1396.0" />
+                  <point x="-41.5" y="24.0" />
+                </edge>
+                <edge source="command2.Copy" target="command2.Command">
+                  <point x="0.0" y="-85.0" />
+                  <point x="145.0" y="1078.0" />
+                  <point x="573.0" y="1078.0" />
+                  <point x="-50.0" y="34.0" />
+                </edge>
+                <edge source="filesystem.Dir" target="filesystem.Node">
+                  <point x="0.0" y="-115.0" />
+                  <point x="104.5" y="295.0" />
+                  <point x="278.3333333333333" y="295.0" />
+                  <point x="-73.66666666666669" y="135.0" />
+                </edge>
+                <edge source="command2.Update" target="command2.Command">
+                  <point x="0.0" y="-75.0" />
+                  <point x="1162.0" y="1078.0" />
+                  <point x="673.0" y="1078.0" />
+                  <point x="50.0" y="34.0" />
+                </edge>
+                <edge source="command2.Replace" target="command2.Command">
+                  <point x="0.0" y="-85.0" />
+                  <point x="891.5" y="1088.0" />
+                  <point x="648.0" y="1088.0" />
+                  <point x="25.0" y="34.0" />
+                </edge>
+                <edge source="navigation.Opening" target="navigation.Navigation">
+                  <point x="0.0" y="-105.5" />
+                  <point x="344.5" y="709.0" />
+                  <point x="255.0" y="709.0" />
+                  <point x="32.75" y="44.5" />
+                </edge>
+                <edge source="filesystem.File" target="filesystem.Node">
+                  <point x="0.0" y="-105.5" />
+                  <point x="620.5" y="295.0" />
+                  <point x="425.6666666666667" y="295.0" />
+                  <point x="73.66666666666669" y="135.0" />
+                </edge>
+                <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.factory.DaoFactory">
+                  <point x="0.0" y="-34.5" />
+                  <point x="621.0" y="1396.0" />
+                  <point x="562.5" y="1396.0" />
+                  <point x="41.5" y="24.0" />
+                </edge>
+                <edge source="navigation.CD" target="navigation.Navigation">
+                  <point x="0.0" y="-85.5" />
+                  <point x="100.0" y="709.0" />
+                  <point x="189.5" y="709.0" />
+                  <point x="-32.75" y="44.5" />
+                </edge>
+                <edge source="dao.testfilesystem_dao.TestFileSystemDaoNode" target="dao.NodeDao">
+                  <point x="0.0" y="-125.0" />
+                  <point x="1183.0" y="254.0" />
+                  <point x="1111.0" y="254.0" />
+                  <point x="62.0" y="114.5" />
+                </edge>
+                <edge source="filesystem.Link" target="filesystem.Node">
+                  <point x="0.0" y="-95.0" />
+                  <point x="0.0" y="135.0" />
+                </edge>
+                <edge source="command2.Delete" target="command2.Command">
+                  <point x="0.0" y="-75.0" />
+                  <point x="0.0" y="34.0" />
+                </edge>
+                <edge source="dao.database_dao.DataBaseDaoNode" target="dao.NodeDao">
+                  <point x="0.0" y="-114.5" />
+                  <point x="915.0" y="254.0" />
+                  <point x="987.0" y="254.0" />
+                  <point x="-62.0" y="114.5" />
+                </edge>
+                <edge source="command2.Create" target="command2.Command">
+                  <point x="0.0" y="-75.0" />
+                  <point x="408.0" y="1088.0" />
+                  <point x="598.0" y="1088.0" />
+                  <point x="-25.0" y="34.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.3130699088145897" x="801.5" y="812.5" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+                <Category>Inner Classes</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -108,15 +273,15 @@
               <ID>JAVA</ID>
               <OriginalElement>command2.Command</OriginalElement>
               <nodes>
-                <node x="584.0" y="1456.0">search.Search</node>
                 <node x="952.0" y="763.0">command2.Create</node>
+                <node x="584.0" y="1456.0">search.Search</node>
                 <node x="399.0" y="1456.0">viewers.TestConsole</node>
                 <node x="1084.0" y="1301.0">exception.NodeAlreadyExistsException</node>
                 <node x="0.0" y="1456.0">exception.IsNotDirectryException</node>
                 <node x="1179.0" y="1086.0">dao.factory.TestFileSystemDaoFactory</node>
                 <node x="423.0" y="753.0">command2.Replace</node>
-                <node x="210.0" y="1456.0">use.Main</node>
                 <node x="0.0" y="1301.0">model.Model</node>
+                <node x="210.0" y="1456.0">use.Main</node>
                 <node x="277.0" y="340.0">filesystem.Dir</node>
                 <node x="1293.0" y="988.0">dao.factory.DaoFactory</node>
                 <node x="1393.0" y="1096.5">dao.factory.DataBaseDaoFactory</node>
@@ -128,8 +293,8 @@
                 <node x="1120.0" y="139.0">navigation.Opening</node>
                 <node x="772.5" y="635.0">command2.Command</node>
                 <node x="816.0" y="1301.0">exception.OperationNotSupportedException</node>
-                <node x="211.0" y="1301.0">viewers.Viewer</node>
                 <node x="1323.0" y="1301.0">exception.NodeNotFoundException</node>
+                <node x="211.0" y="1301.0">viewers.Viewer</node>
                 <node x="418.0" y="1301.0">filesystem.testfilesystem.TestFileSystem</node>
                 <node x="738.0" y="763.0">command2.Delete</node>
                 <node x="205.0" y="763.0">command2.Update</node>
@@ -143,11 +308,45 @@
               </nodes>
               <notes />
               <edges>
+                <edge source="command2.Delete" target="command2.Command">
+                  <point x="0.0" y="-75.0" />
+                  <point x="0.0" y="34.0" />
+                </edge>
+                <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.factory.DaoFactory">
+                  <point x="0.0" y="-34.5" />
+                  <point x="1276.0" y="1061.0" />
+                  <point x="1334.5" y="1061.0" />
+                  <point x="-41.5" y="24.0" />
+                </edge>
                 <edge source="dao.factory.DataBaseDaoFactory" target="dao.factory.DaoFactory">
                   <point x="0.0" y="-24.0" />
                   <point x="1476.0" y="1061.0" />
                   <point x="1417.5" y="1061.0" />
                   <point x="41.5" y="24.0" />
+                </edge>
+                <edge source="navigation.Opening" target="navigation.Navigation">
+                  <point x="0.0" y="-105.5" />
+                  <point x="1240.5" y="114.0" />
+                  <point x="1328.0" y="114.0" />
+                  <point x="-32.75" y="44.5" />
+                </edge>
+                <edge source="filesystem.Link" target="filesystem.Node">
+                  <point x="0.0" y="-105.0" />
+                  <point x="128.5" y="315.0" />
+                  <point x="309.6666666666667" y="315.0" />
+                  <point x="-77.33333333333331" y="145.0" />
+                </edge>
+                <edge source="navigation.CD" target="navigation.Navigation">
+                  <point x="0.0" y="-85.5" />
+                  <point x="1481.0" y="114.0" />
+                  <point x="1393.5" y="114.0" />
+                  <point x="32.75" y="44.5" />
+                </edge>
+                <edge source="command2.Replace" target="command2.Command">
+                  <point x="0.0" y="-85.0" />
+                  <point x="570.5" y="733.0" />
+                  <point x="810.0" y="733.0" />
+                  <point x="-25.0" y="34.0" />
                 </edge>
                 <edge source="command2.Copy" target="command2.Command">
                   <point x="0.0" y="-85.0" />
@@ -165,45 +364,11 @@
                   <point x="785.0" y="723.0" />
                   <point x="-50.0" y="34.0" />
                 </edge>
-                <edge source="command2.Replace" target="command2.Command">
-                  <point x="0.0" y="-85.0" />
-                  <point x="570.5" y="733.0" />
-                  <point x="810.0" y="733.0" />
-                  <point x="-25.0" y="34.0" />
-                </edge>
-                <edge source="navigation.Opening" target="navigation.Navigation">
-                  <point x="0.0" y="-105.5" />
-                  <point x="1240.5" y="114.0" />
-                  <point x="1328.0" y="114.0" />
-                  <point x="-32.75" y="44.5" />
-                </edge>
                 <edge source="filesystem.File" target="filesystem.Node">
                   <point x="0.0" y="-115.5" />
                   <point x="648.0" y="315.0" />
                   <point x="464.3333333333333" y="315.0" />
                   <point x="77.33333333333331" y="145.0" />
-                </edge>
-                <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.factory.DaoFactory">
-                  <point x="0.0" y="-34.5" />
-                  <point x="1276.0" y="1061.0" />
-                  <point x="1334.5" y="1061.0" />
-                  <point x="-41.5" y="24.0" />
-                </edge>
-                <edge source="navigation.CD" target="navigation.Navigation">
-                  <point x="0.0" y="-85.5" />
-                  <point x="1481.0" y="114.0" />
-                  <point x="1393.5" y="114.0" />
-                  <point x="32.75" y="44.5" />
-                </edge>
-                <edge source="filesystem.Link" target="filesystem.Node">
-                  <point x="0.0" y="-105.0" />
-                  <point x="128.5" y="315.0" />
-                  <point x="309.6666666666667" y="315.0" />
-                  <point x="-77.33333333333331" y="145.0" />
-                </edge>
-                <edge source="command2.Delete" target="command2.Command">
-                  <point x="0.0" y="-75.0" />
-                  <point x="0.0" y="34.0" />
                 </edge>
                 <edge source="command2.Create" target="command2.Command">
                   <point x="0.0" y="-75.0" />
@@ -212,14 +377,16 @@
                   <point x="25.0" y="34.0" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.3379265091863517" x="-109.78640776699024" y="700.2135922330098" />
-              <SelectedNodes />
+              <settings layout="Hierarchic Group" zoom="0.3379265091863517" x="-110.0" y="700.0" />
+              <SelectedNodes>
+                <node>command2.Command</node>
+              </SelectedNodes>
               <Categories>
-                <Category>Fields</Category>
                 <Category>Constructors</Category>
+                <Category>Fields</Category>
                 <Category>Methods</Category>
-                <Category>Properties</Category>
                 <Category>Inner Classes</Category>
+                <Category>Properties</Category>
               </Categories>
               <SCOPE>All</SCOPE>
               <VISIBILITY>private</VISIBILITY>
@@ -287,7 +454,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/dao/factory/TestFileSystemDaoFactory.java" />
         <option value="$PROJECT_DIR$/src/command2/DirCopy.java" />
         <option value="$PROJECT_DIR$/src/command2/AbstractCommand.java" />
         <option value="$PROJECT_DIR$/src/command2/Command.java" />
@@ -303,6 +469,7 @@
         <option value="$PROJECT_DIR$/src/manager/FileManager.java" />
         <option value="$PROJECT_DIR$/src/command2/Create.java" />
         <option value="$PROJECT_DIR$/src/dao/NodeDao.java" />
+        <option value="$PROJECT_DIR$/src/search/Search.java" />
       </list>
     </option>
   </component>
@@ -341,6 +508,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -629,7 +797,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -679,6 +846,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -705,24 +890,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -878,48 +1045,6 @@
         <state line="108" column="44" selection-start="2981" selection-end="2981" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/factory/DaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/command2/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/command2/Create.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/factory/TestFileSystemInMemory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="5" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/factory/TestFileSystemDaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="50" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/factory/DataBaseDaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://MODULES/mdl-filemanager">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -931,7 +1056,13 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="51.0" y="14.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/factory/DaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="uml://JAVA/command2.Command">
@@ -940,15 +1071,15 @@
           <ID>JAVA</ID>
           <OriginalElement>command2.Command</OriginalElement>
           <nodes>
-            <node x="584.0" y="1456.0">search.Search</node>
             <node x="952.0" y="763.0">command2.Create</node>
+            <node x="584.0" y="1456.0">search.Search</node>
             <node x="399.0" y="1456.0">viewers.TestConsole</node>
             <node x="1084.0" y="1301.0">exception.NodeAlreadyExistsException</node>
             <node x="0.0" y="1456.0">exception.IsNotDirectryException</node>
             <node x="1179.0" y="1086.0">dao.factory.TestFileSystemDaoFactory</node>
             <node x="423.0" y="753.0">command2.Replace</node>
-            <node x="210.0" y="1456.0">use.Main</node>
             <node x="0.0" y="1301.0">model.Model</node>
+            <node x="210.0" y="1456.0">use.Main</node>
             <node x="277.0" y="340.0">filesystem.Dir</node>
             <node x="1293.0" y="988.0">dao.factory.DaoFactory</node>
             <node x="1393.0" y="1096.5">dao.factory.DataBaseDaoFactory</node>
@@ -960,8 +1091,8 @@
             <node x="1120.0" y="139.0">navigation.Opening</node>
             <node x="772.5" y="635.0">command2.Command</node>
             <node x="816.0" y="1301.0">exception.OperationNotSupportedException</node>
-            <node x="211.0" y="1301.0">viewers.Viewer</node>
             <node x="1323.0" y="1301.0">exception.NodeNotFoundException</node>
+            <node x="211.0" y="1301.0">viewers.Viewer</node>
             <node x="418.0" y="1301.0">filesystem.testfilesystem.TestFileSystem</node>
             <node x="738.0" y="763.0">command2.Delete</node>
             <node x="205.0" y="763.0">command2.Update</node>
@@ -975,11 +1106,45 @@
           </nodes>
           <notes />
           <edges>
+            <edge source="command2.Delete" target="command2.Command">
+              <point x="0.0" y="-75.0" />
+              <point x="0.0" y="34.0" />
+            </edge>
+            <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.factory.DaoFactory">
+              <point x="0.0" y="-34.5" />
+              <point x="1276.0" y="1061.0" />
+              <point x="1334.5" y="1061.0" />
+              <point x="-41.5" y="24.0" />
+            </edge>
             <edge source="dao.factory.DataBaseDaoFactory" target="dao.factory.DaoFactory">
               <point x="0.0" y="-24.0" />
               <point x="1476.0" y="1061.0" />
               <point x="1417.5" y="1061.0" />
               <point x="41.5" y="24.0" />
+            </edge>
+            <edge source="navigation.Opening" target="navigation.Navigation">
+              <point x="0.0" y="-105.5" />
+              <point x="1240.5" y="114.0" />
+              <point x="1328.0" y="114.0" />
+              <point x="-32.75" y="44.5" />
+            </edge>
+            <edge source="filesystem.Link" target="filesystem.Node">
+              <point x="0.0" y="-105.0" />
+              <point x="128.5" y="315.0" />
+              <point x="309.6666666666667" y="315.0" />
+              <point x="-77.33333333333331" y="145.0" />
+            </edge>
+            <edge source="navigation.CD" target="navigation.Navigation">
+              <point x="0.0" y="-85.5" />
+              <point x="1481.0" y="114.0" />
+              <point x="1393.5" y="114.0" />
+              <point x="32.75" y="44.5" />
+            </edge>
+            <edge source="command2.Replace" target="command2.Command">
+              <point x="0.0" y="-85.0" />
+              <point x="570.5" y="733.0" />
+              <point x="810.0" y="733.0" />
+              <point x="-25.0" y="34.0" />
             </edge>
             <edge source="command2.Copy" target="command2.Command">
               <point x="0.0" y="-85.0" />
@@ -997,45 +1162,11 @@
               <point x="785.0" y="723.0" />
               <point x="-50.0" y="34.0" />
             </edge>
-            <edge source="command2.Replace" target="command2.Command">
-              <point x="0.0" y="-85.0" />
-              <point x="570.5" y="733.0" />
-              <point x="810.0" y="733.0" />
-              <point x="-25.0" y="34.0" />
-            </edge>
-            <edge source="navigation.Opening" target="navigation.Navigation">
-              <point x="0.0" y="-105.5" />
-              <point x="1240.5" y="114.0" />
-              <point x="1328.0" y="114.0" />
-              <point x="-32.75" y="44.5" />
-            </edge>
             <edge source="filesystem.File" target="filesystem.Node">
               <point x="0.0" y="-115.5" />
               <point x="648.0" y="315.0" />
               <point x="464.3333333333333" y="315.0" />
               <point x="77.33333333333331" y="145.0" />
-            </edge>
-            <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.factory.DaoFactory">
-              <point x="0.0" y="-34.5" />
-              <point x="1276.0" y="1061.0" />
-              <point x="1334.5" y="1061.0" />
-              <point x="-41.5" y="24.0" />
-            </edge>
-            <edge source="navigation.CD" target="navigation.Navigation">
-              <point x="0.0" y="-85.5" />
-              <point x="1481.0" y="114.0" />
-              <point x="1393.5" y="114.0" />
-              <point x="32.75" y="44.5" />
-            </edge>
-            <edge source="filesystem.Link" target="filesystem.Node">
-              <point x="0.0" y="-105.0" />
-              <point x="128.5" y="315.0" />
-              <point x="309.6666666666667" y="315.0" />
-              <point x="-77.33333333333331" y="145.0" />
-            </edge>
-            <edge source="command2.Delete" target="command2.Command">
-              <point x="0.0" y="-75.0" />
-              <point x="0.0" y="34.0" />
             </edge>
             <edge source="command2.Create" target="command2.Command">
               <point x="0.0" y="-75.0" />
@@ -1044,7 +1175,188 @@
               <point x="25.0" y="34.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.3379265091863517" x="-109.78640776699024" y="700.2135922330098" />
+          <settings layout="Hierarchic Group" zoom="0.3379265091863517" x="-110.0" y="700.0" />
+          <SelectedNodes>
+            <node>command2.Command</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+            <Category>Inner Classes</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/command2/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/command2/Create.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/factory/TestFileSystemInMemory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="5" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/factory/TestFileSystemDaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="50" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/factory/DataBaseDaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/NodeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="42" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/search/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/search.Search">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>search.Search</OriginalElement>
+          <nodes>
+            <node x="310.0" y="1118.0">command2.Create</node>
+            <node x="1306.0" y="990.0">search.Search</node>
+            <node x="1334.0" y="1577.0">viewers.TestConsole</node>
+            <node x="268.0" y="1577.0">exception.NodeAlreadyExistsException</node>
+            <node x="935.0" y="1577.0">exception.IsNotDirectryException</node>
+            <node x="524.0" y="1421.0">dao.factory.TestFileSystemDaoFactory</node>
+            <node x="740.0" y="1108.0">command2.Replace</node>
+            <node x="1145.0" y="1577.0">use.Main</node>
+            <node x="763.0" y="1323.0">model.Model</node>
+            <node x="0.0" y="320.0">filesystem.Dir</node>
+            <node x="722.0" y="1577.0">exception.PathNotFoundException</node>
+            <node x="438.0" y="1323.0">dao.factory.DaoFactory</node>
+            <node x="338.0" y="1431.5">dao.factory.DataBaseDaoFactory</node>
+            <node x="0.0" y="754.0">navigation.CD</node>
+            <node x="1059.0" y="279.0">dao.testfilesystem_dao.TestFileSystemDaoNode</node>
+            <node x="0.0" y="1323.0">dao.factory.TestFileSystemInMemory</node>
+            <node x="241.5" y="0.0">filesystem.Node</node>
+            <node x="156.75" y="595.0">navigation.Navigation</node>
+            <node x="220.0" y="734.0">navigation.Opening</node>
+            <node x="560.5" y="990.0">command2.Command</node>
+            <node x="925.0" y="0.0">dao.NodeDao</node>
+            <node x="0.0" y="1577.0">exception.OperationNotSupportedException</node>
+            <node x="974.0" y="1323.0">viewers.Viewer</node>
+            <node x="507.0" y="1577.0">exception.NodeNotFoundException</node>
+            <node x="1181.0" y="1323.0">filesystem.testfilesystem.TestFileSystem</node>
+            <node x="526.0" y="1118.0">command2.Delete</node>
+            <node x="1063.0" y="1118.0">command2.Update</node>
+            <node x="229.0" y="340.0">filesystem.Link</node>
+            <node x="1352.0" y="0.0">manager.FileManager</node>
+            <node x="791.0" y="289.5">dao.database_dao.DataBaseDaoNode</node>
+            <node x="0.0" y="1108.0">command2.Copy</node>
+            <node x="514.0" y="595.0">viewers.Commands</node>
+            <node x="495.0" y="329.5">filesystem.File</node>
+            <node x="1378.0" y="1323.0">model.ModelKey</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="dao.factory.DataBaseDaoFactory" target="dao.factory.DaoFactory">
+              <point x="0.0" y="-24.0" />
+              <point x="421.0" y="1396.0" />
+              <point x="479.5" y="1396.0" />
+              <point x="-41.5" y="24.0" />
+            </edge>
+            <edge source="command2.Copy" target="command2.Command">
+              <point x="0.0" y="-85.0" />
+              <point x="145.0" y="1078.0" />
+              <point x="573.0" y="1078.0" />
+              <point x="-50.0" y="34.0" />
+            </edge>
+            <edge source="filesystem.Dir" target="filesystem.Node">
+              <point x="0.0" y="-115.0" />
+              <point x="104.5" y="295.0" />
+              <point x="278.3333333333333" y="295.0" />
+              <point x="-73.66666666666669" y="135.0" />
+            </edge>
+            <edge source="command2.Update" target="command2.Command">
+              <point x="0.0" y="-75.0" />
+              <point x="1162.0" y="1078.0" />
+              <point x="673.0" y="1078.0" />
+              <point x="50.0" y="34.0" />
+            </edge>
+            <edge source="command2.Replace" target="command2.Command">
+              <point x="0.0" y="-85.0" />
+              <point x="891.5" y="1088.0" />
+              <point x="648.0" y="1088.0" />
+              <point x="25.0" y="34.0" />
+            </edge>
+            <edge source="navigation.Opening" target="navigation.Navigation">
+              <point x="0.0" y="-105.5" />
+              <point x="344.5" y="709.0" />
+              <point x="255.0" y="709.0" />
+              <point x="32.75" y="44.5" />
+            </edge>
+            <edge source="filesystem.File" target="filesystem.Node">
+              <point x="0.0" y="-105.5" />
+              <point x="620.5" y="295.0" />
+              <point x="425.6666666666667" y="295.0" />
+              <point x="73.66666666666669" y="135.0" />
+            </edge>
+            <edge source="dao.factory.TestFileSystemDaoFactory" target="dao.factory.DaoFactory">
+              <point x="0.0" y="-34.5" />
+              <point x="621.0" y="1396.0" />
+              <point x="562.5" y="1396.0" />
+              <point x="41.5" y="24.0" />
+            </edge>
+            <edge source="navigation.CD" target="navigation.Navigation">
+              <point x="0.0" y="-85.5" />
+              <point x="100.0" y="709.0" />
+              <point x="189.5" y="709.0" />
+              <point x="-32.75" y="44.5" />
+            </edge>
+            <edge source="dao.testfilesystem_dao.TestFileSystemDaoNode" target="dao.NodeDao">
+              <point x="0.0" y="-125.0" />
+              <point x="1183.0" y="254.0" />
+              <point x="1111.0" y="254.0" />
+              <point x="62.0" y="114.5" />
+            </edge>
+            <edge source="filesystem.Link" target="filesystem.Node">
+              <point x="0.0" y="-95.0" />
+              <point x="0.0" y="135.0" />
+            </edge>
+            <edge source="command2.Delete" target="command2.Command">
+              <point x="0.0" y="-75.0" />
+              <point x="0.0" y="34.0" />
+            </edge>
+            <edge source="dao.database_dao.DataBaseDaoNode" target="dao.NodeDao">
+              <point x="0.0" y="-114.5" />
+              <point x="915.0" y="254.0" />
+              <point x="987.0" y="254.0" />
+              <point x="-62.0" y="114.5" />
+            </edge>
+            <edge source="command2.Create" target="command2.Command">
+              <point x="0.0" y="-75.0" />
+              <point x="408.0" y="1088.0" />
+              <point x="598.0" y="1088.0" />
+              <point x="-25.0" y="34.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.3130699088145897" x="801.5" y="812.5" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1055,15 +1367,6 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/NodeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="42" selection-start="121" selection-end="121" vertical-scroll-proportion="0.21996303">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

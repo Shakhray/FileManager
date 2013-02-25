@@ -4,10 +4,11 @@ import java.util.ArrayList;
 
 public abstract class Node {
 	protected String name;
-	protected int id;
-	private ArrayList<String> path;
+	private final int id;// = hashCode();
+	private ArrayList<Integer> path;
+	//private ArrayList<Integer> pathById;
 	
-	public Node(String name, ArrayList<String> path, int id){
+	/*public Node(String name, ArrayList<String> path, int id){
 		setName(name);
 		this.path = path;
 		this.id = id;
@@ -17,21 +18,29 @@ public abstract class Node {
 		setName(name);
 		path = new ArrayList<String>();
 		this.id = id;
+	}*/
+	
+	public Node(Node node){
+		name = node.getName();
+		path = node.getPath();
+		id = hashCode();
 	}
 	
-	public Node(String name, ArrayList<String> path){
+	public Node(String name, ArrayList<Integer> path){
 		setName(name);
 		this.path = path;
+		id = hashCode();
 	}
 	
 	public Node(String name){
 		setName(name);
-		path = new ArrayList<String>(); 
+		path = new ArrayList<Integer>(); 
+		id = hashCode();
 	}
 	
-	public void setId(int id){
+	/*public void setId(int id){
 		this.id = id;
-	}
+	}*/
 	
 	public void setName(String name){
 		this.name = name;
@@ -41,11 +50,15 @@ public abstract class Node {
 		return name;
 	}
 	
-	public ArrayList<String> getPath(){
+	public ArrayList<Integer> getPath(){
 		return path;
 	}
 	
-	public void setPath(ArrayList<String> path){
+	/*public ArrayList<Integer> getPathById(){
+		return pathById;
+	}*/
+	
+	public void setPath(ArrayList<Integer> path){
 		this.path = path; 
 	}
 	
@@ -67,6 +80,9 @@ public abstract class Node {
 	
 	@Override
 	public int hashCode(){
-		return this.hashCode()*100;
+		int hash = 0;
+		hash += name.hashCode();
+		hash += path.hashCode();
+		return hash;
 	}
 }

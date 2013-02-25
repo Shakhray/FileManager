@@ -10,10 +10,10 @@ public class Replace implements Command {
 
     private NodeDao<?>  dao;
     private Node replaceDir;
-    private ArrayList<String> replaceTo;
+    private ArrayList<Integer> replaceTo;
     private ArrayList<Node> backup;
 
-    public Replace(NodeDao<?> dao, Node replaceDir, ArrayList<String> replaceTo) {
+    public Replace(NodeDao<?> dao, Node replaceDir, ArrayList<Integer> replaceTo) {
         this.dao = dao;
         this.replaceDir = replaceDir;
         this.replaceTo = replaceTo;

@@ -50,12 +50,12 @@ public class TestFileSystemDaoNode<PK> implements NodeDao<PK> {
 		root.setInsertedNode(backup);
 	}
 	
-	public void copy(Node copyNode, ArrayList<String> copyto) throws NodeAlreadyExistsException{
+	public void copy(Node copyNode, ArrayList<Integer> copyto) throws NodeAlreadyExistsException{
 		copyNode.setPath(copyto);
 		TestFileSystemInMemory.createNode(copyNode);
 	}
 	
-	public void replace(Node replaceNode, ArrayList<String> replaceTo) throws NodeAlreadyExistsException{
+	public void replace(Node replaceNode, ArrayList<Integer> replaceTo) throws NodeAlreadyExistsException{
 		TestFileSystemInMemory.deleteNode(replaceNode);
 		replaceNode.setPath(replaceTo);
 		TestFileSystemInMemory.createNode(replaceNode);

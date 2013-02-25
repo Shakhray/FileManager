@@ -21,6 +21,8 @@ import exception.IsNotDirectryException;
 import exception.NodeAlreadyExistsException;
 import exception.NodeNotFoundException;
 import exception.OperationNotSupportedException;
+
+import exception.PathNotFoundException;
 import filesystem.Dir;
 import filesystem.File;
 import filesystem.Link;
@@ -31,17 +33,20 @@ public class FileManager {
 	private Stack<Command> commands = new Stack<Command>();
 	private Model model;
 	private Dir currentdir;
+	private Search search;
 	private Stack<Navigation> downDir = new Stack<Navigation>();
 	
 	
 	public FileManager(){
 		useModel();
 		currentdir = model.getNodeDao().getRoot();
+		search = new Search(model.getNodeDao());
 	}
 	
 	public FileManager(String modelkey){
 		useModel(modelkey);
 		currentdir = model.getNodeDao().getRoot();
+		search = new Search(model.getNodeDao());
 	}
 
 	private void useModel(){
@@ -58,7 +63,7 @@ public class FileManager {
 
 	//----------commands------------
 	public void cd (String dir) throws IsNotDirectryException{
-		Navigation cd = new CD(model.getNodeDao(), currentdir,dir);
+		Navigation cd = new CD(model.getNodeDao(), currentdir, dir);
 		cd.execute();
 		
 		downDir.push(cd);
@@ -74,30 +79,39 @@ public class FileManager {
 		return currentdir.getInsertedNode();
 	}
 
-	public void copy(String name, ArrayList<String> copyto) throws NodeNotFoundException{
-		boolean b = true;
-		for (Node node : currentdir.getInsertedNode())
-			if (node.getName().equals(name)) {
-				b = false;
-				Command copy = new Copy(model.getNodeDao(),  node, copyto);
-				copy.execute();
-				commands.push(copy);
-			}
-		if (b) throw new NodeNotFoundException();
+	public void copy(String name, ArrayList<String> copyToStr) throws NodeNotFoundException, PathNotFoundException{
+		if (!search.isExistPath(copyToStr)) throw new PathNotFoundException();
+		else{
+			ArrayList<Integer> copyTo = search.findPath(new ArrayList<String>(copyToStr));
+			boolean b = true;
+			for (Node node : currentdir.getInsertedNode())
+				if (node.getName().equals(name)) {
+					b = false;
+					System.out.println(copyTo.size());
+					Command copy = new Copy(model.getNodeDao(), node, copyTo);
+					copy.execute();
+					commands.push(copy);
+				}
+			if (b) throw new NodeNotFoundException();
+		}
 	}
 
-	public void replace(String name, ArrayList<String> replaceto) throws NodeAlreadyExistsException, NodeNotFoundException{
-		boolean b = true;
-		for (Node node : currentdir.getInsertedNode()){
-			if (node.getName().equals(name)) {
-				b = false;
-				Command replace = new Replace(model.getNodeDao(), node, replaceto);
-				replace.execute();
-				commands.push(replace);
-				break;
+	public void replace(String name, ArrayList<String> replaceToStr) throws NodeAlreadyExistsException, NodeNotFoundException, PathNotFoundException{
+		if (!search.isExistPath(replaceToStr)) throw new PathNotFoundException();
+		else{
+			boolean b = true;
+			ArrayList<Integer> replaceTo = search.findPath(replaceToStr);
+			for (Node node : currentdir.getInsertedNode()){
+				if (node.getName().equals(name)) {
+					b = false;
+					Command replace = new Replace(model.getNodeDao(), node, replaceTo);
+					replace.execute();
+					commands.push(replace);
+					break;
+				}
 			}
+			if (b) throw new NodeNotFoundException();
 		}
-		if (b) throw new NodeNotFoundException();
 	}
 
 	public void rename(String dir, String renameto) throws NodeNotFoundException{
@@ -129,9 +143,9 @@ public class FileManager {
 	}
 	public void makeDir(String name) throws NodeAlreadyExistsException{
 		if (!isExist(name)) {
-			ArrayList<String> path = new ArrayList<String>();
+			ArrayList<Integer> path = new ArrayList<Integer>();
 			path = currentdir.getPath();
-			path.add(currentdir.getName());
+			path.add(currentdir.getId());
 			Dir dir = new Dir(name,path);
 					
 			createCommand(dir);
@@ -147,9 +161,9 @@ public class FileManager {
 
 	public void makeFile(String name) throws NodeAlreadyExistsException{
 		if (!isExist(name)) {
-			ArrayList<String> path = new ArrayList<String>();
+			ArrayList<Integer> path = new ArrayList<Integer>();
 			path = currentdir.getPath();
-			path.add(currentdir.getName());
+			path.add(currentdir.getId());
 			File file = new File(name,path);
 					
 			createCommand(file);
@@ -157,7 +171,7 @@ public class FileManager {
 		else throw new NodeAlreadyExistsException();
 	}
 
-	private Node findNode (Dir root, ArrayList<String> path){
+	/*private Node findNode (Dir root, ArrayList<Integer> path){
 		Node findnode = null;
 		if (path.size()>1){
 		for (Node node : root.getInsertedNode())
@@ -177,21 +191,25 @@ public class FileManager {
 				}
 		if (findnode != null) return findnode;
 		else throw new NodeNotFoundException();
-	}
+	}*/
 	
-	public void makeLink(String name, ArrayList<String> linkTo) throws NodeAlreadyExistsException{
-		if (!isExist(name)) {
-			ArrayList<String> path = new ArrayList<String>();
-			path = currentdir.getPath();
-			path.add(currentdir.getName());
-			
-			linkTo.remove(0);
-			Node linknode = findNode (model.getNodeDao().getRoot(), linkTo);
-			Link link = new Link(name, linknode, path);
-					
-			createCommand(link);
+	public void makeLink(String name, ArrayList<String> linkToStr) throws NodeAlreadyExistsException{
+		if (!search.isExistPath(linkToStr)) throw new PathNotFoundException();
+		else{
+			ArrayList<Integer> linkTo = search.findPath(linkToStr);
+			if (!isExist(name)) {
+				ArrayList<Integer> path = new ArrayList<Integer>();
+				path = currentdir.getPath();
+				path.add(currentdir.getId());
+				
+				linkTo.remove(0);
+				Node linknode = search.findNode(path);
+				Link link = new Link(name, linknode, path);
+						
+				createCommand(link);
+			}
+			else throw new NodeAlreadyExistsException();
 		}
-		else throw new NodeAlreadyExistsException();
 	}
 	public void delete(String deldir){
 		for (Node node : currentdir.getInsertedNode()){
@@ -227,15 +245,4 @@ public class FileManager {
 		if (!commands.isEmpty()) 
 			commands.pop().undo();
 	}
-	
-	//---------------------------
-	
-	//template
-	/*public Node find(String findTo){
-		Search search = new Search();
-		search.execute();
-		
-		Node node = null;
-		return node;
-	}*/
 }

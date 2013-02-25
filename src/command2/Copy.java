@@ -17,10 +17,10 @@ public class Copy implements Command {
 
     private NodeDao<?>  dao;
     private Node copyDir;
-    private ArrayList<String> copyTo;
+    private ArrayList<Integer> copyTo;
     private ArrayList<Node> backup;
 
-    public Copy(NodeDao<?> dao, Node copyDir, ArrayList<String> copyTo) {
+    public Copy(NodeDao<?> dao, Node copyDir, ArrayList<Integer> copyTo) {
         this.dao = dao;
         this.copyDir = copyDir;
         this.copyTo = copyTo;

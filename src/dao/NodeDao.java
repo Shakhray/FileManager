@@ -17,8 +17,8 @@ public interface NodeDao<PK> {
 
 	public void undo(ArrayList<Node> backup);
 
-	public void copy(Node copynode, ArrayList<String> copyto);
+	public void copy(Node copynode, ArrayList<Integer> copyto);
 	public void copy(Node copynode, Integer id);
-	public void replace(Node replacenode, ArrayList<String> replaceto);
+	public void replace(Node replacenode, ArrayList<Integer> replaceto);
 	public void replace(Node replacenode, Integer id);
 }

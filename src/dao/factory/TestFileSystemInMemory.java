@@ -24,13 +24,13 @@ public class TestFileSystemInMemory{
         return root;
     }
 
-    public static Node getNode(ArrayList<String> path){
+    public static Node getNode(ArrayList<Integer> path){
         return findNode(root, path);
     }
    
     public static void updateNode(Node node){
-    	System.out.println(node.getId());
-    	System.out.println(node.getPath().toString());
+    	//System.out.println(node.getId());
+    	//System.out.println(node.getPath().toString());
     	Dir currentDir = (Dir)findNodeToModify(root, node.getPath());
     	for (Node insNode : currentDir.getInsertedNode()){
     		if (insNode.getId() == node.getId()) {
@@ -44,7 +44,7 @@ public class TestFileSystemInMemory{
     	}
     }
     public static Integer createNode(Node node){
-    	node.setId(node.hashCode());
+    	//node.setId(node.hashCode());
     	Dir currentDir =  (Dir)findNodeToModify(root, node.getPath());
     	currentDir.addNode(node);
 		return node.getId();
@@ -54,11 +54,11 @@ public class TestFileSystemInMemory{
     	currentDir.deleteNode(node);
     }
     
-    private static Node findNode (Dir root, ArrayList<String> path){
+    private static Node findNode (Dir root, ArrayList<Integer> path){
 		Node findNode = null;
 		if (path.size()>1){
 		for (Node node : root.getInsertedNode())
-			if (node.getName().equals(path.get(1))) {
+			if (node.getId() == path.get(1)) {
 				path.remove(0);
 				findNode = findNode((Dir)node, path);
 				break;
@@ -67,7 +67,7 @@ public class TestFileSystemInMemory{
 		else
 			if (path.size()==1){
 				for (Node node : root.getInsertedNode())
-					if (node.getName().equals(path.get(0))) {
+					if (node.getId() == (path.get(0))) {
 						findNode = node;
 						break;
 					}
@@ -75,11 +75,11 @@ public class TestFileSystemInMemory{
 		if (findNode != null) return findNode;
 		else throw new NodeNotFoundException();
 	}
-    private static Node findNodeToModify (Dir root, ArrayList<String> path){
+    private static Node findNodeToModify (Dir root, ArrayList<Integer> path){
 		Node findNode = null;
 		if (path.size()>1){
 		for (Node node : root.getInsertedNode())
-			if (node.getName().equals(path.get(1))) {
+			if (node.getId() == path.get(1)) {
 				path.remove(0);
 				findNode = findNodeToModify((Dir)node, path);
 				break;

@@ -8,15 +8,20 @@ public class Dir extends Node{
 	
 	private ArrayList<Node> insertedNode = new ArrayList<Node>();
 	
-	public Dir(String dirName, ArrayList<String> path, int id) {
+	/*public Dir(String dirName, ArrayList<String> path, int id) {
 		super(dirName, path, id);
 	}
 	
 	public Dir(String dirName, int id) {
 		super(dirName, id);
+	}*/
+	
+	
+	public Dir(Dir dir){
+		super(dir);
 	}
 	
-	public Dir(String dirName, ArrayList<String> path) {
+	public Dir(String dirName, ArrayList<Integer> path) {
 		super(dirName, path);
 	}
 	

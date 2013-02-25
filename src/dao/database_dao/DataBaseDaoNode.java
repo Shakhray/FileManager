@@ -45,19 +45,7 @@ public class DataBaseDaoNode<PK> implements NodeDao<PK>{
 	}
 
 	@Override
-	public void copy(Node copynode, ArrayList<String> copyto) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public void copy(Node copynode, Integer id) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void replace(Node replacenode, ArrayList<String> replaceto) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -78,6 +66,18 @@ public class DataBaseDaoNode<PK> implements NodeDao<PK>{
 	public Dir getCurrentDir() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void replace(Node replacenode, ArrayList<Integer> replaceto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void copy(Node copynode, ArrayList<Integer> copyto) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

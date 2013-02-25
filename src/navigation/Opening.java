@@ -25,9 +25,9 @@ public class Opening extends Navigation{
 	public void execute() throws  NodeNotFoundException{
 		if (KEY == 1){
 			//System.out.println(openlink.linkTo().getPath().toString());
-			ArrayList<String> path = new ArrayList<String>();
+			ArrayList<Integer> path = new ArrayList<Integer>();
 			path = new ArrayList(openlink.linkTo().getPath());
-			path.add(openlink.linkTo().getName());
+			path.add(openlink.linkTo().getId());
 			path.remove(0);
 			Node node = findNode(nodeDao.getRoot(), path);
 			if (node != null){
@@ -39,11 +39,11 @@ public class Opening extends Navigation{
 			else throw new NodeNotFoundException();
 		}
 	}
-	private Node findNode (Dir root, ArrayList<String> path){
+	private Node findNode (Dir root, ArrayList<Integer> path){
 		Node findnode = null;
 		if (path.size()>1){
 		for (Node node : root.getInsertedNode())
-			if (node.getName().equals(path.get(0))) {
+			if (node.getId() == path.get(0)) {
 				path.remove(0);
 				findnode = findNode((Dir)node, path);
 				break;
@@ -52,7 +52,7 @@ public class Opening extends Navigation{
 		else
 			if (path.size()==1){
 				for (Node node : root.getInsertedNode())
-					if (node.getName().equals(path.get(0))) {
+					if (node.getId() == path.get(0)) {
 						findnode = node;
 						break;
 					}

@@ -6,19 +6,23 @@ public class Link extends Node{
 
 	private Node linkedTo;
 	
-	public Link(String linkName, ArrayList<String> path, int id) {
+	/*public Link(String linkName, ArrayList<String> path, int id) {
 		super(linkName, path, id);
 	}
 	
 	public Link(String linkName, Node LinkedTo, ArrayList<String> path, int id) {
 		super(linkName, path, id);
 		this.linkedTo = LinkedTo;
+	}*/
+	
+	public Link(Link link){
+		super(link);
 	}
 	
-	public Link(String linkName, ArrayList<String> path) {
+	public Link(String linkName, ArrayList<Integer> path) {
 		super(linkName, path);
 	}
-	public Link(String linkName, Node LinkedTo, ArrayList<String> path) {
+	public Link(String linkName, Node LinkedTo, ArrayList<Integer> path) {
 		super(linkName, path);
 		this.linkedTo = LinkedTo;
 	}

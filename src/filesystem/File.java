@@ -7,21 +7,25 @@ public class File extends Node{
 	private double size = 0;
 	//private File file;
 	
-	public File(String fileName, double size, ArrayList<String> path, int id){
+	/*public File(String fileName, double size, ArrayList<String> path, int id){
 		super(fileName, path, id);
 		this.size = size;
 	}
 	
 	public File(String fileName, ArrayList<String> path, int id){
 		super(fileName, path, id);
+	}*/
+	
+	public File(File file){
+		super(file);
 	}
 	
-	public File(String fileName, double size, ArrayList<String> path){
+	public File(String fileName, double size, ArrayList<Integer> path){
 		super(fileName, path);
 		this.size = size;
 	}
 	
-	public File(String fileName, ArrayList<String> path){
+	public File(String fileName, ArrayList<Integer> path){
 		super(fileName, path);
 	}
 
